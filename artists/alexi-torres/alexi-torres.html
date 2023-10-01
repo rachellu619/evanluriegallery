@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexi Torres - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artist summary card  --->
+
+    <div class="content-wrapper">
+        <div class="header">
+          <h1>
+            Alexi <br>
+            Torres
+          </h1>
+        </div>
+        <div class="numbers">
+          <br>
+          <p>1976</p>
+          <div class="hr"></div>
+          <br>
+        </div>
+        <div class="hero-img">
+          <div class="img-revealer"></div>
+          <img src="image/hero/002_alexi-torres.jpeg" id="img-revealer" alt="" />
+        </div>
+        <div class="hero-img-info">
+          <p>
+            Alexi Torres discusses the relationship between nature and man in a contemporary context emphasizing the interconnectedness of all living things.<br>
+            His works are exceptionally complex, intricately weaving together organic and symbolic elements to create monumental works which challenge the viewer to see beneath the surface into the archetypal qualities of his subjects.<br>
+            He seeks to initiate a dialogue on the effects and power of human thought and behavior on the ever-changing environment, and the need of appreciation of what is.
+          </p>
+        </div>
+        <div class="cta">
+          <a href="../alberto-cavalieri/alberto-cavalieri.html">
+            <div class="cta-btn">
+              <h4><ion-icon name="arrow-back-sharp"></ion-icon> previous artist </h4>
+            </div>
+          </a>
+          <div class="cta-btn">
+            <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+            <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+            <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+            <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+          </div>   
+          <a href="../angela-gebhardt/angela-gebhardt.html">
+            <div class="cta-btn">
+              <h4>next artist <ion-icon name="arrow-forward-sharp"></ion-icon></h4>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <!--- artist accordion  --->
+<div class="tabs-box">
+    <div class="acord">
+        <label for="tb-one" class="bg-one">
+          Artist Photo
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-one">
+        <div class="content">
+          <div class="artistpfp">
+            <img src="image/profile/002_alexi-torres.jpeg" id="alexi_002">
+          </div>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-two"  class="bg-two">
+          Artist CV
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-two">
+        <div class="content">
+          <p>
+            <strong>Alexi Torres</strong><br>
+            September 27, 1976, Bermeja, Matanzas, Cuba.<br>
+            Currently Live and work in Atlanta, GA.<br><br>
+
+            <strong>Education</strong><br>
+            1991-1995 National School of Arts, Havana, Cuba.<br>
+            1989-1991 Elemental School Art, Matanzas, Cuba.<br><br>
+
+            <strong>Publications</strong><br>
+            Art Palm Beach, Alexi Torres and His Infinity Vision, January – 2020.<br>
+            My Modern Met, Interview: Artist Create “Woven” Paintings of How Man and Nature Are Connected, Februay – 2018.<br>
+            Hi Fructose, The “Woven” Paintings of Alexi Torres. January – 2018.<br>
+            Music on Walls, Interview with Alexi Torres, June – 2017.<br>
+            Impakter Magazine. A Spiritual Adventure With Alexi Torres, May – 2017.<br>
+            Art in America Magazine, September – 2016.<br>
+            Widewalls, Cuban Artist Alexi Torres Exhibits at Unix Gallery. September – 2016.<br>
+            Boca Raton Magazine, March – 2016.<br>
+            Art Hive Magazine, Issue #16. 2016.<br>
+            Style No Chaser, 2015.<br>
+            People’s Shoice Award Winner Red Clay Exhibition, Huntsville Museum of Art, Alabama, 2014.<br>
+            Summer Show – Wall Street International, Unix Gallery, New York, 2014.<br>
+            Cover of MIA Art Fair guide book, January 17 – 20, 2014.<br>
+            American Art Collector July 2012, “Organic Elements”, Page 126-127.<br>
+            Huffington Post -Article, Alexi Torres Images Made Of Woven, Leaves, Feathers And Organic Materials.<br>
+            Juxtapoz, “Woven” Oil Works By Alexi Torres.<br>
+            Colossal Art & Design – Article, The Woven Oil Painting of Alexi Torres.<br>
+            Daily Mail UK- Article, Weave never seen anything like it: Artist who paints like other people knit.<br>
+            IFQ magazine 2004, Vol. 6, article and photo, page 55.<br>
+            IFQ magazine 2004, Vol. 7, Grand Prize photo, page 59.<br>
+            La Aurora Magazine 1999, Volume 1, article and photos, 51-52.<br><br>
+
+            <strong>Solo Exhibitions</strong><br><br>
+            <strong>2022</strong><br>
+            Solo Booth Art Miami, Nov 29 – Dec 4, Contessa Gallery, Miami FL.<br>
+            Woven Connections, Sep 15 – Oct 31. Contessa Gallery, Cleveland OH.<br>
+            Thoughts of Hope, May 19 – July 29. Gallery 100, Atlanta GA.</br><br>
+
+            <strong>2021</strong><br>
+            Solo Booth Art Miami, Nov 30 – Dec 5, Contessa Gallery, Miami FL.<br>
+            Wish Me Well, Nov 12 – Jan 18. Maune Contemporary, Atlanta GA.<br><br>
+
+            <strong>2016</strong><br>
+            “Sun Light” September 8 – October 15, Unix Gallery, Chelsea, NY.<br>
+            “Celebration” June 10 – August 12, Jones – Carter Gallery, Lake City, SC.<br>
+            “Women and Nature” January 27- March 14, The Walker Gallery , Kennesaw, GA.<br><br>
+
+            <strong>2014</strong><br>
+            “ONE” April 12 – July 8, Marietta Cobb Museum Of Art, Marietta, GA.<br>
+            “Positive Thoughts”, March 28 – April 25, Mason Murer Fine Art, Atlanta, GA.<br><br>
+
+            <strong>2013</strong><br>
+            “Harvest of a Waning Moon”, June 20 – July 31, Unix Gallery, Chelsea, NY.<br>
+            “Southern Voices”, Febrary 19 – March 31, Hoover Library, Hoover, AL.<br><br>
+            
+            <strong>2012</strong><br>
+            “Icons”, May 12- June 10, Unix Gallery, Miami, FL.<br><br>
+
+            <strong>2011</strong><br>
+            “Weaving Ephemeral Elements”, Oct 8 – Nov 11, Evan Lurie Gallery, Carmel, IN.<br><br>
+            
+            <strong>2004</strong><br>
+            “Capitolio” Diaz Company Gallery, Atlanta, GA.<br><br>
+
+            <strong>2003</strong><br>
+            “Protegiendome” Provincial Center of Visual Arts, Matanzas, Cuba.<br>
+            “Estribos” Provincial Center of Visual Arts, Matanzas, Cuba.<br><br>
+            
+            <strong>2002</strong><br>
+            “Alarma” Provincial Center of Visual Arts, Matanzas, Cuba.<br><br>
+
+            <strong>2001</strong><br>
+            “Camiones Viejos” Gallery Arenas Doradas, Varadero, Cuba.<br><br>
+            
+            <strong>1999</strong><br>
+            “Ceibas” Gallery Melia.Varadero, Cuba.<br><br>
+            
+            <strong>1998</strong><br>
+            “Migraciones” Gallery Bella Costa, Varadero, Cuba.<br><br>
+            
+            <strong>1990</strong><br>
+            “Dibujos” Gallery Nueva Paz, Nueva Paz, Cuba.<br><br> 
+            
+            <strong>Group Exhibitions</strong><br><br>
+            <strong>2022</strong><br>
+            Hamptons Fine Art Fear, July 14 – 17. Contessa Gallery.<br>
+            Something To Declare, Jan 8 – March 20. Marietta Cobb Museum of Art.<br>
+            Solo Booth, The Palm Beach Show, 17 -22. Contessa Gallery.<br><br>
+
+            <strong>2021</strong><br>
+            Solo Booth, Art Miami December 1 – 5. Contessa Gallrey.<br>
+            Solo Booth, Market Art & Design, Hamptons. August 12 – 15. Contessa Gallery.<br>
+            New Year, New Art. Jan 2 – Feb 13, Jonathan Ferrara Gallery, New Orleans.<br><br>
+
+            <strong>2020</strong><br>
+            “No Dead Artist” Aug 22 – Oct 31. Jonathan Ferrara Gallery, New Orleans.<br>
+            Emerging National VIII. Feb 21 – May 21, Museum of Art and Sciences, Macon GA.<br>
+            Art Palm Beach, January 16 – 20, September Gray Fine Art.<br><br> 
+
+            <strong>2019</strong><br>
+            Pulse Miami Beach Art Fair. December 5 – 8.<br>
+            “Gathered IV” MOCA GA, Atlanta. April 20 – June 15.<br>
+            “Music is Life” Sagamore, Miami Beach. March 22 – June 30.<br>
+            “No Method to Our Madness” Conde Contemporary, Coral Gables. January 24 – March 14..<br>
+            Palm Beach Art Fair, Evan Lurie Gallery. January 16 – 20.<br><br>
+
+            <strong>2018</strong><br>
+            Art Prize, Finalist. Grand Rapids, MI. September 19 – Octuber 7.<br>
+            “Soar Beyond” Conant Performing Art Center, Oglethorpe University, Atlanta. April 6 – May 10.<br>
+            “If Not Now When” September Gray Fine Art, Atlanta. February 23 – March 20.<br>
+            Palm Beach Art Fair, Evan Lurie Gallery. January 17 – 21.<br>
+            Palm Beach Modern and Contemporary, Evan Lurie Gallery. January 11 – 15.<br><br>
+
+            <strong>2017</strong><br>
+            November Group Exhibition, Mason FIne Art, Atlanta GA. November 2 – December 30.<br>
+            Art Fields, Lake City, SC. April 21 – 29.<br>
+            Art Market San Francisco, Evan Lurie Gallery. April 27 – 30.<br>
+            Art Boca Raton, Evan Lurie Gallery. March 15 – 19.<br><br>
+
+            <strong>2016</strong><br>
+            Art Miami, Unix Gallery. Dec 1 – 4.<br>
+            “Summer of Lust”, Unix Gallery Houston. June 3 – July 9.<br>
+            Art Fields, Lake City SC. April 22 – 30.<br>
+            ArtBocaRaton, Featured by Evan Lurie Gallery. March 18 -21.<br>
+            LA Art Show, Featured by Unix Gallery Jan 27 – 31.<br><br>
+
+            <strong>2015</strong><br>
+            Art Miami, Featured by Unix Gallery. Nov 29 – Dec 4.<br>
+            Scope Miami Beach, Featured by Evan Lurie Gallery. Dec 1 – 6.<br>
+            TexasContemporary, Featured by Unix Gallery. Oct 1- 4.<br>
+            Art Aspen, Featured by Evan Lurie Gallery. Aug 14 – 16.<br>
+            Art South Hamptons, Featured by Unix Gallery. July 9- 13.<br>
+            Art Hamptons, Featured by Evan Lurie Gallery. July 2 – 5.<br>
+            “Summer Group Show: Efflorescence”, Unix Gallery, NYC. June 25 – August 22.<br>
+            ArtFields, Lake City SC. April 24 – May 2.<br>
+            Group Show. Galerie Bel Air, Gstaad, Switzerland. March- April.<br>
+            Art Palm Spring Fine Art Fair, Featured by Evan Lurie Gallery. February 12 – 15.<br>
+            LA Art Show, Featured by Evan Lurie Gallery. January 14 – 18.<br><br>
+
+            <strong>2014</strong><br>
+            Houston Fine Art Fair, Featured by Evan Lurie Gallery. Sep 18 – 21.<br>
+            Red Clay Survey, Huntsville Museum of Art, AL. August 17 – October 26.<br>
+            “Summer Group Show”, Unix Gallery. July 17 – Sept 6.<br>
+            Art Aspen, Featured by Unix Gallery. july 31 – Aug 3.<br>
+            Art Hamptons, Featured by Unix Gallery. July 10 – 13.<br>
+            Art Hamptons, Featured by Evan Lurie Gallery. July 10 – 13.<br>
+            “Suite Works”, Museum Of Contemporary Art, Georgia. April 26 -Sep 13 .<br>
+            Art Palm Spring Fine Art Fair, Featured by Evan Lurie Gallery. February 13 – 16.<br>
+            Art Wynwood, Featured by Unix Gallery. February 13 – 17.<br>
+            Art Palm Beach Fair, Featured by Evan Lurie Gallery. January 24 – 27.<br>
+            MIA (Miami International Art Fair), Featured by Evan Lurie Gallery. January 17 – 20.<br><br>
+
+            <strong>2013</strong><br>
+            Conrad Miami, Featured by Unix Gallery. November 22 – December -22.<br>
+            Art Miami, Featured by Unix Gallery. December 3 – 8.<br>
+            Scope Miami Beach, Featured by Evan Lurie Gallery. December 3 – 8.<br>
+            Houston Fine Art Fair, Featured by Unix Gallery and Evan Lurie Gallery. Sep 19 – 22.<br>
+            Art Aspen, Featured by Unix Gallery.july 31 – Aug 3.<br>
+            Art Hamptons, Featured by Evan Lurie Gallery. July 11 – 14.<br>
+            Art Southhamptons Fair, Featured by Unix Gallery. July 24 – 28.<br>
+            DMoMA , Belmount Sur Lausanne. Switzerland. June 5 – July 9.<br>
+            “A Matter Of Time”, Belair Fine Art. Geneva, Switzerland. April 26 – May 16.<br>
+            Art Palm Beach Fair, Featured by Evan Lurie Gallery.<br>
+            Art Wynwood, Featured by Unix Gallery. February 14 – 18.<br><br>
+
+            <strong>2012</strong><br>
+            Art Miami, Featured by Unix Gallery. December 4 – 9.<br>
+            Scope Miami, Featured by Evan Lurie Gallery. December 4 – 9.<br>
+            “New Work from Alexi Torres and Luis Sanchez”. Evan Lurie Gallery. Oc 13- Nov 9.<br>
+            Art Southhamptons Fair, Featured by Unix Gallery. July 26 – 30.<br>
+            Art Hamptons, Featured by Evan Lurie Gallery. July 13 – 15.<br>
+            San Francisco Fine Art Fair, Featured by Evan Lurie Gallery. May 13 – 15.<br>
+            Young Talents from Atlanta” Rush Gallery, NY. April 19 – May 19.<br>
+            “Refresh” Mason Murer Fine Art, Atlanta,GA.<br>
+            “Terra” Kai Lin Art, Atlanta, GA.<br>
+            Art Palm Beach Fair, Featured by Evan Lurie Gallery.<br>
+            Timothy Tew’s Top 25, Atlanta, GA.<br><br>
+
+            <strong>2011</strong><br>
+            Red Dot Miami Art Fair, Featured by Evan Lurie Gallery.<br><br>
+            
+            <strong>2010</strong><br>
+            “International Summer Group Show”Besharat Gallery, Atlanta GA.<br><br>
+
+            <strong>2009</strong><br>
+            Trilogy Art Gallery, Atlanta GA.<br><br>
+            
+            <strong>2004</strong><br>
+            “Discovery” Naomy Silva Gallery, Atlanta, GA.<br>N.Y. Art Festival, Miami, FL USA.<br><br>
+
+            <strong>2003</strong><br>
+            Provincial Salon of Modern Art Roberto Diago, Matanzas, Cuba.<br>
+            “Mis Cartas Para Elpidio” with Yampiel Baez, Provincial Center of Visual Arts, Matanzas, Cuba.<br><br>
+            
+            <strong>2002</strong><br>
+            “El Paradigma y Las Nueces” Provincial Center of Visual Arts, Matanzas, Cuba.<br>
+            “Paradisos Artificiales” Provincial Center of Visual Arts, Matanzas, Cuba.<br>
+            Salon Nacional de Dibujo, Provincial Center of Visual Arts, Matanzas, Cuba.<br>
+            Provincial Salon of Modern Art Roberto Diago, Matanzas, Cuba.<br>
+            Papeles de la Isla” Couturier Gallery, Los Angeles, USA.<br>
+            “Praxis” Center of Visual Arts, Matanzas, Cuba.<br>
+            “Mapa Conceptual” UNEAC Gallery, Matanzas, Cuba.<br>
+            El Camino Mas Corto”, Center of Development of Visual Arts, Matanzas, Cuba.<br><br>
+
+            <strong>2001</strong><br>
+            “El Camino Mas Corto”, Center of Development of Visual Arts, Matanzas, Cuba.<br>
+            “Pintores Cubanos”, Gora Gallery, Montreal ,Canada.<br>
+            Provincial Salon of Modern Art Roberto Diago, Matanzas, Cuba.<br>
+            “Sin Titulo”, Provincial Center of Visual Arts, Matanzas, Cuba.<br><br>
+            
+            <strong>2000</strong><br>
+            “Reencuentros”, 60th Anniversary of the School of Arts, Matanzas, Cuba.<br>
+            “Otra Isla”, Provincial Center of Visual Arts, Matanzas, Cuba.<br>
+            Provincial Salon of Modern Art Roberto Diago, Matanzas, Cuba.<br>
+            International Salon 2000, Varadero, Cuba.<br>
+            West-End Gallery with Lam Group,.Hollywood, Florida, USA.<br>
+            “El camino mas corto”. Provincial Gallery of Arts, Matanzas, Cuba.<br>
+            “Salon de Paisaje”, Galleria de Arte, Sol y Mar, Varadero, Cuba.<br>
+            “La Consagracin de la nada”. Center of Visual Art Development, Habana. Cuba.<br><br>
+
+            <strong>1999</strong><br>
+            “El camino mas corto”. Provincial Gallery of Arts, Matanzas, Cuba.<br>
+            Provincial Salon of Modern Art Roberto Diago, Matanzas, Cuba.<br>
+            “X Motivos”, Puentes Group, Provincial Gallery of Arts, Matanzas, Cuba.<br>
+            “Mi cabeza y yo”. National Colloquial of Plastic Arts of Hermanos Saíz. Matanzas, Cuba.<br><br>
+          
+            <strong>1998</strong><br>
+            “Genesis”, Provincial Salon Hermano Saiz, Matanzas, Cuba.<br>
+            “El Arte Cubano”, II National Salon of UNEAC. Matanzas, Cuba.<br>
+            Provincial Salon of Modern Art Roberto Diago, Matanzas, Cuba.<br>
+            “Nuestro vino de platano, aunque amargo, es nuestro vino”. Cultural House, Bonifacio Byrne, Matanzas, Cuba.<br>
+            “Puentes a la luz”. Center of Visual Arts, Matanzas, Cuba.<br><br>  
+
+            <strong>1997</strong><br>
+            Provincial Salon of Modern Art Roberto Diago, Matanzas, Cuba.<br>
+            Landscape Salon Gallery Arte, Sol y Mar, Varadero, Cuba.<br><br>
+
+            <strong>1996</strong><br>
+            Provincial Salon of Modern Art Roberto Diago, Matanzas, Cuba.<br>
+            “Academia 96” International Salon, Havana, Cuba.<br><br>
+
+            <strong>1995</strong><br>
+            Provincial Salon of Modern Art Roberto Diago, Matanzas, Cuba.<br><br>
+
+            <strong>1990</strong><br>
+            National Salon of Modern Arts, Havana, Cuba.<br><br>
+
+            <strong>Awards</strong><br>
+            2017: Top Winner, ArtFields, Lake City, SC, USA.<br>
+            2014: People Choice Award, Red Clay Survey, Huntsville Museum of Art. AL, USA.<br>
+            2014: Merit Award, Red Clay Survey, Huntsville Museum of Art. AL, USA.<br>
+            2004: Grand Prize N.Y.Art Festival,Miami Florida USA.<br>
+            2002: Grand Prize “Mapa Conceptual”, Matanzas Cuba.<br>
+            2000: Second Place Roberto Diago. Provincial Salon of Visual Arts. Matanzas, Cuba.<br>
+            2000: Honorable Mention “Landscape Salon”, Varadero Art Gallery, Varadero ,Cuba.<br>
+            1998: Second Place “Genesis” Hermanos Salon Saíz Association Art Gallery Havana,Cuba.<br>
+            1996 and 2000: Grand Prize for the Landscape Exhibition. “Arte, Sol y Mar” Art Gallery , Varadero, Cuba.<br>
+            1995: Honors Graduation from the National School of Arts. Havana, Cuba.<br><br>
+
+            <strong>Selected Collections</strong><br>
+            David C. Driskell Center for the Study of African American Art, University of Maryland.<br>
+            MOCA GA – (Museum of Contemporary Art of Georgia)<br>
+            Legacy Ventures, Atlanta, GA.<br>
+            Josh Altman, Los Angeles, CA.<br>
+            Delta Air Lines<br>
+            Marietta Cobb Museum of Art, Marietta, GA.<br>
+            Hoover Public Library, Hoover, AL.<br>
+            Museum of Art. Matanzas, Cuba.<br>
+            Will Smith, Los Angeles, CA.<br>
+            Laura Rathe, Houston, TX.<br>
+            Bernie Marcus, Boca Raton , FL.<br>
+            Ruth Beardsley, Queensland, Australia.<br>
+            Lewis Brisbois Bisgaard & Smith, Atlanta GA.<br>
+            Trijicon inc, VA.<br>
+            Law & Moran, Atlanta GA.<br>
+          </p>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-three"  class="bg-three">
+          Artist Profile
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-three">
+        <div class="content">
+          <p>
+            Torres taps into universal collective memory with playful themes and ironic juxtapositions relevant to the contemporary experience. His series range from portraits of ordinary people, cultural, military to a diverse sampling of symbols from popular culture. These images are then reimagined and reconstructed employing a unique multi-layer painting technique. Inspired by the agrarian lifestyle of his friends and family, Torres plants an idea for each new work and harvests it at completion according to the lunar patterns followed by his ancestors in his native Cuba. To record this ritual, each painting is begun and finished on a waning moon and recorded with his signature on the canvas.<br><br>
+            Alexi Torres was born in 1976 in Bermeja, a small village about 70 miles southeast of Havana, Cuba. From 1989-1991 he studied at Escuela Provicial de Artes in Mantanzas and 1991-1995 at Escuela Nacional de Artes in Havana. Torres has had numerous solo and group exhibitions in the United States and abroad including: UNIX Gallery, New York, 2013 and 2016; Jones Carter Gallery, Lake City, SC, 2016; Marietta Cobb Museum Of Art, Marietta, GA, 2014; DMoMA Lausanne, Switzerland, 2013; Hoover Library, Alabama, 2013; Rush Gallery, New York, 2012; Kai Lin Art, Atlanta, 2012; Scope Miami, 2011-15; Art Miami, 2011-16; LA Art Show; Texas Contemporary; Art South Hampton; Evan Lurie Gallery, 2011; and Naomi Silva Gallery, Atlanta, 2004. Torres’s work can be found in major private and public collections, including the private collections of Will Smith, Los Angeles, CA; Delta Airlines, Atlanta GA; Marietta Cobb Museum of Art, Marietta, GA; Hoover Public Library, Hoover, AL; Museum of Art Matanzas, Cuba; David Mills, San Francisco, CA; Lewis Brisbois Bisgaard & Smith, Atlanta, GA; Ruth Beardsley, Australia; Laura Rathe, Houston, TX; Bernie Marcus, Boca Raton , FL; Trijicon Inc, VA; Law & Moran, Atlanta GA. He is the recipient of the following awards: 2017 Top prize at Art Fields, SC. 2014 People’s Choice Award; Red Clay Survey; Huntsville Museum of Art. 2002 Grand Prize “Mapa Conceptual”, Matanzas, Cuba. 2000 Second Place Roberto Diego, Provincial Salon of Visual Arts, Matanzas, Cuba.<br><br>
+            In 2003 the artist moved from Cuba to the United States where he maintains studios in Atlanta, GA and Zacundo, Costa Rica.
+          </p>
+        </div>
+    </div>
+
+
+    <div class="acord">
+        <label for="tb-four"  class="bg-four">
+          Artist Video
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-four">
+        <div class="content">
+          <div class="vid-container">
+
+            <div class="main-video-container">
+               <video src="https://evanluriegallery.s3.us-east-2.amazonaws.com/alexi-torres/video/Alexi+Torres+2023.mp4" loop controls class="main-video"></video>
+               <h3 class="main-vid-title">Studio 2023</h3>
+            </div>
+         
+            <div class="video-list-container">
+         
+               <div class="list active">
+                  <video src="https://evanluriegallery.s3.us-east-2.amazonaws.com/alexi-torres/video/Alexi+Torres+2023.mp4" class="list-video"></video>
+                  <h3 class="list-title">Studio 2023</h3>
+               </div>
+         
+               <div class="list">
+                  <video src="https://evanluriegallery.s3.us-east-2.amazonaws.com/alexi-torres/video/Alexi+Torres+Interview+with+Divine+Insights.mp4" class="list-video"></video>
+                  <h3 class="list-title">Interview with Divine Insights 2021</h3>
+               </div>
+         
+               <div class="list">
+                  <video src="https://evanluriegallery.s3.us-east-2.amazonaws.com/alexi-torres/video/Gallery+100+-+Studio+Visit+2020.mp4" class="list-video"></video>
+                  <h3 class="list-title">Gallery 100 Studio Visit 2021</h3>
+               </div>
+         
+            </div>
+         
+         </div>
+        </div>
+    </div>
+
+  </div>
+
+    <!--- artwork masonary --->
+
+    <div class="art-container">
+      <a href="alexi-torres-001.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/alexi-torres/001_Pursuit+of+Happiness+II.jpeg" alt="Pursuit of Happiness II">
+        </div>
+      </a>
+      <a href="alexi-torres-002.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/alexi-torres/002_White+Flag+Cuba.jpeg" alt="White Flag Cuba">
+        </div>
+      </a>
+      <a href="alexi-torres-003.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/alexi-torres/003_Making+America.jpeg" alt="Making America">
+        </div>
+      </a>
+      <a href="alexi-torres-004.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/alexi-torres/004_Cocreation.jpeg" alt="Cocreation">
+        </div>
+      </a>
+      <a href="alexi-torres-005.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/alexi-torres/005_Well+Being.jpeg" alt="Well Being">
+        </div>
+      </a>
+      <a href="alexi-torres-006.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/alexi-torres/006_Corazon+de+Mujer.jpeg" alt="Corazon de Mujer">
+        </div>
+      </a>
+      <a href="alexi-torres-007.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/alexi-torres/007_Spirit+of+Security+-+Seduction.jpeg" alt="Spirit of Security - Seduction">
+        </div>
+      </a>
+      <a href="alexi-torres-008.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/alexi-torres/008_Love+Song.jpeg" alt="Love Song">
+        </div>
+      </a>
+      <a href="alexi-torres-009.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/alexi-torres/009_Rocking.jpeg" alt="Rocking">
+        </div>
+      </a>
+      <a href="alexi-torres-010.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/alexi-torres/010_Meditation+II.jpeg" alt="Meditation II">
+        </div>
+      </a>
+
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                  <a href="../../vr.html">Virtual Gallery</a>
+                  <a href="../../sculpture.html">Sculpture</a>
+                  <a href="../../press.html">Press</a>
+              </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+
+  </body>
+</html>

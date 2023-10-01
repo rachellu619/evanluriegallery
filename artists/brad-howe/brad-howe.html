@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Brad Howe - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artist summary card  --->
+
+    <div class="content-wrapper">
+        <div class="header">
+          <h1>
+            Brad <br>
+            Howe
+          </h1>
+        </div>
+        <div class="numbers">
+          <br>
+          <p>1959</p>
+          <div class="hr"></div>
+          <br>
+        </div>
+        <div class="hero-img">
+          <div class="img-revealer"></div>
+          <img src="image/hero/004_brad-howe.jpeg" id="img-revealer" alt="" />
+        </div>
+        <div class="hero-img-info">
+          <p>
+            “If we are to engage in the project of self-edification, the evolution of self, the enterprise is tied to our imagination.<br>
+            As Richard Rorty indicates, imagination is bound by our vocabulary, and it is in the growth of vocabulary we should focus.<br>
+            Vocabulary is tied to experience, and it is in energized moments of exposure to strangeness that our vocabulary expands.<br>
+            Encountering strangeness stretches and expands our self-image and seeds the rich potential for our collective conversations.” 
+          </p>
+        </div>
+        <div class="cta">
+          <a href="../angela-gebhardt/angela-gebhardt.html">
+            <div class="cta-btn">
+              <h4><ion-icon name="arrow-back-sharp"></ion-icon> previous artist </h4>
+            </div>
+          </a>
+          <div class="cta-btn">
+            <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+            <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+            <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+            <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+          </div>   
+          <a href="../breakfast/breakfast.html">
+            <div class="cta-btn">
+              <h4>next artist <ion-icon name="arrow-forward-sharp"></ion-icon></h4>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <!--- artist accordion  --->
+<div class="tabs-box">
+    <div class="acord">
+        <label for="tb-one" class="bg-one">
+          Artist Photo
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-one">
+        <div class="content" >
+          <div class="artistpfp">
+            <img src="image/profile/004_brad-howe.jpeg" id="brad_004">
+          </div>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-two"  class="bg-two">
+          Artist CV
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-two">
+        <div class="content">
+          <p>
+            <strong>Born:</strong><br>
+            Riverside, California<br><br>
+
+            <strong>Residence:</strong><br>
+            Los Angeles, California<br><br>
+
+            <strong>Education:</strong><br>
+            Stanford University, Stanford, California<br>
+            University of Sao Paulo, Sao Paulo, Brazil<br><br>
+
+            <strong>Individual Exhibitions</strong><br><br>
+
+            <strong>2022</strong><br>
+            Recent Sculptures, Caldwell Snyder Gallery, Montecito, California<br><br>
+
+            <strong>2019</strong><br>
+            Wishful Thinking, Caldwell Snyder Gallery, St. Helena, California<br><br>
+
+            <strong>2017</strong><br>
+            Second Nature, Galerie Uli Lang, Biberach, Germany<br><br>
+
+            <strong>2016</strong><br>
+            Jarding de Reverie, Pacific Design Center, West Hollywood,California<br>
+            Brad Howe Invitational, Gallery Jeon, Daegu, South Korea<br>
+            System of Shared Risk, Galerie Uli Lang, Biberach, Germany<br><br>
+
+            <strong>2015</strong><br>
+            Working Fictions, Caldwell Snyder Gallery, San Francisco, California<br>
+            Cartography, CMay Gallery, Seoul, Korea<br><br>
+
+            <strong>2014</strong><br>
+            Shadow Economy, Museum of Art and History, Lancaster, California<br>
+            Concoctions, The Frostig Collection, Santa Monica, California<br><br>
+
+            <strong>2013</strong><br>
+            Docile Bodies, Caldwell Snyder Gallery, San Francisco, California<br>
+            Deprivato, Katherine Cone Gallery, Los Angeles, California<br>
+            Coyote, Galerie Uli Lang, Biberach, Germany<br><br>
+
+            <strong>2012</strong><br>
+            Kinetic Works, The Frostig Collection, Santa Monica, California<br>
+            Sculpture & Kinetic Art, Soohoh Gallery, Seoul, South Korea<br>
+            Sculpture, Galerie Janos, Paris, France<br><br>
+
+            <strong>2011</strong><br>
+            Construct, Galerie Uli Lang, Biberach, Germany<br><br>
+
+            <strong>2010</strong><br>
+            Primavernica, AndrewShire Gallery, Los Angeles, California<br>
+            Sculturen, Mobiles und Mandalas, Galerie<br>
+            Kaysser, Munich, Germany<br>
+            Giocare con la Scultura, Art 1307, Napoli, Italy<br><br>
+
+            <strong>2008</strong><br>
+            Brad Howe, Alexander Mertens Fine Art, Montecito, California<br>
+            Sculpture, College of The Canyons, Santa Clarita, California<br><br>
+
+            <strong>2007</strong><br>
+            At This Moment, Sculpturesite Gallery, San Francisco, California<br>
+            Strata, Museum of Design, Art and Architecture, Culver City, California<br>
+            Stainless Steel Sculpture, Galerie Uli Lang, Biberach, Germany<br>
+            Skulpturen Und Objekte, Galerie Kaysser, Munich, Germany<br><br>
+
+            <strong>2006</strong><br>
+            The Next Dimension, Hamilton-Selway Fine Art, Hollywood, California<br>
+            New Work, Parchman Stremmel Gallery, San Antonio, Texas<br>
+            Monoliths, Galerie Holm, Ulm, Germany<br>
+            Tectonics, Galerie Uli Lang, Biberach, Germany<br>
+            Steps in Serious Exuberance, Skulpturengalerie, Zurich, Switzerland<br><br>
+
+            <strong>2005</strong><br>
+            A Survey of Color, Form and Motion, Rosenthal Fine Art, Chicago, Illinois<br>
+            In Collaboration, Adamar Fine Art, Miami, Florida<br>
+            Synchrony, Galerie Uli Lang, Biberach, Germany<br><br>
+
+            <strong>2002</strong><br>
+            Stahlplastiken, Galerie Uli Lang, Biberach, Germany<br><br>
+
+            <strong>2001</strong><br>
+            Steel Haiku, Jernigan Wicker Fine Arts, San Francisco, California<br><br>
+
+            <strong>2000</strong><br>
+            Neo Modernism, Boritzer/Gray/Hamano Gallery, Santa Monica,California<br>
+            Biscotto, Jernigan Wicker Fine Arts, San Francisco, California<br><br>
+
+            <strong>1999</strong><br>
+            Esculturas, Praxis Arte Internacional, Mexico City, Mexico<br>
+            Aquatica, Boritzer/Gray/Hamano Gallery, Santa Monica, California<br><br>
+
+            <strong>1997</strong><br>
+            Drift, Boritzer/Gray/Hamano Gallery, Santa Monica, California<br><br>
+
+            <strong>1996</strong><br>
+            Flats & Risers, Diane Nelson Gallery, Laguna Beach, California<br>
+            Causes, Arario Gallery, Cheoan-Shi, South Korea<br><br>
+
+            <strong>1995</strong><br>
+            Boias, Galeria Nara Roesler, Sao Paulo, Brazil<br><br>
+
+            <strong>1994</strong><br>
+            Hop The Twig, Boritzer/Gray/Hamano Gallery, Santa Monica, California<br><br>
+
+            <strong>Selected Group Exhibitions</strong><br><br>
+
+            <strong>2022</strong><br>
+            reFORMED, James Gallery, Pittsburgh, PA<br>
+            Axiom. Alex Couewnberg, Brad Howe, SCAPE Gallery, Corona Del Mar, California<br>
+            Salon Redux, David Klein Gallery, Detroit, Michigan<br>
+            Fun Gal Gro Up Sho, Gallery SADE, Los Angeles, California<br><br>
+
+            <strong>2020</strong><br>
+            Trooping the Colours, Brad Howe, Michelle Benoit, Galerie Uli Lang, Biberach, Germany<br><br>
+
+            <strong>2019</strong><br>
+            XIII Bienal de la Habana 2019, Havana, Cuba Brad Howe, Michelle Benoit, Eduardo Vega de Seoane, Thomas Punzmann Contemporary, Frankfurt, Germany<br>
+            Fractured Beauty, Alisa Henriquez, Andy Krieger, Brad Howe, David Klein Gallery, Detroit, Michigan<br><br>
+
+            <strong>2018</strong><br>
+            The Pearly Gates Collection, Yucca Valley Visual and Performing Arts Center, Yucca Valley, California<br>
+            Bauhaus Club, Contemporary Cluster, Rome, Italy<br>
+            Disturbances, Art 1307, Naples, Italy<br><br>
+
+            <strong>2017</strong><br>
+            On The Road: American Abstraction, David Klein Gallery, Detroit, Michigan<br><br>
+
+            <strong>2016</strong><br>
+            20, Zetaeffe Galleria, Florence, Italy Properties of Light, George Billis Gallery, Los Angeles, California<br>
+            Recent Work, Gallery Jones, Vancouver, Canada<br><br>
+
+            <strong>2015</strong><br>
+            American Array, Honolulu Museum of Art, Honolulu, Hawaii<br>
+            The Nature of Sculpture: Art in the Garden, Los Angeles County Arboretum, Arcadia, California<br>
+            Farbe ist mein Motiv, Galerie Kaysser, Ruhpolding, Germany<br>
+            Gerundet Umkriest, Gallery Foundation SBC Pro Arte, Biberach, Germany<br><br>
+
+            <strong>2014</strong><br>
+            Blur the Lines, Brad Howe and Murakami Takashi, Asian Art Works, Busan, Korea<br>
+            Farmhouse Logic: Brad Howe and Gary Komarin, Morrison Gallery, Kent, Connecticut<br>
+            Bogen Schiessen, Museum Biberach, Biberach, Germany<br><br>
+
+            <strong>2013</strong><br>
+            The Frostig Collection, Museum of Art and History, Lancaster, California<br>
+            Rouge, Katherine Cone Gallery, Los Angeles, California<br>
+            Brad Howe, Zachary Thornton, Lopez-Herrera, Thomas Punzman Fine Arts, Frankfurt, Germany<br>
+            Gary Komarin and Brad Howe, Galerie Proarta, Zurich, Switzerland<br>
+            Bunt, Galerie Kaysser, Ruhpolding, Germany<br><br>
+
+            <strong>2012</strong><br>
+            TARFEST: 10th Anniversary Art Exhibition, LACMA, Los Angeles, California<br>
+            Frostig at Large: In West Hollywood, West Hollywood, California<br>
+            Color Balance, Marco Casentini and Brad Howe, Melissa Morgan Fine Art, Palm Desert, California<br>
+            L'Art del Regal XII & Brad Howe, Esculture. Art Contemporani Nord-America, La Galeria, Barcelona, Spain Mouvement et Lumiere: Exposition de 85 Sculptures, La Fondation Villa Datris, Isle Sur La Sorgue, Vaucluse, France<br><br>
+          
+            <strong>2010</strong><br>
+            Malibu Sculpture 2010, A Summer Exhibition curated by Carl Scholsberg, Malibu Civic Center, Malibu, California<br>
+            Tectonic-Ephemeral-Sensual: Sculpture and Jewelry, SPF: a Gallery, Culver City, California<br>
+            Avesta Art 2010, Verket, Avesta, Sweden<br><br>
+            
+            <strong>2009</strong><br>
+            Five, Andrea Schwartz Gallery, San Francisco, California<br>
+            A Happy Medium, Gilman Contemporary, Ketchum, Idaho<br><br>
+            
+            <strong>2008</strong><br>
+            Sculpture in Motion, Atlanta Botanical Garden, Atlanta, Georgia<br>
+            Fusion, Gilman Contemporary, Ketchum, Idaho<br><br>
+            
+            <strong>2007</strong><br>
+            Keeping It Straight, Right Angles and Hard Edges in Contemporary Southern California, Riverside Museum of Art, Riverside, California<br>
+            The El Paseo Invitational, Outdoor Sculpture Exhibition, Palm Desert, California<br><br>
+
+            <strong>2006</strong><br>
+            L.A. Minimalism Today, Gallery C, Hermosa Beach, California<br>
+            Primary Colors, Sculpturesite Gallery, San Francisco, California<br><br>
+
+            <strong>2005</strong><br>
+            Touch Me, Gallery C, Hermosa Beach, California<br><br>
+
+            <strong>2004</strong><br>
+            Nine, Gallery C, Hermosa Beach, California<br>
+            Out of Plane: Light on White Maze, SPF: a Gallery, Culver City, California<br><br>
+
+            <strong>2002</strong><br>
+            Pourquoi Pas, Galerie Janos, Paris, France<br><br>
+
+            <strong>1999</strong><br>
+            Pier Walk 99, International Sculpture Exhibition, Chicago, Illinois<br><br>
+
+            <strong>1998</strong><br>
+            Illusion, Riverside Art Museum, Riverside, California<br><br>
+
+            <strong>1997</strong><br>
+            Grins, Humor and Whimsy in Contemporary Art, Millard Sheets Gallery, Pomona, California<br><br>
+
+            <strong>1995</strong><br>
+            Edition FIAC/SAGA, Paris, France<br><br>
+
+            <strong>1994</strong><br>
+            Group Show, Peter Blake Gallery, Laguna Beach, California<br>
+            Big Littles, Boritzer/Gray/Hamano Gallery, Santa Monica, California<br>
+            Pop into the '90s, Kass/Meridian Gallery, Chicago, Illinois<br>
+            Busan Bienniale, Busan, South Korea<br><br>
+
+            <strong>Selected Public & Corporate Collections</strong><br><br>
+
+            Allergan Corporation, Irvine, California<br>
+            Arario Industries, Cheon-Shi, South Korea<br>
+            Bachem California Inc., Torrance, California<br>
+            Baxter Healthcare Corporation, Irvine, California<br>
+            Beechcraft Corporation, Van Nuys, California<br>
+            Birtcher Corporation, Irvine, California<br>
+            Boehringer Ingelheim, Biberach, Germany<br>
+            Boehringer Ingelheim, Ridgefield, Connecticut<br>
+            Carl Bean AIDS Center, Los Angeles, California<br>
+            Cedars-Sinai Hospital, Los Angeles, California<br>
+            Chandler Properties, Los Angeles, California<br>
+            City of Hope, Duarte, California<br>
+            City of Montebello, Transportation Building, Montebello, California<br>
+            City of Santa Fe Springs, California<br>
+            City of West Hollywood, California<br>
+            Colegio Nacional de Educacion Profesional Tecnica- Administrative Campus, Toluca, Mexico<br>
+            Concord Property Corporation, San Antonio, Texas<br>
+            Crocker Museum of Art, Sacramento, California<br>
+            Cupertino Housing Partners, Cupertino, California<br>
+            Duncan Aviation, Lincoln, Nebraska<br>
+            Edificio Siglum, SARE Corporation, Mexico City, Mexico<br>
+            Edison International, Rosemead, California<br>
+            Edwards Lifesciences, Irvine, California<br>
+            Eisenhower Medical Center, Rancho Mirage, California<br>
+            Equity Office, Atlanta, Georgia<br>
+            Georgia International Convention Center, Atlanta, Georgia<br>
+            Heising-Simons Foundation, San Francisco, California<br>
+            Hilton Caribe, San Juan, Puerto Rico<br>
+            Honolulu Museum of Art, Honolulu, Hawaii<br>
+            Houlihan Lokey, Los Angeles, California<br>
+            Intuit, Reno, Nevada<br>
+            Jesuit Dallas Museum, Dallas, Texas<br>
+            Katell Properties, Los Angeles, California<br>
+            Kaiser Permanente, Baldwin Park, California<br>
+            Kitakyushu City International Center, Kitakyushu, Japan<br>
+            Kimball International, Inc., Los Angeles, California<br>
+            Kreissparkasse, Biberach, Germany<br>
+            Lancaster Museum of Art and History, Lancaster, California<br>
+            La Fundidora, Centro Cultural, Monterrey, NL, Mexico<br>
+            Landesbank Baden-Wurttemberg, Stuttgart, Germany<br>
+            Lockton Insurance, Los Angeles, California<br>
+            Lord Baltimore Properties, Ontario, California<br>
+            LARC Foundation, Saugus, California<br>
+            Loyola Law School, Los Angeles, California<br>
+            Medix Mihagino, Kitakyushu, Japan<br>
+            Mercure Hotel, Sao Paulo, Brazil<br>
+            M.G.M. Grand Airlines, JFK Airport, New York<br>
+            Ministry of Industry and Trade Building, Mexico City, Mexico<br>
+            M.I.T., Cambridge, Massachusetts<br>
+            Murrel Company, Newport Beach, California<br>
+            Neiman Marcus, Dallas, Texas<br>
+            Nobe Telecommunications Corporation, Miami, Florida<br>
+            Overton Moore and Associates Inc. Los Angeles, California<br>
+            Pacific Medical Buildings, San Diego, California<br>
+            Pasadena Museum of California Art, Pasadena, California<br>
+            Princess Cruise Line, Sun Princess, Los Angeles, California<br>
+            Raleigh Durham Airport, Raleigh, North Carolina<br>
+            Royal Host, International Forum Building, Tokyo, Japan<br>
+            Saks Fifth Avenue, USA<br>
+            Samsung Corporation, Seoul, South Korea<br>
+            Sand Hill Property Company, Sunnyvale, California<br>
+            SAS Software Inc., Cary, North Carolina<br>
+            Department of Commerce, Mexico City, Mexico<br>
+            Straub Autovermietung Hertz, Biberach, Germany<br>
+            Sudwestbank, Stuttgart, Germany<br>
+            Stanford University, Palo Alto, California<br>
+            Sysco Corporation, Houston, Texas<br>
+            Temple University, Philadelphia, Pennsylvania<br>
+            The Animation Guild, Burbank, California<br>
+            The Diplomat Hotel, Hollywood, Florida<br>
+            The Trenton Group, Los Angeles, California<br>
+            Trinity University, San Antonio, Texas<br>
+            UCLA Medical Center, Los Angeles, California<br>
+            UCLA Anderson School of Business, Los Angeles, California<br>
+            Union Bank, Carmel, California<br>
+            Wheelock Inc., Singapore<br>
+            Wheelock Inc., Hong Kong<br>
+            Western Asset, Pasadena, California<br>
+            Western Asset, Sao Paulo, Brazil<br>
+            Xerox Corporation, Rochester, New York<br><br>
+
+            <strong>Biblography</strong><br><br>
+
+            A Dance of Atoms, Brad Howe, Skira, Milan, 2022<br>
+            California Homes, September/October 2020<br>
+            Art Ltd. Magazine, Nov/Dec 2016, Woodland Hills, California, November 2016<br>
+            University Hospitals, Artwork from the Collection of University Hospitals, Cleveland OH, 2016<br>
+            Fabrik Magazine, Los Angeles, California, September 2016<br>
+            Schwabische Zeitung, Passende Kombination fur Schemmerhofen, Germany, June 2014<br>
+            Mouvement et Lumiere, #2 Exposition 2012, La Villa Datris, France, 2012<br>
+            Urban Landscape Furniture, Hi-Design International Publishing, Hong Kong, 2012<br>
+            Artweek LA (Vol. 74), Los Angeles, CA, April 30, 2012<br>
+            Montecito Messenger, Montecito, CA USA, November 11 – 17, 2011<br>
+            ZVW-Redaktion, Das Werthaltige am Blech, Stuttgart, Germany, November 6, 2010<br>
+            Avanti, L’universo di Brad Howe, Rome, Italy, March 25, 2010<br>
+            Casa Claudia, Editora Abril, Sao Paulo, Brazil, December 2009<br>
+            Schwabische Zeitung, Germany, July 24, 2009<br>
+            Luxe. Interiors + design, USA, Summer 2009<br>
+            Arroyo Magazine, Pasadena, CA, March 2009<br>
+            Sculpture Magazine, USA, September 2008<br>
+            Architectural Digest, Germany, March 2008<br>
+            Applaus, Kultur Magazin, Munich, Germany, November 2007<br>
+            San Antonio Express News, San Antonio, Texas, October 22, 2006<br>
+            Boehringer Ingelheim Zeitung, Ingelheim, Germany, June 6, 2006<br>
+            Los Angeles Times, May 25, 2006<br>
+            Schwabische Zeitung, Biberach, Germany, May 23, 2006<br>
+            Gallery Guide, Chicago, May 2005<br>
+            South Florida Business Journal, March 18-24, 2005<br>
+            Angeleno Magazine, Los Angeles, California, September 2004<br>
+            Wochenblatt, Germany, September 16, 2004<br>
+            Architectural Digest, July 2004<br>
+            Coast Magazine, Newport Beach, California, June 2004<br>
+            Schwabische Zeitung, Biberach, Germany, July 2, 2002<br>
+            El Nuevo Herald, Miami, Florida, September 29, 2001<br>
+            Los Angeles Times, April 3, 2001<br>
+            Los Angeles Times, September 8, 2000<br>
+            The Orange County Register, September 7, 2000<br>
+            Vice Versa, Mexico City, Mexico, April 2000<br>
+            Serious Exuberance, Sculpture by Brad Howe, Noriega Editors, Mexico City, 1999<br>
+            Reforma, Mexico City, Mexico, October 5, 1999<br>
+            Free Expression, Vol. 4, House Design by Edward R. Niles, Images Publishing, 1998<br>
+            San Francisco Examiner Magazine, September 20, 1998<br>
+            International Herald Tribune, August 11, 1998<br>
+            San Diego Times Tribune, August 11, 1998<br>
+            New York Times, August 6, 1998<br>
+            Chonan Culture Journal, Chonan, South Korea, 1996<br>
+            Joongdo Focus Monthly Photo Journal, South Korea, September 1996<br>
+            The Press-Enterprise, Riverside, California, January 18, 1996<br>
+            Contemporary California Architects, Philip Jodidio, Taschen Publications, 1995<br>
+            Florida Design (Vol. 5 No. 3), December 1995<br>
+            Folha de Sao Paulo, Sao Paulo, Brazil, October 10, 1995<br>
+            Jornal da Tarde, Sao Paulo, Brazil, October 10, 1995<br>
+            Art Pictorial (Vol. 4), Tokyo, Japan, 1995<br>
+            Mexico: Casas del Pacifico, Marie-Pierre Colle Corcuera, ALTI Publishing, 1994<br>
+            Empowered Spaces; Architects & Designers At Home & At Work, 1993<br>
+            El Nacional, Caracas, Venezuela, June 1993<br>
+            Harper's Bazaar, January 1993<br>
+            Mittwoch, Freiburg, Germany, March 20, 1991<br>
+            Kultur Joker, Freiburg, Germany, March 1991<br>
+            Dallas Morning News, January 6, 1991<br>
+            Gallery Guide, California & Pacific NW, 1991<br>
+            American Pop Culture Today Vol. 3, Japan, 1990<br>
+            BusinessWeek, December 3, 1990<br>
+            Veja Magazine, Brazil, November 28, 1990<br>
+            Vogue Magazine, Mexico, August 1990<br>
+            California Riviera Magazine, Laguna Beach, California, July 1990<br> 
+            Artension Magazine, Paris, May-June 1990<br>
+            Los Angeles Times, December 29, 1989<br>
+            Jornal do Brazil, Rio de Janeiro, Brazil October 3, 1989<br>
+            Village View, Los Angeles, August 24, 1988<br>
+            UPI, July 6, 1988<br>
+            Los Angeles Times, December 20, 1987<br>
+            Los Angeles Times, September 13, 1987<br>
+            Orange County Magazine, California, March 1987<br>
+            Vogue Magazine, Brazil, July 1986<br>
+            Vogue Magazine, Brazil, May 1986<br>
+            Revista de Domingo, Rio de Janeiro, Brazil, April 1986<br>
+            Fatos Magazine, Brazil, May 1985<br>
+          </p>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-three"  class="bg-three">
+          Artist Profile
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-three">
+        <div class="content">
+          <p>
+            Brad Howe began his career in Brazil after studying history at the University of Sao Paulo. His work presents the influence of inquiry into the aesthetics of various cultures and distinct movements in the continuum of art history.<br><br>  
+            Howe's work continues to connect with international communities, exhibiting and completing site-specific commissions both in the US and abroad. Known for his sculpture practice, Howe’s focus also includes the representation of objects through diverse means, including photography.<br>
+          </p>
+        </div>
+    </div>
+
+  </div>
+
+    <!--- artwork masonary --->
+
+    <div class="art-container">
+      <a href="brad-howe-001.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/001_HOWE_Bolsa_17x27x5.5.jpg" alt="Bolsa">
+        </div>
+      </a>
+      <a href="brad-howe-002.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/002_HOWE_Cicada_42x24x15.jpeg" alt="Cicada">
+        </div>
+      </a>
+      <a href="brad-howe-003.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/003_HOWE_Dillo_14x23x4.jpeg" alt="Dillo">
+        </div>
+      </a>
+      <a href="brad-howe-004.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/004_HOWE_Gota_13.5x21x4.jpg" alt="Gota">
+        </div>
+      </a>
+      <a href="brad-howe-005.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/005_HOWE_Iberica-A_46x25x31.jpeg" alt="Iberica A">
+        </div>
+      </a>
+      <a href="brad-howe-006.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/006_HOWE_Latitude73x40x30.jpeg" alt="Latitude">
+        </div>
+      </a>
+      <a href="brad-howe-007.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/007_HOWE_Makin-Cake-A_28x23x3.5.jpg" alt="Howe Makin' Cake">
+        </div>
+      </a>
+      <a href="brad-howe-008.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/008_HOWE_Morumbi-Kinetic_24x31x12.jpeg" alt="Morumbi">
+        </div>
+      </a>
+      <a href="brad-howe-009.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/009_HOWE_Navarro_79x40x9.jpeg" alt="Navarro">
+        </div>
+      </a>
+      <a href="brad-howe-010.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/010_HOWE_Paddles_78x55x36.jpeg" alt="Paddles">
+        </div>
+      </a>
+      <a href="brad-howe-011.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/011_HOWE_Paiui-Kinetic_46x31x16.jpeg" alt="Paiui">
+        </div>
+      </a>
+      <a href="brad-howe-012.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/012_HOWE_Pee-Wee_136x52x38.jpeg" alt="Pee Wee">
+        </div>
+      </a>
+      <a href="brad-howe-013.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/013_HOWE_Plum_21x13x6.jpeg" alt="Plum">
+        </div>
+      </a>
+      <a href="brad-howe-014.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/014_HOWE_Scrooch_44x43x24.jpeg" alt="Scrooch">
+        </div>
+      </a>
+      <a href="brad-howe-015.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/015_HOWE_Snout_14x22x5.jpeg" alt="Snout">
+        </div>
+      </a>
+      <a href="brad-howe-016.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/016_HOWE_Sombrero96x38x30.jpeg" alt="Sombrero">
+        </div>
+      </a>
+      <a href="brad-howe-017.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/017_HOWE_Victoria-Kinetic_38x31x18.jpeg" alt="Victoria">
+        </div>
+      </a>
+      <a href="brad-howe-018.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/018_Make-Mine-Moonshine.jpeg" alt="Make Mine Moonshine">
+        </div>
+      </a>
+      <a href="brad-howe-019.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/019-Centrum-1-.jpeg" alt="Centrum">
+        </div>
+      </a>
+      <a href="brad-howe-020.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/020_Reckon.jpeg" alt="Reckon">
+        </div>
+      </a>
+      <a href="brad-howe-021.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/brad-howe/021_Things-Happen.jpeg" alt="Things Happen">
+        </div>
+      </a>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                  <a href="../../vr.html">Virtual Gallery</a>
+                  <a href="../../sculpture.html">Sculpture</a>
+                  <a href="../../press.html">Press</a>
+              </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+
+  </body>
+</html>

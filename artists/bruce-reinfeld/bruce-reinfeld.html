@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bruce reinfeld - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  </head>
+
+  <body>
+
+   <!--- header  --->
+
+   <header>
+    <a href="../../index.html">
+      <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+    </a>
+    <div class="menu-open" onclick="menuOpen()">
+      <ion-icon name="menu-outline"></ion-icon>
+    </div>
+  </header>
+
+  <div class="menu-container">
+    <div class="menu-close" onclick="menuClose()">
+      <ion-icon name="close-outline"></ion-icon>
+    </div>
+    <div class="menu-items">
+      <div class="menu-items-container">
+        <span>
+          <a href="../../event.html">
+            <div class="menu-item">
+              <div class="menu-item-list">E</div>
+              <div class="menu-item-name">EV<strong>E</strong>NT</div>
+            </div>
+          </a>
+        </span>
+        <div class="line"></div>
+        <span>
+          <a href="../../vault.html">
+            <div class="menu-item">
+              <div class="menu-item-list">V</div>
+              <div class="menu-item-name"><strong>V</strong>AULT</div>
+            </div>
+          </a>
+        </span>
+        <div class="line"></div>
+        <span>
+          <a href="../../artist-summary.html">
+            <div class="menu-item">
+                <div class="menu-item-list">A</div>
+                <div class="menu-item-name"><strong>A</strong>RTIST</div>
+            </div>
+          </a>
+        </span>
+        <div class="line"></div>
+        <span>
+          <a href="../../about.html">
+            <div class="menu-item">
+              <div class="menu-item-list">N</div>
+              <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+            </div>
+          </a>
+        </span>
+        <div class="line"></div>
+      </div>
+    </div>
+  </div>
+
+    <!--- artist summary card  --->
+
+    <div class="content-wrapper">
+        <div class="header">
+          <h1>
+            Bruce <br>
+            reinfeld
+          </h1>
+        </div>
+        <div class="numbers">
+          <br>
+          <div class="hr"></div>
+          <br>
+        </div>
+        <div class="hero-img">
+          <div class="img-revealer"></div>
+          <img src="image/hero/006_bruce-reinfeld.jpeg" id="img-revealer" alt="" />
+        </div>
+        <div class="hero-img-info">
+          <p>
+            “At first glance…Bruce… doesn't initially seem like the whimsical kind…<br>
+            His photographs… are focused, journalistic and frank.<br>
+            The well-heeled lyrics that infiltrate his buoyant brand of pop are ruminative and straight forward, poetic yet never fussy.<br>
+            Yet for all this blunt force, there is a capriciousness that belies his lighthearted sense of play and humor.<br>
+            Photographically it is wrecked train tracks, battered sculptures, creaky barns, bruised busses, dime store Elvis impersonators and the wretched likes that are his subjects.<br>
+            He adds a gently silly and unique perspective.<br>
+            (His coloring)… gives each piece of black & white film a surrealist burst of pop color that makes the image he has captured come vibrantly alive — merging the beauty and sadness in his art with seamless elegance.”
+          </p>
+        </div>
+        <div class="cta">
+          <a href="../breakfast/breakfast.html">
+            <div class="cta-btn">
+              <h4><ion-icon name="arrow-back-sharp"></ion-icon> previous artist </h4>
+            </div>
+          </a>
+          <div class="cta-btn">
+            <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+            <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+            <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+            <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+          </div>   
+          <a href="../carlo-borer/carlo-borer.html">
+            <div class="cta-btn">
+              <h4>next artist <ion-icon name="arrow-forward-sharp"></ion-icon></h4>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <!--- artist accordion  --->
+<div class="tabs-box">
+    <div class="acord">
+        <label for="tb-one" class="bg-one">
+          Artist Photo
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-one">
+        <div class="content" >
+          <div class="artistpfp">
+            <img src="image/profile/006_bruce-reinfeld.jpeg" id="bruce_006">
+          </div>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-three"  class="bg-three">
+          Artist Profile
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-three">
+        <div class="content">
+          <p>
+            Bruce Jefferies Reinfeld is from Philadelphia. His passion for photography began with his drive to capture images of the immediate world and the people that surrounded him. Through his early years of intensive self-study, he later honed his craft at the University of the Arts in Philadelphia and at NYU, Tisch School of the Arts in NYC. Bruce’s personal philosophy focuses on the belief that beauty surrounds us all. It exists even in the most common people, animals, and things. However, the distraction of our daily lives blinds us to this beauty, leaving us to just pass them without providing the appropriate recognition of their existence. Bruce’s mission is to direct us to see the beauty in unusual things, like the Lone Star Bus, Bull’s Horns, a rusting Cadillac, or the palm trees of Coconut Grove.<br><br>
+
+            Reinfeld has lived a vibrant youth and has incorporated that adventurous spirit into his work. He has found the ability to use the lens of a camera to capture this beauty for all of us to enjoy. As Franz Kafka wrote so eloquently: “Anyone who keeps the ability to see beauty never grows old”. It is for that reason collectors love Bruce Reinfeld’s photographs. They point us to the simple things we would have never paid attention to or enough attention to otherwise, and he has inspired us to feel as timeless as his works. Reinfeld has developed an extraordinarily intense and interdisciplinary artistic research, exploring visual arts, music, graphic design, fashion, poetry, and urban performances, resulting in a conceptual and metaphysical reaction. Greatly influenced by graphic design and pop art, Reinfeld moves around across America aboard his Sprinter van capturing a unique perspective on everyday life.<br><br>
+
+            He works with 35 mm film bodies and toy plastic cameras – along with infrared film and black & white stock in 35 mm and 120 mm format. A far cry from today’s world of digital cameras and hyper-editing techniques that accompany other photographers’ work. It doesn’t come as a surprise that, from 1990 onwards, Reinfeld attentively photographs wrecked train tracks, battered sculptures, creaky barns, bruised busses, dime-store Elvis impersonators, and the wretched likes that are his subjects. The photographs are non-manipulated and never staged or set up. Onto this, he adds a gentle silly perspective: he airbrushes colors onto each image digitally because of the detail that can be obtained. So the black and white photographs become so vibrantly alive with that surrealist burst of Pop color. The grainy black and white hues, almost monochrome, give a sense of space, reaction to time through perception and action, and wordplay which are all fundamental elements of Bruce Jefferies Reinfeld’s artistic research.<br><br>
+
+            His newest work explores interactive dimensions with his innovative LENTICULAR process. Individual elements of the artwork are arranged in layers, creating a breathtaking depth effect. Mesmerizing images appear, shift, and change depending on the audience's viewpoint creating an engaging visual experience. <br><br>
+
+            A study of abstract pattern, color, and movement was launched softly in December 2018 at Context Art Miami. Along with the top names in contemporary art, collectors, designers and curators took notice.<br><br>
+
+            The movement within each piece leaves a positive lasting impression but doesn't distract from the overall design. Current and past projects in the Hamptons, Aspen, Miami, and New York City have left collectors & top designers excited and intrigued to see what Bruce will do next. <br><br>
+
+            Bruce Jefferies Reinfeld doesn’t take too many photos or write too many songs, weeding out those photos that are not where they should be, and tearing down the songs that don’t say or sound exactly what and how they should. Bruce’s creativity encompasses his photography but he also has a band called Hifidisco. Music and photography may be different but they’re symbiotic and symmetrical to Reinfeld even if they weren’t always exactly equitable. He says that the skillset for everything he does is kind of tied together like a tree and its roots. Some roots are bigger than others but they are all connected. They have to be or it is not real.<br>
+          </p>
+        </div>
+    </div>
+
+    <div class="acord">
+      <label for="tb-four"  class="bg-four">
+        Artist Video
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </label>
+      <input type="checkbox" name="mytabs" id="tb-four">
+      <div class="content">
+        <div class="vid-container">
+
+          <div class="main-video-container">
+             <video src="video/circle wall install.mp4" loop controls class="main-video"></video>
+             <h3 class="main-vid-title">Circle Wall Installation</h3>
+          </div>
+       
+          <div class="video-list-container">
+       
+             <div class="list active">
+                <video src="video/circle wall install.mp4" class="list-video"></video>
+                <h3 class="list-title">Circle Wall Installation</h3>
+             </div>
+       
+             <div class="list">
+                <video src="video/Disco Disks - triptych.mp4" class="list-video"></video>
+                <h3 class="list-title">Disco Disks Triptych</h3>
+             </div>
+       
+          </div>
+       
+       </div>
+      </div>
+  </div>
+
+  </div>
+
+    <!--- artwork masonary --->
+
+    <div class="art-container">
+      <a href="bruce-reinfeld-001.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/bruce-reinfeld/001_All+You+Need+Is+Love.jpeg" alt="All You Need Is Love">
+        </div>
+      </a>
+      <a href="bruce-reinfeld-002.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/bruce-reinfeld/002_In+My+Love.jpeg" alt="In My Love">
+        </div>
+      </a>
+      <a href="bruce-reinfeld-003.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/bruce-reinfeld/003_Cloud+Circle.jpeg" alt="Cloud Circle">
+        </div>
+      </a>
+      <a href="bruce-reinfeld-004.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/bruce-reinfeld/004_Boxcars+triptych+-+3+sections+-+Lenticular.jpeg" alt="Boxcars Triptych">
+        </div>
+      </a>
+      <a href="bruce-reinfeld-005.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/bruce-reinfeld/005_Disco+Disc+Blur+1.0.jpeg" alt="Disco Disc Blur 1.0">
+        </div>
+      </a>
+      <a href="bruce-reinfeld-006.html">
+        <div class="art-box">
+          <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/bruce-reinfeld/006_white+lines+-+white+circle+-+duo+and+mono.jpeg" alt="White Lines White Circle">
+        </div>
+      </a>
+      <a href="bruce-reinfeld-007.html">
+        <div class="art-box">
+          <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/bruce-reinfeld/007_Cloud+Squares.jpeg" alt="Cloud Squares">
+        </div>
+      </a>
+      <a href="bruce-reinfeld-008.html">
+        <div class="art-box">
+          <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/bruce-reinfeld/008_Black+Hole+Sun.jpeg" alt="Black Hole Sun">
+        </div>
+      </a>
+      <a href="bruce-reinfeld-009.html">
+        <div class="art-box">
+          <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/bruce-reinfeld/009.jpeg" alt="">
+        </div>
+      </a>
+      <a href="bruce-reinfeld-010.html">
+        <div class="art-box">
+          <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/bruce-reinfeld/010.gif" alt="What Along Strange Trip It's Been">
+        </div>
+      </a>
+    </div>
+</div>
+</div>
+</div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                  <a href="../../vr.html">Virtual Gallery</a>
+                  <a href="../../sculpture.html">Sculpture</a>
+                  <a href="../../press.html">Press</a>
+              </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+
+  </body>
+</html>
