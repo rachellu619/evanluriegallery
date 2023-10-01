@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Red Fury - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+    <!--- jquery --->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artwork summary card  --->
+
+    <div class="content-wrapper">
+        <div class="col">
+            <div class="p-info" id="artwork-info">
+              <p>Red Fury</p>
+              <p class="availability">available</p>
+              <p>30 x 24 inch</p>
+            </div>
+            <div class="p-img">
+              <div class="p-img-wrap">
+                    <img src="image/artwork/002_red-fury-scaled.jpeg" alt=""
+                    class="thumbnail" data-large="image/artwork/002_red-fury-scaled.jpeg">
+              </div>
+              <div class="p-img-border"></div>
+            </div>
+            <div class="img">
+              <div class="img-data">
+                      <div class="img-name">
+                        <a href="jorge-santos.html">
+                          <p>Jorge Santos</p>
+                        </a>
+                      </div>
+                    <div class="img-info">
+                          <p>media: Oil and Acrylic on Canvas</p>
+                    </div>
+              </div>
+              <div class="hr"></div>
+             </div>
+              <div class="carousel">
+                <a href="jorge-santos-001.html">
+                    <div class="arrow">
+                        <ion-icon name="chevron-back-sharp"></ion-icon>
+                    </div>
+                </a>
+                <div class="share-social">
+                  <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+                  <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+                  <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+                  <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+                  <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+                  <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+                </div>
+                <a href="jorge-santos-003.html">
+                  <div class="arrow">
+                      <ion-icon name="chevron-forward-sharp"></ion-icon>
+                  </div>
+                </a>
+              </div>
+            </div>
+    </div>
+
+    <!--- artwork modal --->
+
+    <div id="modal" class="modal">
+      <img id="modal-content" class="modal-content">
+    </div>
+
+    <!--- contact us --->
+
+    <div id="contactContainer">
+      <h3>&bull; Inquiry &bull;</h3>
+      <form action="https://formsubmit.co/info@evanluriegallery.com" method="post" id="contact_form">
+        <div class="name">
+          <label for="name"></label>
+          <input type="text" placeholder="My name is" name="name" id="name_input" required>
+        </div>
+        <div class="email">
+          <label for="email"></label>
+          <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+        </div>
+        <div class="telephone">
+          <label for="name"></label>
+          <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+        </div>
+        <div class="subject">
+          <label for="subject"></label>
+          <select placeholder="Subject line" name="subject" id="subject_input" required>
+            <option disabled hidden selected>Newsletter Options</option>
+            <option>I would like to sign up for newsletter</option>
+            <option>I would like not to sign up for newsletter</option>
+          </select>
+        </div>
+        <div class="message">
+          <label for="message"></label>
+          <textarea name="message" placeholder="I'm interested in..." id="message_input" cols="30" rows="5" required></textarea>
+        </div>
+          <div class="submit">
+            <input type="submit" value="Send Message" id="form_button" />
+          </div>
+      </form>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="store-info">
+                <div class="store-info-h">
+                    Location
+                </div>
+                <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                  <p>1917 Harrison St<br>
+                  Hollywood FL 33020</p>
+                </a>
+                <div class="store-info-h">
+                    Phone
+                </div>
+                <a href="tel:+13057731732"><p>305-773-1732</p></a>
+            </div>
+            <div class="quick-links">
+                <div class="quick-links-h">
+                    Quick Links
+                </div>
+                <div class="quick-links-items">
+                    <a href="../../vr.html">Virtual Gallery</a>
+                    <a href="../../sculpture.html">Sculpture</a>
+                    <a href="../../press.html">Press</a>
+                </div>
+            </div>
+            <div class="social-links">
+                <div class="social-links-h">
+                    Contact Us
+                </div>
+                <div class="social-links-items">
+                    <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                    <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                    <a href="mailto:info@evanluriegallery.com">Email</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+  
+    <!--- js artwork modal --->
+
+    <script>
+      $(document).ready(function() {
+          var modal = $("#modal");
+          var modalContent = $("#modal-content");
+          
+          $(".thumbnail").click(function() {
+              var largeImageUrl = $(this).data("large");
+              modalContent.attr("src", largeImageUrl);
+              modal.show();
+          });
+          
+          modalContent.click(function() {
+              modal.hide();
+          });
+          
+          modal.click(function(event) {
+              if (event.target === this) {
+                  modal.hide();
+              }
+          });
+      });
+    </script>
+  
+
+  </body>
+</html>

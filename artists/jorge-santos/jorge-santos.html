@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jorge Santos - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artist summary card  --->
+
+    <div class="content-wrapper">
+        <div class="header">
+          <h1>
+            Jorge <br>
+            Santos
+          </h1>
+        </div>
+        <div class="numbers">
+          <br>
+          <p>1959</p>
+          <div class="hr"></div>
+          <br>
+        </div>
+        <div class="hero-img">
+          <div class="img-revealer"></div>
+          <img src="image/hero/022_jorge-santos.jpeg" id="img-revealer" alt="" />
+        </div>
+        <div class="hero-img-info">
+          <p>
+            Born in 1959, Jorge Santos is of Portuguese descent.<br>
+            His childhood was spent in Luanda, Angola before his family fled to Lisbon, Portugal in order to escape a violent political agenda.<br>
+            As Portugal sunk into its own revolution, Santos relocated to the United States in 1982.<br>
+            Throughout these years the artist consistently honed his draftsmanship as a form of escape from life’s unrest.<br>
+            Particularly struck by an Odd Nerdrum show at Forum Gallery, NY in the 90s, Santos began to experiment with and use paint thereafter.
+          </p>
+        </div>
+        <div class="cta">
+          <a href="../jorge-blanco/jorge-blanco.html">
+            <div class="cta-btn">
+              <h4><ion-icon name="arrow-back-sharp"></ion-icon> previous artist </h4>
+            </div>
+          </a>
+          <div class="cta-btn">
+            <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+            <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+            <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+            <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+          </div>
+          <a href="../kevin-barrett/kevin-barrett.html">
+            <div class="cta-btn">
+              <h4>next artist <ion-icon name="arrow-forward-sharp"></ion-icon></h4>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <!--- artist accordion  --->
+<div class="tabs-box">
+    <div class="acord">
+        <label for="tb-one" class="bg-one">
+          Artist Photo
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-one">
+        <div class="content" >
+          <div class="artistpfp">
+            <img src="image/profile/022_jorge-santos.jpeg" id="jorge_022">
+          </div>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-two"  class="bg-two">
+          Artist CV
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-two">
+        <div class="content">
+          <p>
+            <strong>Selected Solo Exhibitions</strong><br><br>
+
+            2013 101 Exhibit, Los Angeles, CA<br>
+            2010 101 Exhibit, Miami, FL<br>
+            2009 Nicolaysen Museum, Casper WY<br>
+            2009 Evan Lurie Gallery, Carmel IN<br>
+            2008 Klaudia Marr Gallery, Santa Fe, NM<br>
+            2007 George Billis Gallery, Los Angeles, CA<br>
+            2006 Andrea Schwartz Gallery, San Francisco, CA<br>
+            2005 Gallery Saint Germain, W. Hollywood, CA<br>
+            2004 Glass Garage Gallery, West Hollywood, CA<br>
+            2004 Lurie Fine Art Gallery, Bocaraton, FL<br>
+            2003 Glass Garage Gallery, West Hollywood, CA<br>
+            2002 Glass Garage Gallery, West Hollywood, CA<br>
+            2001 Glass Garage Gallery, West Hollywood, CA<br>
+            2000 Mendenhall Gallery, Pasadena, CA<br>
+            1999 Mendenhall Gallery, Pasadena, CA<br>
+            1993 Louis Newman Galleries, Beverly Hills, CA<br>
+            1993 Art of Hands Gallery, Costa Mesa, CA<br>
+            1993 MRL Gallery, Long Beach, CA<br>
+            1992 MRL Gallery, Long Beach, CA<br>
+            1991 MRL Gallery, Long Beach, CA<br>
+            1990 MRL Gallery, Long Beach, CA<br>
+            1989 MRL Gallery, Long Beach, CA<br><br>
+
+            <strong>Selected Group Exhibitions</strong><br><br>
+
+            2020 Art Palm Beach, Palm Beach , FL<br>
+            2020 Wynwood, Miami ,FL<br>
+            2020 RJD Gallery, Bridgehampton, NY<br>
+            2019 Art Market, Bridgehampton, NY<br>
+            2019 Palm Beach Art Modern Contemporary, Palm Beach, FL<br>
+            2019 Art Palm Beach, Palm Beach, FL<br>
+            2019 Wynwood, Miami, FL<br>
+            2019 Art San Francisco, San Francisco, CA<br>
+            2019 RJD Gallery, Bridgehampton, NY<br>
+            2019 SOFA, Chicago, IL<br>
+            2019 Texas Contemporary, Houston, TX<br>
+            2019 CONTEXT/Art Miami, Miami, FL<br>
+            2019 Evan Lurie Gallery, Carmel, IN<br>
+            2018 Art Miami, Miami, FL<br>
+            2017 Art Palm Beach, Palm Beach, FL<br>
+            2017 Art Market, San Francisco, CA<br>
+            2017 Art Market, Bridgehampton, NY<br>
+            2017 Scope, Miami, FL<br>
+            2017 Red Dot, Miami, FL<br>
+            2017 Art San Diego, Del Mar, CA<br>
+            2016 Scope, Miami, FL<br>
+            2016 101 Exhibit, Los Angeles, CA<br>
+            2016 Art Los Angeles Contemporary, Los Angeles, CA<br>
+            2016 artMRKT Hamptons, Bridgehampton, NY<br>
+            2016 Art South Hampton, Southhampton, NY<br>
+            2016 EVOKE Gallery, Santa Fe, NM<br>
+            2016 Art Aspen, Aspen, CO<br>
+            2016 Art Boca Raton, Boca Raton, FL<br>
+            2016 Art Palm Springs, Palm Springs, CA<br>
+            2015 Scope, Miami, FL<br>
+            2015 Houston Fine Art, Houston, TX<br>
+            2015 Art Aspen, Aspen, CO<br>
+            2015 Art Hamptons, Bridgehampton, NY<br>
+            2015 EVOKE Gallery, Santa Fe, NM<br>
+            2014 Houston Fine Art, Houston, TX<br>
+            2014 ArtMRKT Hamptons, Bridgehampton, NY<br>
+            2014 Art Hamptons, Bridgehampton, NY<br>
+            2014 EVOKE Gallery, Santa Fe, NM<br>
+            2014 Art Palm Beach, Palm Beach, FL<br>
+            2013 Miami Project, Miami, FL<br>
+            2013 Scope, Miami FL<br>
+            2013 Houston Fine ART, Houston, TX<br>
+            2013 artMRKT Hamptons, Bridgehampton, NY<br>
+            2013 Art Hamptons, Bridgehampton, NY<br>
+            2013 LA ART Show, Los Angeles, CA<br>
+            2013 Art Palm Beach, Palm Beach, FL<br>
+            2012 Art Miami, Miami, FL<br>
+            2012 SCOPE, Miami, FL<br>
+            2012 artMRKT Hamptons, Bridgehampton, NY<br>
+            2012 EVOKE Gallery, Santa Fe, NM<br>
+            2012 101/Exhibit, Miami, FL<br>
+            2012 Evan Lurie Gallery, Carmel IN<br>
+            2012 San Francisco Fine Art Fair, San Francisco, CA<br>
+            2012 Art Platform, Santa Monica, CA<br>
+            2012 Art South Hampton, Southhampton, NY<br>
+            2012 Houston Fine Art Fair, Houston, TX<br>
+            2011 SCOPE, Miami, FL<br>
+            2011 Red Dot, Miami, FL<br>
+            2011 Art Hamptons, Bridgehampton, NY<br>
+            2011 artMRKT Hamptons, Bridgehampton, NY<br>
+            2011 EVOKE Gallery, Santa Fe, NM<br>
+            2011 Art Palm Beach, Palm Beach, FL<br>
+            2011 Art Los Angles Contemporary, Los Angeles, CA<br>
+            2011 Art Chicago, Chicago, IL<br>
+            2011 San Francisco Art Fair, San Francisco, CA<br>
+            2010 SCOPE, Miami, FL<br>
+            2010 George Billis Gallery, Los Angeles, CA<br>
+            2009 George Billis Gallery, New York, NY<br>
+            2009 Klaudia Marr Gallery, Santa Fe, NM<br>
+            2008 George Billis Gallery, Los Angeles, CA<br>
+            2008 Evan Lurie Gallery, Carmel, IN<br>
+            2008 Laguna Beach Art Museum, Laguna Beach, CA<br>
+            2008 LA Art Fair, Los Angeles, CA<br>
+            2007 Lurie Galleries, Miami, FL<br>
+            2007 Klaudia Marr Gallery, Santa Fe, NM<br>
+            2007 Evan Lurie Gallery, Carmel, IN<br>
+            2007 Naomi Silva Gallery, Atlanta, GA<br>
+            2006 Andrea Schwartz Gallery, San Francisco, CA<br>
+            2006 7-0-7 Contemporary Gallery, Santa Fe, NM<br>
+            2006 SOHO Fine Art Galleries, Studio City, CA<br>
+            2006 Art Chicago, Chicago, IL<br>
+            2006 Lurie Galleries, Miami, FL<br>
+            2005 Gallery Saint Germain, W. Hollywood, CA<br>
+            2005 LA Art Fair, Los Angeles, CA<br>
+            2005 Kent Gallery, Key West, FL<br>
+            2005 Mendenhall Sobieski Gallery, Pasadena, CA<br>
+            2004 Kent Gallery, Key West, FL<br>
+            2004 Broadway Gallery, Fort Lauderdale, FL<br>
+            2003 Glass Garage Gallery, West Hollywood, CA<br>
+            2002 Soho Gallery, Studio City, CA<br>
+            2002 Greenwood Chebithes Gallery, Laguna Beach, CA<br>
+            2001 Glass Garage Gallery, West Hollywood, CA<br>
+            2000 Mendenhall Gallery, Pasadena, CA<br>
+            1999 Mendenhall Gallery, Pasadena,CA<br>
+            1998 Modernism Show, Santa Monica, CA<br>
+            1998 Miami Art Fair, Miami, FL<br>
+            1998 Mendenhall Gallery, Pasadena, CA<br>
+            1997 Solomon Gallery, Los Angeles, CA<br>
+            1997 MB Modern, New York, NY<br>
+            1996 Horwitch Newman Gallery, Scottsdale, AZ<br>
+            1996 Solomon Gallery, Los Angeles, CA<br>
+            1995 Koplin Gallery, Santa Monica, CA<br>
+            1994 Horwitch Newman Gallery, Scottsdale, AZ<br>
+            1994 Louis Newman Galleries, Beverly Hills, CA<br>
+            1994 Louis Newman Galleries, Beverly Hills, CA<br>
+            1993 Artspace Gallery, Woodland Hills, CA<br>
+            1993 Joslyn Art Center Gallery, Torrance, CA<br>
+            1992 South Bay Contemporary Museum of Art, Torrance, CA<br>
+            1992 LA Art Core, Los Angeles, CA<br>
+            1991 Joslyn Art Center Gallery, Torrance, CA<br>
+            1990 Harris Fine Art Center, Provo UT<br>
+            1989 Orlando Gallery, Sherman Oaks, CA<br>
+            1988 International Art Show Olympic Games, Seoul, Korea<br>
+            1986 Joslyn Art Center Gallery, Torrance, CA<br>
+          </p>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-three"  class="bg-three">
+          Artist Profile
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-three">
+        <div class="content">
+          <p>
+            Jorge Santos paintings are a profound display of picture making for the sheer purposes of formulating an all but transparent narrative via highly technical draftsmanship and paint handling. As a self-taught artist, the evolutionary process of his work is often subject to reconfiguration, repositioning, and refinement until the grand conclusion is met. Narrative is of such importance that even compositional concerns may be subordinate to the inclusion of a necessary motif in the storyline.<br><br>
+            One may recall the Latin term “deus ex machina”, which is a literary device used to resolve a troubled plot. In English, this translates to “God out of the machine”. It refers to an unexpected, artificial, or improbable character, device, or event introduced suddenly in a work of fiction to untangle a plot. For instance, consider the artist’s 2012 work entitled Maitre D where a fork between one of the dinner participant’s toes is tied by string to a wine bottle in the foreground thus preventing it from crashing to the floor. How or why did this happen? This whimsical instance is the result of a mid-production decision to reposition compositional elements in order to resolve the foreground in a more provocative way without having to repaint the bottle.<br><br>
+            This almost humorous result often surfaces in a Santos work, as for the artist, there are little rules he truly feels the need to play by. Paintings for the artist exist as a cocktail of source materials, from still life to imagery or the mind’s eye. They are not pre-assembled sets such as that of the Realist painter, and any “photo realist” instances are purely the result of the artist’s skill to portray a likeness. In fact, the ambient lighting and elongated figures are more stylized than authentic, echoing the Italian Mannerist painters of the 16th century.<br><br>
+            Though highly refined and emotive, a Santos painting may have a poetic title but this is not a necessity, it’s just by way of the artist’s improvisational nature. He seems to be commenting on pop culture, derives source material from TV, Internet videos, and other mass media but is humble and quite reluctant to be billed as a social critic. In his pictures, settings come off as irrational or precariously balanced, moods are secretive, illusory, and often ambiguous but there is no argument to their blatant allure and charm over the viewer. These complexities may seem to deliberately provoke interpretation but Santos will only entertain his personal opinion that he is simply an image-maker.<br><br>
+            Jorge Santos has exhibited previously with 101/exhibit for a solo show in Miami in 2010. He has participated in over 20 solo and 70 group exhibitions at numerous galleries, museums, and fine art fairs since 1986 including the Laguna Beach Art Museum in Laguna Beach, CA; the Joslyn Art Center Gallery in Torrance, CA; Art Miami, Miami, FL; Art Platform, Santa Monica, CA; Art Chicago, Chicago, IL; SCOPE, Miami, FL; and Art Los Angeles Contemporary and George Billis Gallery in Los Angeles, CA.<br>
+          </p>
+        </div>
+    </div>
+
+  </div>
+
+    <!--- artwork masonary --->
+
+    <div class="art-container">
+      <a href="jorge-santos-001.html">
+        <div class="art-box">
+            <img src="image/artwork/001_Diver-in-Zambezi.jpeg" alt="Diver in Zambezi">
+        </div>
+      </a>
+      <a href="jorge-santos-002.html">
+        <div class="art-box">
+            <img src="image/artwork/002_red-fury-scaled.jpeg" alt="Red Fury">
+        </div>
+      </a>
+      <a href="jorge-santos-003.html">
+        <div class="art-box">
+            <img src="image/artwork/003_Fish-Net.jpeg" alt="Fish Net">
+        </div>
+      </a>
+      <a href="jorge-santos-004.html">
+        <div class="art-box">
+            <img src="image/artwork/004_sunday afternoon.jpeg" alt="Sunday Afternoon">
+        </div>
+      </a>
+      <a href="jorge-santos-005.html">
+        <div class="art-box">
+            <img src="image/artwork/005_Convict-63x100-1-scaled.jpeg" alt="Convict">
+        </div>
+      </a>
+      <a href="jorge-santos-006.html">
+        <div class="art-box">
+            <img src="image/artwork/006_Dry-River-bed.jpeg" alt="Dry River Bed">
+        </div>
+      </a>
+      <a href="jorge-santos-007.html">
+        <div class="art-box">
+            <img src="image/artwork/007_cloud hunter.jpeg" alt="Cloud Hunter">
+        </div>
+      </a>
+      <a href="jorge-santos-008.html">
+        <div class="art-box">
+            <img src="image/artwork/008_feeding time.jpeg" alt="Feeding Time">
+        </div>
+      </a>
+      <a href="jorge-santos-009.html">
+        <div class="art-box">
+            <img src="image/artwork/009_Lead Foot.jpeg" alt="Lead Foot">
+        </div>
+      </a>
+      <a href="jorge-santos-010.html">
+        <div class="art-box">
+            <img src="image/artwork/010_night search.jpeg" alt="Night Search">
+        </div>
+      </a>
+      <a href="jorge-santos-011.html">
+        <div class="art-box">
+            <img src="image/artwork/011_serenade.jpeg" alt="Serenade">
+        </div>
+      </a>
+      <a href="jorge-santos-012.html">
+        <div class="art-box">
+            <img src="image/artwork/012_adrift.jpeg" alt="Adrift">
+        </div>
+      </a>
+      <a href="jorge-santos-013.html">
+        <div class="art-box">
+            <img src="image/artwork/013_land search.jpeg" alt="Land Search">
+        </div>
+      </a>
+      <a href="jorge-santos-014.html">
+        <div class="art-box">
+            <img src="image/artwork/014_cra z loom 2.jpeg" alt="Cra Z Loom 2">
+        </div>
+      </a>
+      <a href="jorge-santos-015.html">
+        <div class="art-box">
+            <img src="image/artwork/015_Cra_Z_Loom3_qhqzvp.jpeg" alt="Cra Z Loom 3">
+        </div>
+      </a>
+      <a href="jorge-santos-016.html">
+        <div class="art-box">
+            <img src="image/artwork/016_Cra_Z_Loom4_phvjsu.jpeg" alt="Cra Z Loom 4">
+        </div>
+      </a>
+      <a href="jorge-santos-017.html">
+        <div class="art-box">
+            <img src="image/artwork/017_referee.jpeg" alt="Referee">
+        </div>
+      </a>
+      <a href="jorge-santos-018.html">
+        <div class="art-box">
+            <img src="image/artwork/018.jpg" alt="The Wait">
+        </div>
+      </a>
+      <a href="jorge-santos-019.html">
+        <div class="art-box">
+            <img src="image/artwork/019.jpeg" alt="Messenger">
+        </div>
+      </a>
+      <a href="jorge-santos-020.html">
+        <div class="art-box">
+            <img src="image/artwork/020.jpeg" alt="Raven">
+        </div>
+      </a>
+      <a href="jorge-santos-021.html">
+        <div class="art-box">
+            <img src="image/artwork/021.jpeg" alt="Dry Lake Sirens">
+        </div>
+      </a>
+      <a href="jorge-santos-022.html">
+        <div class="art-box">
+            <img src="image/artwork/022.jpeg" alt="First Crop">
+        </div>
+      </a>
+      <a href="jorge-santos-023.html">
+        <div class="art-box">
+            <img src="image/artwork/023.jpeg" alt="Nude #3">
+        </div>
+      </a>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                  <a href="../../vr.html">Virtual Gallery</a>
+                  <a href="../../sculpture.html">Sculpture</a>
+                  <a href="../../press.html">Press</a>
+              </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+
+  </body>
+</html>
