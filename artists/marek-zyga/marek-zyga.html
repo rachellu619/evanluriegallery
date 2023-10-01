@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Marek Zyga - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artist summary card  --->
+
+    <div class="content-wrapper">
+        <div class="header">
+          <h1>
+            Marek <br>
+            Zyga
+          </h1>
+        </div>
+        <div class="numbers">
+          <br>
+          <p>1968</p>
+          <div class="hr"></div>
+          <br>
+        </div>
+        <div class="hero-img">
+          <div class="img-revealer"></div>
+          <img src="image/hero/026_marek-zyga.jpeg" id="img-revealer" alt="" />
+        </div>
+        <div class="hero-img-info">
+          <p>
+            Marek Zyga is born in 1968.<br>
+            As a sculptor he isinterested in human being, especially in body and gestures.<br>
+            He is fascinated by persons, their beaviour and reactions.<br>
+          </p>
+        </div>
+        <div class="cta">
+          <a href="../luis-sanchez/luis-sanchez.html">
+            <div class="cta-btn">
+              <h4><ion-icon name="arrow-back-sharp"></ion-icon> previous artist </h4>
+            </div>
+          </a>
+          <div class="cta-btn">
+            <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+            <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+            <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+            <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+          </div>
+          <a href="../michael-gorman/michael-gorman.html">
+            <div class="cta-btn">
+              <h4>next artist <ion-icon name="arrow-forward-sharp"></ion-icon></h4>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <!--- artist accordion  --->
+<div class="tabs-box">
+    <div class="acord">
+        <label for="tb-one" class="bg-one">
+          Artist Photo
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-one">
+        <div class="content" >
+          <div class="artistpfp">
+            <img src="image/profile/026_marek-zyga.jpeg" id="marek_026">
+          </div>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-two"  class="bg-two">
+          Artist CV
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-two">
+        <div class="content">
+          <p>
+            <strong>Exhibitions</strong><br><br>
+
+            <strong>2020</strong><br>
+            Dreamescape, SINT-ALDEGONDISKERK, BELGIUM<br>
+            Dreamescape HASELT<br>
+            Stadtpfarrer Kitzbuthel, Austria (solo exhibition)<br>
+            Affordable art fair in NYC from Evan Laurie Gallery, USA<br>
+            Biennale Brabant, Tilburg, The Netherland<br><br>
+
+            <strong>2009</strong><br>
+            Art Up, Lile, France<br>
+            Art Munster, Munster, Germany<br>
+            SFEER BEURS, Gent, Belgium<br>
+            Stadtpfarrer Kitzbuthel, Austria (solo exhibition)<br>
+            Art Breda, Breda, The Netherland<br>
+            Sfeer kunst with Vlask gallery, Gent, Belgium<br>
+            DREAMESCAPE Vietach, Austria<br>
+            Midtjyllands Kunst Center, Bryrup, Denmark<br>
+            Arte Padova with Vecchiato Gallery, Padova, Italy<br>
+            Biennale Brabant, Tilburg, The Netherlands<br>
+            Form+Figure, Melissa Morgan Gallery, El Paseo, USA<br>
+            SOFA Chicago, Karen Echt Gallery, USA<br>
+            Tres Chic witch Hebda art, Belgium<br><br>
+
+            <strong>2018</strong><br>
+            First Art Fair, Amsterdam, The Netherlands<br>
+            Bergamo Arte Fiera, Bergamo, Italy<br>
+            Continuum Gallery, Konigswinter, Germany ( solo exhibition )<br>
+            Lucca Art Fair with Vecchiato Arte Gallery. Italy<br>
+            Musee Du Val Saint Lambert, Spa, Belgium<br>
+            Cafmeyer Gallery, Knokke, Belgium<br>
+            Beautiful People, Vught, The Netherlands<br>
+            DREAMESCAPE Haselt, Belgium<br>
+            SOFA CHICAGO, Karen ECHT Gallery,Chicago,USA<br>
+            GANDA with Vlask Gallery, Gent, Belgium<br>
+            Biennale Veghel, The Netherlands<br>
+            The Contemporary Figure, Melissa Morgan Gallery, El Passeo, California<br><br>
+
+            <strong>2017</strong><br>
+            Art fair Palm Beach with Evan Lurie Gallery<br>
+            Art & Antic Munster<br>
+            Art Breda with Van Loon Gallery,The Netherlands<br>
+            Art Frais, Spa with Art Hebda, Belgium<br>
+            SOFA Chicago, Karen Echt Gallery, USA<br>
+            Biennale Brabant,The Netherlands<br>
+            Uniek Of Origineel, Genk, Belgium<br>
+            Midtjyllands Kunst Center, Bryrup, Denmark<br>
+            Dreamescape, Traun, Austria<br>
+            ARTE PADOVA, Padova with Vecchiato Arte Gallery,Italy<br><br>
+
+            <strong>2016</strong><br>
+            Art fair Palm Beach with Continuum Gallery,USA<br>
+            LA Art Show with Evan Lurie Gallery Los Angeles, USA<br>
+            Art. Boca Raton, Floryda,USA<br>
+            Art. Breda, The Netherland<br>
+            Cafmeyer Gallery, Knokke, Belgium<br>
+            Gallery Van Loon ,The Netherland (solo exhibition)<br>
+            Biennale Vuhgt, The Netherland<br>
+            Art Hamptons New York with Evan Lurie Gallery<br>
+            Art Fair Koln, Germany<br>
+            SOFA Chicago, Karen Echt Gallery,USA<br>
+            Biennale Veghel, The Netherland<br><br>
+
+            <strong>2015</strong><br>
+            IQ-Artist, Amsterdam, The Netherland<br>
+            Art Fair Palm Beach with Thomas Riley Gallery, USA<br>
+            Art Breda with Continuum Gallery, The Netherland<br>
+            Art Hamptons New York with Evan Lurie Gallery<br>
+            Art Nokturn Knokke, Belgium<br>
+            Art fair Koln, Germany<br>
+            Biennale Brabant, Tilburg,The Netherland<br>
+            Scope Miami, Miami, USA<br><br>
+
+            <strong>2014</strong><br>
+            Art fair Palm Beach PISMO Gallery Denver, USA<br>
+            Art fair BREDA with Van Loon Gallery, The Netherland<br>
+            Continuum Gallery, Konigswinter, Germany (solo exhibition)<br>
+            Alden Biesen, Belgium<br>
+            Art Nokturn Knokke,Belgium<br>
+            Art SOFA CHICAGO with Thomas Riley Gallery, USA<br><br>
+
+            <strong>2013</strong><br>
+            Art fair ART HERNING Herning, Danmark<br>
+            Biennale Vught The Netherland<br>
+            Continuum Gallery Konigswinter, Germany<br>
+            Dreamscapes Viechtach, Germany<br>
+            Dreamscapes Ultrecht, The Netherland<br>
+            Art Fair SOFA Chicago with Tom Riley Gallery USA<br>
+            Karen Echt Gallery Chicago, USA<br>
+            Galeria van Loon & Simons Gallery The Netherland (solo exhibition)<br><br>
+
+            <strong>2012</strong><br>
+            Minerwa Gallery Malmo, Sweden (solo exhibition)<br>
+            Stijl-2012, Belgium<br>
+            Continuum Gallery Konigswinter .Germany<br>
+            De Lange Litanie Roselare Belgium<br>
+            Gallery Bram Hobro, Denmark<br>
+            Ceramic from Bolesławiec MCC Bolesławiec, Poland<br>
+            New Form Galery Treleborg, Sweden<br>
+            Biennale Tilburg The Netherland<br>
+            Art fair LINEART with Francis Hebda Gallery Gent, Belgium<br><br>
+
+            <strong>2011</strong><br>
+            Szalom Galery Kraków, Poland (solo exhibition)<br>
+            Galeria van Loon & Simons Gallery The Netherland (solo exhibition)<br>
+            Biennale Vught The Netherland<br>
+            Art Nocturne Knokke Knokke, Belgium<br>
+            Pumpwerk Siegburg, Germany<br>
+            Art fair LINEART with Francis Hebda Gallery, Gent, Belgium<br>
+            International Ceramics Center, Bolesławiec, Poland (solo exhibition)<br><br>
+
+            <strong>2010</strong><br>
+            Liliane Beelden Parade with Van Loon & Simons Gallery The Netherland<br>
+            Art Nocturne Knokke Knokke, Belgium<br><br>
+
+            <strong>2009</strong><br>
+            Oisterwijk Sculpture with EtienneGallery The Netherlands<br>
+            Art fair LINEART Ghent with Francis Hebda Gallery Belgium<br><br>
+
+            <strong>2008</strong><br>
+            Etienne Gallery The Netherlands Oisterwijk Sculpture The Netherlands<br>
+            Wurtzburg Palast Germany (solo exhibition)<br><br>
+
+            <strong>2007</strong><br>
+            Ceramics Museum In Bolesławiec Poland (solo exhibition)<br>
+            Art fair LINEART with Francis Hebda Gallery Gent, Belgium<br><br>
+          </p>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-three"  class="bg-three">
+          Artist Profile
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-three">
+        <div class="content">
+          <p>
+            His sculptures are like processed images from reality, to some extent they are stories. When an idea comes to his mind and eventually takes shape, he sculpture in clay and then it is formed into gypsum. As a self-taught he is sensitive to proper technique.<br><br>
+
+            Before he start a new work, he think about it verry well how he will make it. He don’t make any sketches but turns immediately a model into clay. His works are decorated with angobas, pigments and are glazed. The sculptures of Marek relate to classic sculptural forms. One can see busts, torsos, heads carrying symbolic, erotic, exposing meaning-sometimes with a certain undertone of surrealism. His ally is experience and observation.<br><br>
+
+            “My allies are experience and observation. I am inspired by man, actually by relations between people, differences and similarities.”<br>
+          </p>
+        </div>
+    </div>
+
+  </div>
+
+    <!--- artwork masonary --->
+
+    <div class="art-container">
+      <a href="marek-zyga-001.html">
+        <div class="art-box">
+            <img src="image/artwork/001_Call+Me+Irresponsible+(1).jpeg" alt="Call Me Irresponsible">
+        </div>
+      </a>
+      <a href="marek-zyga-002.html">
+        <div class="art-box">
+            <img src="image/artwork/002_It+Had+To+Be+You.jpeg" alt="It Had to Be You">
+        </div>
+      </a>
+      <a href="marek-zyga-003.html">
+        <div class="art-box">
+            <img src="image/artwork/003_Leave My Body.jpeg" alt="Leave My Body">
+        </div>
+      </a>
+      <a href="marek-zyga-004.html">
+        <div class="art-box">
+            <img src="image/artwork/004_You Have Got A Friend in Me.jpeg" alt="You Have Got A Friend in Me">
+        </div>
+      </a>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                  <a href="../../vr.html">Virtual Gallery</a>
+                  <a href="../../sculpture.html">Sculpture</a>
+                  <a href="../../press.html">Press</a>
+              </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+
+  </body>
+</html>

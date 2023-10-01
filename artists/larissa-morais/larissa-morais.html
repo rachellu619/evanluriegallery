@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Larissa Morais - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artist summary card  --->
+
+    <div class="content-wrapper">
+        <div class="header">
+          <h1>
+            Larissa <br>
+            Morais
+          </h1>
+        </div>
+        <div class="numbers">
+          <br>
+          <p>1966</p>
+          <div class="hr"></div>
+          <br>
+        </div>
+        <div class="hero-img">
+          <div class="img-revealer"></div>
+          <img src="image/hero/024_larissa-morais.jpeg" id="img-revealer" alt="" />
+        </div>
+        <div class="hero-img-info">
+          <p>
+            Larissa Morais was born and raised in Moscow.<br>
+            She has been painting since she was in high school, however her first love was not the brush but the keys of a piano.<br>
+            The replacement of a teacher changed her vision from music and into the world of art.<br>
+            While helping her sister one afternoon with her art homework something sparked her passion for painting and perhaps she stumbled upon her destiny.
+          </p>
+        </div>
+        <div class="cta">
+          <a href="../kris-gebhardt/kris-gebhardt.html">
+            <div class="cta-btn">
+              <h4><ion-icon name="arrow-back-sharp"></ion-icon> previous artist </h4>
+            </div>
+          </a>
+          <div class="cta-btn">
+            <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+            <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+            <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+            <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+          </div>
+          <a href="../luis-sanchez/luis-sanchez.html">
+            <div class="cta-btn">
+              <h4>next artist <ion-icon name="arrow-forward-sharp"></ion-icon></h4>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <!--- artist accordion  --->
+<div class="tabs-box">
+    <div class="acord">
+        <label for="tb-one" class="bg-one">
+          Artist Photo
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-one">
+        <div class="content" >
+          <div class="artistpfp">
+            <img src="image/profile/024_larissa-morais.jpeg" id="larissa_024">
+          </div>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-two"  class="bg-two">
+          Artist CV
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-two">
+        <div class="content">
+          <p>
+            - BFA, Moscow, Theatrical Arts Institute<br>
+            - Graduate School of Restoration and Conservation<br>
+            - Sculpture courses at Serguey Gaydukov Studio<br>
+            - Extensive course on Copying Techniques at the Pushkin Museum of Fine Arts<br><br>
+
+            <strong>EXHIBITIONS</strong><br><br>
+
+            2022 Lahaina Galleries - Group<br>
+            2021 Lahaina Galleries, - Group<br>
+            2020 A Gallery, Izmir, Turkey - Group<br>
+            2020 Lahaina Galleries - Group<br>
+            2019 Lahaina Galleries - Group<br>
+            2018 Lahaina Galleries, Lahaina, Hawaii - Group<br>
+            2017 Lahaina Galleries, Lahaina, Hawaii - Group<br>
+            2016 Lahaina Galleries, Lahaina, Hawaii - Group<br>
+            2015 Lahaina Galleries, Wailea, Hawaii - Group<br>
+            2014 Lahaina Galleries, Newport Beach, CA - Group<br>
+            2015 Lahaina Galleries, Maui, Hawaii - Group<br>
+            2014 Lahaina Galleries, Newport Beach, CA - Group<br>
+            2012 Larissa Morais Studio, Orange, CA - Solo<br>
+            2012 The Dina Collection, Beverly Hills, CA - Group<br>
+            2012 Studio Gallery at Bayside Restaurant, Newport Beach, CA - Solo<br>
+            2012 Studio Gallery at Bistango Restaurant, Irvine, CA - Group<br>
+            2011 Bowers Museum, Santa Ana, CA., Russian White Nights Event<br>
+            2011 Christopher Morgan Galleries, Palm Desert, CA - Solo<br>
+            2010 Christopher Morgan Galleries, Palm Desert, CA - Solo<br>
+            2010 Glass Garage Gallery, West Hollywood, CA - Group<br>
+            2009 Miranda Galleries, Laguna Beach, CA - Two Men Show<br>
+            2009 Christopher Morgan Galleries, Palm Desert, CA - Solo<br>
+            2008 Fendi Casa, West Hollywood, CA - Group<br>
+            2008 Christopher Morgan Galleries, Palm Desert, CA - Solo<br>
+            2008 Glass Garage Gallery, West Hollywood, CA - Group<br>
+            2007 Zantman Art Galleries, Palm Desert, CA - Solo<br>
+            2007 Evan Lurie Gallery, Carmel, IN - Group<br>
+            2007 Lurie Fine Art Galleries, Miami, FL - Group<br>
+            2006 Glass Garage Gallery, West Hollywood, CA - Solo<br>
+            2005 SOHO Gallery, Studio City, CA - Group<br>
+            2005 Lurie Fine Art Galleries, Boca Raton, FL - Solo<br>
+            2004 SOHO Gallery, Studio City, CA - Solo<br>
+            2004 RDS Gallery, S. Hampton, FL - Solo<br>
+            2004 Kent Gallery, Key West, FL - Group<br>
+            2004 Lurie Fine Art Galleries, Boca Raton, FL - Solo<br>
+            2003 SOHO Gallery, Studio City, CA - Solo<br>
+            2003 SOHO Gallery, Studio City, CA - Group<br>
+            2003 Glass Garage Gallery, West Hollywood, CA - Group<br>
+            2002 SOHO Gallery, Studio City, CA - Group<br>
+            2002 Glass Garage Gallery, West Hollywood, CA - Solo<br>
+            2002 Glass Garage Gallery, West Hollywood, CA - Group<br>
+            2001 SOHO Gallery, Studio City, CA - Group<br>
+            1993 Hammer Trade Center, Moscow, Russia - Solo<br>
+            1993 El Paseo Art Gallery, Mogan, Spain - Group<br>
+            1992 Church Art Gallery, Fremantle, Australia - Group<br>
+            1991 Mars Gallery, Moscow, Russia - Solo<br>
+            1989 Mars Gallery, Moscow, Russia - Solo<br>
+            1988 Mars Gallery, Moscow, Russia - Group<br><br>
+
+            <strong>PRIVATE COLLECTIONS</strong><br><br>
+
+            I.Roubal MD, USA<br>
+            P.Falchi, USA<br>
+            R.Collins, Brazil<br>
+            A.Bubion, USA<br>
+            Christian Galindo, USA<br>
+            Rosana Francoli, Italy<br>
+            Lucien Arkas, Izmir, Turkey<br><br>
+
+            <strong>CORPORATE COLLECTIONS</strong><br><br>
+
+            Brazilian Embassy, Moscow, Russia<br>
+            Sovintel, Moscow, Russia<br>
+            Empresa Zanini, Sao Paulo, Brazil<br>
+          </p>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-three"  class="bg-three">
+          Artist Profile
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-three">
+        <div class="content">
+          <p>
+            Larissa became a graduate from BFA, Moscow Theatrical Arts Institute, and attended the Graduate School of Restoration and conservation where throughout the years she took courses in conservation and restoration of 15th-and 16th-century paintings. "when you restore a painting, you can paint your own strokes into history". Larissa is influenced by everything in her life. Her brush creates a realistic impression as if it couldn't possibly be anything but a photo. She views her subject matter as architecture. She sees the subject and presents it in a way that is usually not seen from the naked eye. Her favorite subject to paint is the human figure from which she brings a reality to the paintings where attention to detail is as strong as attention to the character of the model. In her artwork, we are in the company of beautiful men and women, intimately poised and positioned. All her artwork is conceived from a sketch, which she later paints onto a large black canvas. Her delicate technique is with very thin layers of oil paint, while using the black background for shadowing. She captures every detail of her subject. For her it is all there, she just uncovers it. Her favorite painting is always the one she is working on and the most difficult thing is to part with her art. She usually falls in love while painting, and she describes it as "it is always bittersweet when parting with a painting however it's always validating". As Ralph Waldo Emerson once said, "the love of beauty is taste, the creation of beauty is art". Larissa's paintings capture true beauty, they are moving and intoxication, filled with such lush imagery and sensuality. Oscar Wild said, " every portrait that is painted with feeling is portrait of the artist, not the sitter". Larissa's gift of bringing reality to a bare canvas is a true testament of what a great artist truly is.
+          </p>
+        </div>
+    </div>
+
+  </div>
+
+    <!--- artwork masonary --->
+
+    <div class="art-container">
+      <a href="larissa-morais-001.html">
+        <div class="art-box">
+            <img src="image/artwork/001_silk iii.jpeg">
+        </div>
+      </a>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                  <a href="../../vr.html">Virtual Gallery</a>
+                  <a href="../../sculpture.html">Sculpture</a>
+                  <a href="../../press.html">Press</a>
+              </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+
+  </body>
+</html>
