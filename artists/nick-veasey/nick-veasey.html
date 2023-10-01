@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nick Veasey - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <div class="menu-item">
+              <div class="menu-item-list">N</div>
+              <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+            </div>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artist summary card  --->
+
+    <div class="content-wrapper">
+        <div class="header">
+          <h1>
+            Nick <br>
+            Veasey
+          </h1>
+        </div>
+        <div class="numbers">
+          <br>
+          <p>1962</p>
+          <div class="hr"></div>
+          <br>
+        </div>
+        <div class="hero-img">
+          <div class="img-revealer"></div>
+          <img src="image/hero/029_nick-veasey.jpg" id="img-revealer" alt="" />
+        </div>
+        <div class="hero-img-info">
+          <p>
+            Described by London’s Victoria & Albert museum as “forensic investigation as an art form”, Nick Veasey’s stunningly detailed x-rays reveal how his subjects are designed and made – whether by man or by nature.
+          </p>
+        </div>
+        <div class="cta">
+          <a href="../miroslav-antic/miroslav-antic.html">
+            <div class="cta-btn">
+              <h4><ion-icon name="arrow-back-sharp"></ion-icon> previous artist </h4>
+            </div>
+          </a>
+          <div class="cta-btn">
+            <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+            <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+            <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+            <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+          </div>
+          <a href="../pablo-dona/pablo-dona.html">
+            <div class="cta-btn">
+              <h4>next artist <ion-icon name="arrow-forward-sharp"></ion-icon></h4>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <!--- artist accordion  --->
+<div class="tabs-box">
+    <div class="acord">
+        <label for="tb-one" class="bg-one">
+          Artist Photo
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-one">
+        <div class="content" >
+          <div class="artistpfp">
+            <img src="image/profile/029_nick-veasey.jpg" id="nick_029">
+          </div>
+        </div>
+    </div>
+
+    <div class="acord">
+      <label for="tb-two"  class="bg-two">
+        Artist CV
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </label>
+      <input type="checkbox" name="mytabs" id="tb-two">
+      <div class="content">
+        <p>
+          <strong>EXHIBITIONS</strong><br><br>
+          
+          <strong>2017</strong><br>
+          Art Market & Design Hamptons, Evan Lurie Gallery, Bridgehampton, NY<br>
+          Art Palm Beach, Evan Lurie Gallery, West Palm Beach, FL<br>
+          Art San Francisco, Evan Lurie Gallery, San Francisco, CA<br>
+          Art Boca, Evan Lurie Gallery, Boca Raton, FL<br>
+          Palm Beach Art & Antique Show, Evan Lurie Gallery, West Palm Beach, FL<br>
+          Naples Art & Antique Show, Evan Lurie Gallery, Naples, FL<br><br>
+
+          <strong>2016</strong><br>
+          Art Boca, Evan Lurie Gallery, Boca Raton, FL<br>
+          Art Hamptons, Evan Lurie Gallery, Bridgehampton, NY<br>
+          Art Market & Design Hamptons, Evan Lurie Gallery, Bridgehampton, NY<br>
+          Art Aspen, Evan Lurie Gallery, Aspen, CO<br>
+          Art Palm Beach, Evan Lurie Gallery, West Palm Beach, FL<br>
+          Art San Francisco, Evan Lurie Gallery, San Francisco, CA<br>
+          Art Palm Springs, Evan Lurie Gallery, Palm Springs, FL<br>
+          SCOPE MIAMI, Evan Lurie Gallery, Miami, FL<br><br>
+
+          <strong>2015</strong><br>
+          M.A.D. Gallery, Geneva, Switzerland<br>
+          Axiom Contemporary, Santa Monica, CA<br>
+          Art Angels, Los Angeles, CA<br>
+          Bluerider Gallery, Taipei, Taiwan<br>
+          “Let There Be Art”, Emilio Castelar, Mexico City, Mexico<br>
+          Art Hamptons, Evan Lurie Gallery, Bridgehampton, NY<br>
+          Art Market & Design Hamptons, Evan Lurie Gallery, Bridgehampton, NY<br>
+          Art Aspen, Evan Lurie Gallery, Aspen, CO<br>
+          Art Palm Beach, Evan Lurie Gallery, West Palm Beach, FL<br>
+          Art San Francisco, Evan Lurie Gallery, San Francisco, CA<br>
+          Art Palm Springs, Evan Lurie Gallery, Palm Springs, FL<br>
+          SCOPE MIAMI, Evan Lurie Gallery, Miami, FL<br><br>
+
+          <strong>2014</strong><br>
+          Art Hamptons, Evan Lurie Gallery, Bridgehampton, NY<br>
+          Art Market & Design Hamptons, Evan Lurie Gallery, Bridgehampton, NY<br>
+          Art Aspen, Evan Lurie Gallery, Aspen, CO<br>
+          Art Palm Beach, Evan Lurie Gallery, West Palm Beach, FL<br>
+          Art San Francisco, Evan Lurie Gallery, San Francisco, CA<br>
+          Art Palm Springs, Evan Lurie Gallery, Palm Springs, FL<br>
+          SCOPE MIAMI, Evan Lurie Gallery, Miami, FL<br>
+          Traffic Jam Galleries, NSW, Australia<br>
+          NOVA Gallery, Makati City, Philippines<br>
+          ‘Masters of Illusion’, bG Gallery at Bergamot Station, Santa Monica, CA<br>
+          ‘Art & Photography of the Spectacular’, bG Gallery,Bergamot Station, Santa Monica, CA<br>
+          Guns n Roses, Nick Veasey X-ray Galerie Frangulyan, Paris, France<br><br>
+
+          <strong>2013</strong><br>
+          Bluerider Gallery, Taipei, Taiwan<br>
+          Opiom Gallery, Opio, France<br>
+          Linda Matney Gallery, Williamsburg, VA<br>
+          Galerie Frangulyan, Paris, France<br><br>
+
+          <strong>2012</strong><br>
+          Richard Goodall Gallery, Manchester, UK<br>
+          Joseph Bellows Gallery, La Jolla CA<br>
+          Brucie Collections, Kiev, Ukraine<br>
+          Gregg Shienbaum Fine Art Gallery, Miami, FL<br><br>
+
+          <strong>2011</strong><br>
+          Pobeda Gallery, Moscow, Russia<br>
+          Split Photo Gallery, Croatia<br>
+          Glass Garage Fine Art Gallery, West Hollywood, CA<br>
+          Atelier Jungwirth, Graz, Austria<br><br>
+
+          <strong>2010</strong><br>
+          ‘British Photography’ V&A Museum, London, UK<br>
+          Gallerie LeRoyer, Montreal, Canada<br>
+          Dubinsky Fine Arts, Zurich, Switzerland<br>
+          21 Galleries, Berlin, Germany<br>
+          Klaudia Marr Gallery, Santa Fe, NM<br>
+          Galerie Tagomago, Barcelona, Spain<br>
+          Young Gallery Photo, La Galerie Pierre Mahaux, Megeve, France<br><br>
+
+          <strong>2009</strong><br>
+          Young Gallery Photo, Knokke, Belgium<br>
+          Maddox Arts, London, UK<br>
+          Great Ormond Street Hospital, London, UK<br>
+          Deutsches Röntgen-Museum, Remscheid, Germany<br>
+          Richard Goodall Gallery, Manchester, UK<br>
+          Young Gallery Photo, Brussels, Belgium<br><br>
+
+          <strong>2008</strong><br>
+          ‘XFUNS Gala 08 X = Secret’, Museum of Contemporary Art, Taipei, Taiwan<br>
+          ‘The Really Naked Celebrity Exhibition’,National Osteoporosis Society,Redchurch St., London, UK<br>
+          David Gallery, Culver City, CA<br>
+          ‘See Through The World Around You’, Hunterian Gallery, Royal College of Surgeons, London, UK<br>
+          Logan Airport, Boston, MA, USA<br><br>
+
+          <strong>2007</strong><br>
+          Parker Technologies, Cleveland, OH<br><br>
+
+          <strong>2003</strong><br>
+          Deutsche Poste, Bonn, Germany<br><br>
+
+          <strong>PUBLICATION</strong><br><br>
+
+          A Decade in X-ray<br>
+          X-ray – See Through The World Around You<br>
+          X-Treme X-ray in association with The Science Museum<br><br>
+
+          <strong>COLLECTIONS</strong><br><br>
+
+          Michael Bay, Director/ Producer<br>
+          EUROPE, Deutsche Post, Bonn, Germany<br>
+          Deutches Roentgen Museum, Remscheid, Germany<br>
+          Museum Villa Rot, Burgrieden, Germany<br>
+          Science and Technology Museum, Milan, Italy<br>
+          UK Investec, London, UK<br>
+          Natural History Museum, Tring, UK<br>
+          National Media Museum, Yorkshire, UK<br>
+          Victoria & Albert Museum, London, UK<br>
+          WORLDWIDE, AMOREPACIFIC Museum of Art, Gyeonggi-do, Korea<br>
+          Crossfit, San Diego, CA, USA<br>
+          Fort Wayne Museum of Art<br>
+          Fort Wayne, IN, USA<br>
+          MASS MoCA, North Adams, MA<br>
+          Musée de Design et D’Arts Appliqués Contemporains (MUDAC), Lausanne, Switzerland<br>
+          Museum of Contemporary Art, Taipei, Taiwan<br>
+          Museum of Contemporary Art, San Francisco, CA<br>
+          Parker Technologies, Cleveland, OH<br>
+          Seabury Group, New York, NY<br>
+          The Museum at FIT, New York, NY<br>
+        </p>
+      </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-three"  class="bg-three">
+          Artist Profile
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-three">
+        <div class="content">
+          <p>
+            A man with x-ray vision, Nick Veasey creates art that shows what it is really like inside.<br><br>
+
+            Nick’s work with radiographic imaging equipment takes the x-ray to another level. Everyday objects are transformed from the banal to the beguiling and the layers and make-up of natural items are shown in fantastic detail.<br><br>
+
+            These works are a classic example of the fusion between art and science.  The results transcend classification as photographs, having the gravitas to motivate science institutions and art galleries to acquire the artworks. The Victoria and Albert Museum in London have recently added his work to the British National Collection of Photography.  Nick regularly exhibits at fine art galleries the world over. The ethereal and fascinating works have collected a host of International awards.<br><br>
+
+            In today’s world that is obsessed with ‘image’, superficiality and artifice, Veasey counters such insubstantial diversions by delving inside and discovering what things are really made of.  Metaphors for the images are many and varied.  Their context is very relevant in today’s society with the prevalence of surveillance and the use of x-ray technology for security.<br><br>
+
+            The artist’s work can be seen as a project that harnesses and exploits modern technology to advance the boundaries of perception and of art.  But what sets him apart from other artists is not only the technique.  Instead of creating or transforming things, he is exposing something that always existed, objects we think we know but we don’t. Not from the inside out.<br><br>
+
+            Creating art with radiation is complex and dangerous but the results continually inspire Nick to keep experimenting.<br><br>
+
+            The subjects of his attention are manifold.  Flora and fauna, DJ Decks, ordinary objects such as shoes, a typewriter and even a classic Morris Mini.  Mainly, whatever surrounds us and is tangible.  Although working with the manifest, he achieves to uncover the invisible. Veasey’s x-rays penetrate the surface and take us on a journey into a world otherwise hidden and unseen.  The inner life of objects and organisms is revealed, the surface replaced with transparency, the inside becomes the outside – what is left is the form the aesthetics of form the inner beauty.<br><br>
+
+            The work is a dazzling balance of extremes, using lethal radiation to produce results of great lyricism and grace.  Veasey’s x-rays penetrate solid matter to render it ghostly and gentle, giving the viewers that precious feeling that they have somehow seen reality afresh with an aspect to life that they have never before experienced.<br><br>
+
+            An artist that pushes boundaries in pursuit of his calling.<br>
+          </p>
+        </div>
+    </div>
+
+
+    <div class="acord">
+        <label for="tb-four"  class="bg-four">
+          Artist Video
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-four">
+        <div class="content">
+          <div class="vid-container">
+
+            <div class="main-video-container">
+               <video src="https://evanluriegallery.s3.us-east-2.amazonaws.com/nick-veasey/video/IMG_6165.MOV" loop controls class="main-video"></video>
+               <h3 class="main-vid-title">Nick X Rayin Feb 2023 Pt 1</h3>
+            </div>
+         
+            <div class="video-list-container">
+         
+               <div class="list active">
+                  <video src="https://evanluriegallery.s3.us-east-2.amazonaws.com/nick-veasey/video/IMG_6165.MOV" class="list-video"></video>
+                  <h3 class="list-title">Nick X Rayin Feb 2023 Pt 1</h3>
+               </div>
+         
+               <div class="list">
+                  <video src="https://evanluriegallery.s3.us-east-2.amazonaws.com/nick-veasey/video/IMG_6169.MOV" class="list-video"></video>
+                  <h3 class="list-title">Nick X Rayin Feb 2023 Pt 2</h3>
+               </div>
+         
+               <div class="list">
+                  <video src="https://evanluriegallery.s3.us-east-2.amazonaws.com/nick-veasey/video/IMG_6187.MOV" class="list-video"></video>
+                  <h3 class="list-title">Nick X Rayin Feb 2023 Pt 3</h3>
+               </div>
+         
+            </div>
+         
+         </div>
+        </div>
+    </div>
+
+  </div>
+
+    <!--- artwork masonary --->
+
+    <div class="art-container">
+      <a href="nick-veasey-001.html">
+        <div class="art-box">
+            <img src="image/artwork/001_1930s Pontiac with Gangsters.jpg" alt="1930's Pontiac with Gangsters">
+        </div>
+      </a>
+      <a href="nick-veasey-002.html">
+        <div class="art-box">
+            <img src="image/artwork/002_1948 Mercury Cowboys.jpg" alt="1948 Mercury Cowboys">
+        </div>
+      </a>
+      <a href="nick-veasey-003.html">
+        <div class="art-box">
+            <img src="image/artwork/003_1970 Union Jack Mini Driver.jpg" alt="1970 Union Jack Mini Driver">
+        </div>
+      </a>
+      <a href="nick-veasey-004.html">
+        <div class="art-box">
+            <img src="image/artwork/004_Baby Blue Rat Pack 3mb.jpg" alt="Baby Blue Rat Pack">
+        </div>
+      </a>
+      <a href="nick-veasey-005.html">
+        <div class="art-box">
+            <img src="image/artwork/005_Boxed Perfume.jpg" alt="Perfume Box">
+        </div>
+      </a>
+      <a href="nick-veasey-006.html">
+        <div class="art-box">
+            <img src="image/artwork/006_Bride and Groom.jpg" alt="Bride & Groom">
+        </div>
+      </a>
+      <a href="nick-veasey-007.html">
+        <div class="art-box">
+            <img src="image/artwork/007_Christian Louboutin.jpg" alt="Christian Louboutin, Pigalle Follies 1c1s">
+        </div>
+      </a>
+      <a href="nick-veasey-008.html">
+        <div class="art-box">
+            <img src="image/artwork/008_Crystal Skull White on Black bgd.jpg" alt="Crystal Skull (white on black)">
+        </div>
+      </a>
+      <a href="nick-veasey-009.html">
+        <div class="art-box">
+            <img src="image/artwork/009_DJ.jpg" alt="DJ">
+        </div>
+      </a>
+      <a href="nick-veasey-010.html">
+        <div class="art-box">
+            <img src="image/artwork/010_Easy Listener.jpg" alt="Easy Listener">
+        </div>
+      </a>
+      <a href="nick-veasey-011.html">
+        <div class="art-box">
+            <img src="image/artwork/011_F104 Starfighter.jpg" a;t="F-104 Starfighter">
+        </div>
+      </a>
+      <a href="nick-veasey-012.html">
+        <div class="art-box">
+            <img src="image/artwork/012_Indian Rider.jpg" alt="Indian Rider">
+        </div>
+      </a>
+      <a href="nick-veasey-013.html">
+        <div class="art-box">
+            <img src="image/artwork/013_Kylie's knickers.jpg" alt="Kylie's Knickers">
+        </div>
+      </a>
+      <a href="nick-veasey-014.html">
+        <div class="art-box">
+            <img src="image/artwork/014_Microphone_MR.jpg" alt="Microphone">
+        </div>
+      </a>
+      <a href="nick-veasey-015.html">
+        <div class="art-box">
+            <img src="image/artwork/015_NFL Helmet Silver Crystal.jpg" alt="NFL Helmet (silver on black)">
+        </div>
+      </a>
+      <a href="nick-veasey-016.html">
+        <div class="art-box">
+            <img src="image/artwork/016_Red robots 60x48 in pro.jpg" alt="Red Robot">
+        </div>
+      </a>
+      <a href="nick-veasey-017.html">
+        <div class="art-box">
+            <img src="image/artwork/017_Smartphone.jpg" alt="Smartphone?">
+        </div>
+      </a>
+      <a href="nick-veasey-018.html">
+        <div class="art-box">
+            <img src="image/artwork/018_Stormtroopers x 2 flash combined BETWEEN.jpg" alt="Stormtroopers">
+        </div>
+      </a>
+      <a href="nick-veasey-019.html">
+        <div class="art-box">
+            <img src="image/artwork/019_Superman takes a break.jpg" alt="Superman Takes a Break">
+        </div>
+      </a>
+      <a href="nick-veasey-020.html">
+        <div class="art-box">
+            <img src="image/artwork/020_Union Jack Matchless.jpg" alt="Union Jack Matchless">
+        </div>
+      </a>
+      <a href="nick-veasey-021.html">
+        <div class="art-box">
+            <img src="image/artwork/021_1958 Corvette C1 1665x600mm.jpeg" alt="1958 Corvette C1">
+        </div>
+      </a>
+      <a href="nick-veasey-022.html">
+        <div class="art-box">
+            <img src="image/artwork/022_1963 Corvette C2 1665x600mm.jpeg" alt="1963 Corvette C2">
+        </div>
+      </a>
+      <a href="nick-veasey-023.html">
+        <div class="art-box">
+            <img src="image/artwork/023_1972 Corvette LT-1.jpeg" alt="1972 Corvette LT-1">
+        </div>
+      </a>
+      <a href="nick-veasey-024.html">
+        <div class="art-box">
+            <img src="image/artwork/024_Corvette Cruiser 1665x600mm.jpeg" alt="Corvette Cruiser">
+        </div>
+      </a>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                  <a href="../../vr.html">Virtual Gallery</a>
+                  <a href="../../sculpture.html">Sculpture</a>
+                  <a href="../../press.html">Press</a>
+              </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+
+  </body>
+</html>
