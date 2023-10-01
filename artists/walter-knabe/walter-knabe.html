@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Walter Knabe - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artist summary card  --->
+
+    <div class="content-wrapper">
+        <div class="header">
+          <h1>
+            Walter <br>
+            Knabe
+          </h1>
+        </div>
+        <div class="numbers">
+          <br>
+          <div class="hr"></div>
+          <br>
+        </div>
+        <div class="hero-img">
+          <div class="img-revealer"></div>
+          <img src="image/hero/033_walter-knabe.jpeg" id="img-revealer" alt="" />
+        </div>
+        <div class="hero-img-info">
+          <p>
+            Walter Knabe is an American multi-disciplinary fine artist.<br>
+            As a painter and silk screen printer, Knabe’s work is versatile and includes original paintings and limited-edition artwork, fabrics, wall coverings, exclusive lifestyle/home decor and licensed designs.
+          </p>
+        </div>
+        <div class="cta">
+          <a href="../todd-gray/todd-gray.html">
+            <div class="cta-btn">
+              <h4><ion-icon name="arrow-back-sharp"></ion-icon> previous artist </h4>
+            </div>
+          </a>
+          <div class="cta-btn">
+            <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+            <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+            <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+            <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+          </div>
+          <a href="../alberto-cavalieri/alberto-cavalieri.html">
+            <div class="cta-btn">
+              <h4>next artist <ion-icon name="arrow-forward-sharp"></ion-icon></h4>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <!--- artist accordion  --->
+<div class="tabs-box">
+    <div class="acord">
+        <label for="tb-one" class="bg-one">
+          Artist Photo
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-one">
+        <div class="content" >
+          <div class="artistpfp">
+            <img src="image/profile/033_walter-knabe.jpeg" id="walter_033">
+          </div>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-two"  class="bg-two">
+          Artist CV
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-two">
+        <div class="content">
+          <p>
+            <strong>Private Collections and Awards</strong><br><br>
+
+            Michael Jordan, Chicago, Il<br>
+            Mr. and Mrs. George Bush, Houston, TX<br>
+            Saul Steinberg, New York, NY<br>
+            Andre Agassi, Las Vegas, NV<br>
+            Richard Gere, New York, NY<br> 
+            Neil Simon, Saddle River, NJ<br>
+            William Woodward, New York, NY<br> 
+            Spike Lee, Brooklyn, NY<br>
+            Dylan Cannon, Los Angeles, CA<br> 
+            Dean Schulhof, New York, NY<br>
+            “Design Legend”, 2011, IIDC<br><br>
+
+            <strong>Public Projects</strong><br><br>
+
+            Harrods, London, England<br>
+            Paris Casino, Las Vegas, NV<br>
+            Empire Hotel, New York, NY<br>
+            Bloomindales, New York, NY<br>
+            Citibank, New York, NY<br>
+            Manufacturers Hanover, New York, NY<br>
+            Walt Disney World, Orlando, FL<br>
+            Trump Plaza, New York, NY<br>
+            Michael Graves Architect, Princeton, NJ<br>
+            The White House, Washington D.C.<br>
+            National Gymnastics Championships 2005, Indianapolis, IN<br>
+            Indianapolis 500 2010, Indianapolis, IN<br>
+            Super Bowl 2012 Poster Host City, Indianapolis, IN<br>
+            Riley Children’s Hospital, Indianapolis, IN<br>
+            Indianapolis Artsgarden, Indianapolis, IN<br>
+            Conrad Indianapolis, Presidential Suite, Indianapolis, IN<br>
+            Community Hospital, Indianapolis, IN<br>
+            Argosy Casino, Lawrenceburg, IN<br>
+            American United Life Insurance, Indianapolis, IN<br><br>
+
+            <strong>Commissioned Work</strong><br><br>
+
+            Steve Chase, Los Angeles, CA<br>
+            Third Street Art, Bloomington, IN<br>
+            Philippe Starck, New York, NY<br>
+            F. Schumacher, New York, NY<br>
+            Business Week, New York, NY<br>
+            Guy Laroche, New York, NY<br>
+            Vintage Books, New York, NY<br>
+            Eli Lilly & Co., Indianapolis, IN<br>
+            Gregory & Appel Insurance, Indianapolis, IN<br>
+            LDI Ltd, Indianapolis, IN<br><br>
+
+            <strong>Selected Fine Art Exhibits</strong><br><br>
+
+            2019 Scope Art Show Miami, FL<br>
+            2018 International Sculpture & Objects Art Fair Chicago, IL<br>
+            2017 Reliant Partners, Indianapolis, IN. “An Evening with Aphrodite”. Painting, screenprint and unique screenprint exhibition<br>
+            2017 LDI Industries, Indianapolis, IN. Screenprint and painting exhibition.<br>
+            2011-15 Conrad Indianapolis Hotel - West Foyer. Indianapolis, IN. Screenprint and painting exhibition.<br>
+            2014 Red Dot Art Fair, Miami, FL<br>
+            2014 National Art Museum of Sports, Indianapolis, IN<br>
+            2012 Art Palm Beach, West Palm Beach, FL. Painting exhibition<br>
+            2011 Long-Sharp/Curls, Detroit, MI. Screenprint and painting exhibition<br>
+            2011 Art Greenwich, Greenwich, CT. NAC Gallery painting exhibition<br>
+            2011 Art Newport, Newport, RI. “Mythologies” Solo painting exhibition<br>
+            2011 Art Naples, Naples. FL. Painting exhibition<br>
+            2010 Artbox Gallery, Indianapolis, IN. Painting and screenprint exhibition<br>
+            2009 Evan Lurie Gallery, Indianapolis, IN. Painting and screenprint exhibition<br>
+            2008 Niermann Weeks, New York, NY. Screenprint exhibition<br>
+            2005 Indianapolis Art Center, Indianapolis, IN. “Confluence and Convergence; Michael Graves and Walter Knabe”<br>
+            1997 Felissimo, New York, NY. Painting exhibition<br>
+            1996 Winn Casino, Atlantic City, NJ. Commissioned murals<br>
+            1995 Indianapolis Museum of Art, Indianapolis, IN. “Walter Knabe – Fine Art Goes Functional”<br>
+            1992 Ruschman Gallery, Indianapolis, IN. “Sculptural Vessels” exhibition<br>
+            1990 Brooklyn Art Museum, Brooklyn, NY. Painting exhibition<br>
+            1987 Betty Cunningham Gallery, New York, NY. Group painting exhibition<br>
+            1984 Susan Markel Gallery, New York, NY. Works on paper<br>
+            1981 Carrington Gallery, New York, NY. Fine artwork and functional artwork<br>
+            1979 Madison Art Center, Madison, WI. Group painting exhibition<br>
+            1978 Lockerbie Gallery, Indianapolis, IN. Solo painting exhibition<br>
+            1977 University of Wisconsin, Madison, WI. Painting exhibition<br>
+            1975 Worked with Thomas Hart Benton on implementation of one of his last murals in Joplin, MO<br><br>
+
+            <strong>Licensed Design Work</strong><br><br>
+            
+            Imperial Home Décor Group, Cleveland, OH<br>
+            Fieldcrest/Pillowtex, Kannapolis, NC<br> 
+            Monarch Design, Providence, RI<br>
+            Brownlow Corp. Fort Worth, TX<br> 
+            Stamps Happen, Fullerton, CA<br> 
+            Sunrise/Hallmark, Kansas City, MO<br>
+            Hampton Art, Los Angeles, CA<br> 
+            Paper Adventures, Milwaukee, WI<br>
+            Checks Unlimited, Colorado Springs, CO<br> 
+            Me and My Big Ideas, Lake Forest, CA<br><br>
+            
+            <strong>Education</strong><br><br>
+            
+            1975-76 Study and work with Thomas Hart Benton, St. Louis, MO<br>
+            1976 BFA Columbia College, Columbia, MO<br>
+            1978 MA University of Wisconsin, Madison, WI<br>
+            1979 MFA University of Wisconsin, Madison, WI<br>
+          </p>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-three"  class="bg-three">
+          Artist Profile
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-three">
+        <div class="content">
+          <p>
+            “I hope my work – with its mythology – will lead others to discover or more deeply connect with their mythology,” says Knabe.<br><br>
+
+            A designer since the age of 14, Walter Knabe obtained his Master’s degree in Fine Arts from the University of Wisconsin. Walter opened his first studio nearly 35 years ago as a painter in New York City. As fate would have it, he had a chance to cover the walls of a prominent Manhattan apartment with his heavily patterned paintings, setting into motion a life long career. His paintings quickly morphed into full-scale wall coverings, which have been in demand by many high profile clients and interior design houses. Also, his studio has produced fabrics and other home décor products developed from Walter’s screen-printing expertise; as well as hand made and licensed designs for bedding, stationery, and national event artwork.<br><br>
+            
+            Walter’s signature style is inspired by a sense of antiquity and the ever-evolving presence of everyday life. He approaches his work from the philosophy of timeless design, creating an expressive sacred space that is relevant for future generations. With a collision of colors and elements, he blends new and old in a bold, layered, narrative combination. Walter takes a soulful approach as he creates mythology within his artwork which inspires others.<br><br>
+            
+            For over 35 years, Walter Knabe has been a trusted resource for high profile collectors and interior designers around the globe who covet Walter’s work. His studio houses showroom for his wall coverings and fabrics, as well as Walter’s painting studio; allowing for a certain blending of fine and functional art.<br><br>
+
+            His artwork can be found in the homes and offices of film, sports, and music legends. Walter has been the official artist for several high profile events, including the Indianapolis 500. Permanent installations can be found in numerous businesses all over the world.<br>
+          </p>
+        </div>
+    </div>
+
+  </div>
+
+    <!--- artwork masonary --->
+
+    <div class="art-container">
+      <a href="walter-knabe-001.html">
+        <div class="art-box">
+            <img src="image/artwork/001_Brigitte Bardot - Blush.jpeg" alt="Brigitte Bardot - Blush">
+        </div>
+      </a>
+      <a href="walter-knabe-002.html">
+        <div class="art-box">
+            <img src="image/artwork/002_The Beatles.jpeg" alt="The Beatles">
+        </div>
+      </a>
+      <a href="walter-knabe-003.html">
+        <div class="art-box">
+            <img src="image/artwork/003_Peace Illuminated.jpeg" alt="Peace Illuminated">
+        </div>
+      </a>
+      <a href="walter-knabe-004.html">
+        <div class="art-box">
+            <img src="image/artwork/004_Steve McQueen.jpeg" alt="Steve McQueen">
+        </div>
+      </a>
+      <a href="walter-knabe-005.html">
+        <div class="art-box">
+            <img src="image/artwork/005_Grace the Princess.jpeg" alt="Grace the Princess">
+        </div>
+      </a>
+      <a href="walter-knabe-006.html">
+        <div class="art-box">
+            <img src="image/artwork/006_Grace.jpeg" alt="Grace">
+        </div>
+      </a>
+      <a href="walter-knabe-007.html">
+        <div class="art-box">
+            <img src="image/artwork/007_Frank Sinatra.jpeg" alt="Frank Sinatra">
+        </div>
+      </a>
+      <a href="walter-knabe-008.html">
+        <div class="art-box">
+            <img src="image/artwork/008.jpeg" alt="Audrey Hepburn">
+        </div>
+      </a>
+      <a href="walter-knabe-009.html">
+        <div class="art-box">
+            <img src="image/artwork/009.jpeg" alt="Sophia Loren">
+        </div>
+      </a>
+      <a href="walter-knabe-010.html">
+        <div class="art-box">
+            <img src="image/artwork/010.jpeg" alt="Bettie Page">
+        </div>
+      </a>
+      <a href="walter-knabe-011.html">
+        <div class="art-box">
+            <img src="image/artwork/011.jpeg" alt="Mystery Skull I">
+        </div>
+      </a>
+      <a href="walter-knabe-012.html">
+        <div class="art-box">
+            <img src="image/artwork/012.jpeg" alt="Mystery Skull II">
+        </div>
+      </a>
+      <a href="walter-knabe-013.html">
+        <div class="art-box">
+            <img src="image/artwork/013.jpeg" alt="Mystery Skull III">
+        </div>
+      </a>
+      <a href="walter-knabe-014.html">
+        <div class="art-box">
+            <img src="image/artwork/014.jpeg" alt="Mystery Skull IV">
+        </div>
+      </a>
+      <a href="walter-knabe-015.html">
+        <div class="art-box">
+            <img src="image/artwork/015.jpeg" alt="Kaleidoscope Skull IV">
+        </div>
+      </a>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                  <a href="../../vr.html">Virtual Gallery</a>
+                  <a href="../../sculpture.html">Sculpture</a>
+                  <a href="../../press.html">Press</a>
+              </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+
+  </body>
+</html>

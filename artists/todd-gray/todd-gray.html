@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Todd Gray - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artist summary card  --->
+
+    <div class="content-wrapper">
+        <div class="header">
+          <h1>
+            Todd <br>
+            Gray
+          </h1>
+        </div>
+        <div class="numbers">
+          <br>
+          <p>1962</p>
+          <div class="hr"></div>
+          <br>
+        </div>
+        <div class="hero-img">
+          <div class="img-revealer"></div>
+          <img src="image/hero/035_todd-gray.webp" id="img-revealer" alt="" />
+        </div>
+        <div class="hero-img-info">
+          <p>
+            "I think that art needs to be fundamentally beautiful and pretty to look at: like a melody in a song.<br>
+            A song with no melody (to me) is like an art piece that is not beautiful.<br>
+            It is not that art is not art if it is not beautiful nor music not music without melody, but the intention to create beauty is a primary force that has always driven me."<br>
+          </p>
+        </div>
+        <div class="cta">
+          <a href="../theodore-gall/theodore-gall.html">
+            <div class="cta-btn">
+              <h4><ion-icon name="arrow-back-sharp"></ion-icon> previous artist </h4>
+            </div>
+          </a>
+          <div class="cta-btn">
+            <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+            <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+            <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+            <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+          </div>
+          <a href="../walter-knabe/walter-knabe.html">
+            <div class="cta-btn">
+              <h4>next artist <ion-icon name="arrow-forward-sharp"></ion-icon></h4>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <!--- artist accordion  --->
+<div class="tabs-box">
+    <div class="acord">
+        <label for="tb-one" class="bg-one">
+          Artist Photo
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-one">
+        <div class="content" >
+          <div class="artistpfp">
+            <img src="image/profile/035_todd-gray.webp" id="todd_035">
+          </div>
+        </div>
+    </div>
+
+    <div class="acord">
+      <label for="tb-two"  class="bg-two">
+        Artist CV
+        <ion-icon name="chevron-down-outline"></ion-icon>
+      </label>
+      <input type="checkbox" name="mytabs" id="tb-two">
+      <div class="content">
+        <p>
+          <strong>SOLO EXHIBITIONS</strong><br><br>
+
+          <strong>2019</strong><br>
+          "Outside of the Box" Bruce Lurie Gallery, Los Angeles, California<br>
+          "Todd Gray - Pop Art" One Man Show, Aspen Art Gallery, Aspen, Colorado<br>
+          "Pop Geometry" Anderson Museum of Art, Anderson, Indiana<br>
+          "Pop Geometry" Swope Museum of Art, Terre Haute, Indiana<br>
+          "POP!" Riverside Museum of Art (RAM), Riverside, California<br>
+          "Pop Sculpture" CODA Gallery, Palm Desert, California<br>
+          "Todd Gray - Pop Art” One Man Show, Skidmore Contemporary Art Gallery, Santa Monica, California<br><br>
+
+          <strong>2018</strong><br>
+          World Trade Center Mural Project - Todd Gray Studios, New York City, New York<br>
+          “Pop Geometry” Butler Museum of American Art, Youngstown, Ohio<br>
+          “Pop Geometry” Fort Smith Art Museum, Fort Smith, Arkansas<br>
+          “Pop Geometry” Hardin Center for Cultural Arts Chan Gallery, Gadsden, Alabama<br><br>
+
+          <strong>2017</strong><br>
+          “Pop Geometry” Missouri State University Art and Design, Brick City Gallery, Springfield, Missouri<br>
+          “Pop Geometry” The Goddard Museum, Ardmore, Oklahoma<br><br>
+
+          <strong>2015</strong><br>‍
+          “Pop Geometry” Skidmore Contemporary Art Gallery, Santa Monica, California<br><br>
+
+          <strong>1993</strong><br>‍
+          Martin Lawrence Galleries (11 throughout the U.S.)<br>
+          Suzanne Brown Gallery, Scottsdale, Arizona<br><br>
+
+          <strong>1992</strong><br>
+          Martin Lawrence Galleries (11 throughout the U.S.)<br>
+          Suzanne Brown Gallery, Scottsdale, Arizona<br><br>
+
+          <strong>1991</strong><br>
+          Peter Lembcke Gallery, San Francisco, California<br>
+          Suzanne Brown Gallery, Scottsdale, Arizona<br>
+          Andre Zarre Gallery, New York City, New York<br><br>
+
+          <strong>1990</strong><br>
+          Schwartz Cierlak Gallery, Santa Monica, California<br>
+          Suzanne Brown Gallery, Scottsdale, Arizona<br><br>
+
+          <strong>1989</strong><br>‍
+          Wilshire Pacific Gallery, Los Angeles, California<br>
+          Schwartz Cierlak Gallery, Santa Monica, California<br><br>
+
+          <strong>GROUP EXHIBITIONS (selected)</strong><br><br>
+
+          <strong>2020</strong><br>
+          "Art Palm Springs" with Bruce Lurie Gallery, Palm Desert, California<br>
+          "LA Art Show" with Bruce Lurie Gallery, Los Angeles, California<br>
+          "Art Palm Beach" with Bruce Lurie Gallery, West Palm Beach, Florida<br><br>
+
+          <strong>2019</strong><br>
+          "Context Art Fair" with Bruce Lurie Gallery, Art Basel, Miami, Florida<br>
+          "SOFA Art Fair" with Bruce Lurie Gallery, Chicago, Illinois<br>
+          "Houston Art Fair" with Bruce Lurie Gallery, Houston, Texas<br>
+          "Affordable Art Fair" with Bruce Lurie Gallery, New York City, New York<br>
+          "Art Market Hamptons" with Bruce Lurie Gallery, Hamptons, New York<br>
+          "Aspen Art Fair" with Bruce Lurie Gallery, Culver City, California<br>
+          "Aspen Art Fair" with Aspen Art Gallery, Aspen, Colorado<br>
+          Bruce Lurie Gallery, Los Angeles, California<br>
+          Aspen Art Gallery, Aspen, Colorado<br>
+          "Art Busan", Seoul, South Korea<br>
+          CODA Gallery, Palm Desert, California<br>
+          HL Fine Art, Seoul, Korea<br>
+          Eden Fine Art Galleries, San Francisco, California<br><br>
+
+          <strong>2018</strong><br>
+          HL Fine Art, Seoul, Korea<br>
+          Eden Fine Art Galleries, London, England<br>
+          Eden Fine Art Galleries, New York, New York (SoHo & Madison Avenue)<br>
+          Eden Fine Art Galleries, San Francisco, California<br>
+          Eden Fine Art Galleries, Tel Aviv & Jerusalem, Israel<br>
+          A Gallery, Palm Desert, California<br>
+          CODA Gallery, Palm Desert, California<br><br>
+
+          <strong>2017</strong><br>
+          Bel-Air Fine Art, Geneva, Switzerland, St. Moritz<br>
+          Eden Fine Art Galleries, New York, New York (SoHo & Madison Avenue)<br>
+          Eden Fine Art Galleries, San Francisco, California<br>
+          Eden Fine Art Galleries, Tel Aviv & Jerusalem, Israel<br>
+          A Gallery, Palm Desert, California<br>
+          Eden Fine Art Galleries, London, England<br><br>
+
+          <strong>2016</strong><br>
+          Bel-Air Fine Art, Geneva, Switzerland, St. Moritz<br>
+          Eden Fine Art Galleries, New York, New York (SoHo & Madison Avenue)<br>
+          Eden Fine Art Galleries, San Francisco, California<br>
+          Eden Fine Art Galleries, Tel Aviv & Jerusalem, Israel<br>
+          A Gallery, Palm Desert, California<br><br>
+
+          <strong>2015</strong><br>‍
+          “Pop Geometry” A Gallery, Palm Desert, California<br>
+          “Pop Geometry” One Man Show, Skidmore Contemporary Art, Santa Monica, California<br>
+          “A working progress group show" Skidmore Contemporary Art, Santa Monica, California<br>
+          "Art Market San Francisco" with Skidmore Contemporary Art, San Francisco, California<br><br>
+
+          <strong>1997</strong><br>
+          Dick Kleinman Gallery, Cleveland, Ohio<br>
+          Acme Fine Art, San Francisco, California<br>
+          Katie Gingrass Gallery, Milwaukee, Wisconsin<br>
+          A Gallery, ‘Assemblage’, Todd Gray & Craig French, Palm Desert, California<br>
+          Vail Village Arts, Vail, Colorado<br>
+          Windsors Gallery, Miami, Florida<br>
+          Village Gallery, Scottsdale, Arizona<br><br>
+
+          <strong>1996</strong><br>
+          Solomon Dubnick Gallery,’Sculptural Furnishings 4’<br>
+          Sacramento , California<br>
+          Nan Miller Gallery, ‘The Best of Both Worlds’<br>
+          Rochester, New York<br>
+          Richard Russell Gallery, New Orleans, Louisiana<br>
+          Windsor’s Gallery,`Miami, Florida<br>
+          Vail Village Arts, Vail, Colorado<br>
+          Village Gallery, Scottsdale, Arizona<br>
+          A Gallery, Palm Desert, California<br>
+          Acme Fine Art, San Francisco, California<br>
+          Katie Gingrass Gallery, Milwaukee, Wisconsin<br><br>
+
+          <strong>1995</strong><br>
+          A Gallery, Palm Desert, California<br>
+          Windsor’s Gallery, Miami, Florida<br>
+          One World Gallery, Las Vegas, Nevada<br><br>
+
+          <strong>1994</strong><br>
+          Sherwood Gallery, Laguna Beach, California<br>
+          Westervelt Fine Art, Laguna Niguel, California<br>
+          Elaine Sternberg Gallery, Chicago, Illinois<br>
+          One World Gallery, Las Vegas, Nevada<br>
+          A Gallery, Palm Desert, California<br>
+          Suzanne Brown Gallery, Scottsdale, Arizona<br>
+          Windsor’s Gallery, Miami, Florida<br><br>
+
+          <strong>1993</strong><br>
+          Tokyo International Art Show, Tokyo, Japan<br>
+          Posner Gallery, Milwaukee, Wisconsin<br>
+          Gallery of Functional Art, ‘Magnetism- Force Follows Function’, Santa Monica, California<br>
+          Sherwood Gallery, Laguna Beach, California<br>
+          Westervelt Fine Art, Laguna Niguel, California<br>
+          Pauline Hirsch Gallery, ‘Fusion 93- The Artist’s Role in Rebuilding L.A.’, Los Angeles, California<br>
+          Elaine Sternberg Gallery, ‘ Todd Gray and Mark Beam’, Chicago, Illinois<br>
+          One World Gallery, Las Vegas, Nevada<br>
+          Devorzon Gallery, Los Angeles, California<br>
+          A Gallery, Palm desert, California<br>
+          Suzanne Brown Gallery, Scottsdale, Arizona<br>
+          Madeline Michaels Gallery, Lahaina, Maui<br>
+          Posner Gallery, ‘Oh Come All Ye Playful’, Santa Monica, California<br><br>
+
+          <strong>1992</strong><br>
+          Devorzon Gallery, Los Angeles, California<br>
+          CG Rein Galleries:<br>
+          Minneapolis, Minnesota<br>
+          Santa Fe, New Mexico<br>
+          Houston, Texas<br>
+          Suzanne Brown Gallery, Scottsdale, Arizona<br>
+          Diane Nelson Gallery, ‘Winter Show’, Laguna Beach, California<br>
+          A Gallery, Palm Desert, California<br><br>
+
+          <strong>1993</strong><br>
+          Tokyo International Art Show, Tokyo, Japan<br>
+          Posner Gallery, Milwaukee, Wisconsin<br>
+          Gallery of Functional Art, ‘Magnetism- Force Follows Function’ Santa Monica, California<br>
+          Sherwood Gallery, Laguna Beach, California<br>
+          Westervelt Fine Art, Laguna Niguel, California<br>
+          Pauline Hirsch Gallery, ‘Fusion 93- The Artist’s Role in Rebuilding L.A.’ Los Angeles, California<br>
+          Elaine Sternberg Gallery, ‘ Todd Gray and Mark Beam’ Chicago, Illinois<br>
+          One World Gallery, Las Vegas, Nevada<br>
+          Devorzon Gallery, Los Angeles, California<br>
+          A Gallery, Palm desert, California<br>
+          Suzanne Brown Gallery, Scottsdale, Arizona<br>
+          Madeline Michaels Gallery, Lahaina, Maui<br>
+          Posner Gallery, ‘Oh Come All Ye Playful’ Santa Monica, California<br><br>
+
+          <strong>1992</strong><br>
+          Devorzon Gallery, Los Angeles, California<br>
+          CG Rein Galleries:<br>
+          Minneapolis, Minnesota<br>
+          Santa Fe, New Mexico<br>
+          Houston, Texas<br>
+          Suzanne Brown Gallery, Scottsdale, Arizona<br>
+          Diane Nelson Gallery, ‘Winter Show’, Laguna Beach, California<br>
+          A Gallery, Palm Desert, California<br><br>
+
+          <strong>1991</strong><br>
+          Peter Lembcke Gallery, ‘Summer Show’, San Francisco, California<br>
+          A Gallery, Palm Desert, California<br>
+          Diane Nelson Gallery, ‘Summer Show’, Laguna Beach, California<br>
+          Parks Gallery, Tokyo, Japan<br>
+          CG Rein Galleries<br>
+          Minneapolis, Minnesota<br>
+          Santa Fe, New Mexico<br>
+          Houston, Texas<br>
+          Diane Nelson Gallery, ‘Salon Show’, Laguna Beach, California<br>
+          Spectrum Gallery, ‘Todd Gray and Nancy Henderson’ Palm Desert, CA<br>
+          Sherwood Gallery, Laguna Beach, California<br>
+          Andre Zarre Gallery, New York City, New York<br>
+          Schwartz Cierlak Gallery, Santa Monica, California<br><br>
+
+          <strong>1990</strong><br>
+          Diane Nelson Gallery, ‘Color Five’, Laguna Beach, California<br>
+          Spectrum Gallery, ‘Bruzzi’s’, Palm Desert, California<br>
+          Andre Zarre Gallery, ‘New Yorkers and Outsiders’ New York City, NY<br>
+          Sherwood Gallery, Laguna Beach, California<br>
+          Schwartz Cierlak Gallery, ‘Summer Show’ Santa Monica, California<br>
+          Suzanne Brown Gallery, Scottsdale, Arizona<br>
+          Patton Duval Gallery, Los Angeles, California<br><br>
+
+          <strong>1989</strong><br>
+          Andre Zarre Gallery, ‘Wood, Metal, Stone’ New York City, New York<br>
+          Brand Gallery, ‘Dealers Choice- Selections from Art Dealers Association of California’, Glendale, California<br>
+          Spectrum Gallery, Palm Desert, California<br>
+          Patton Duval Gallery, Los Angeles, California<br>
+          Schwartz Cierlak Gallery, Santa Monica, California<br>
+          Suzanne Brown Gallery, Scottsdale, Arizona<br>
+          Art Expressions Gallery, San Diego, California<br><br>
+
+          <strong>1988</strong><br>
+          Schwartz Cierlak Gallery, ‘Tryptychs by Eight Artists’ Santa Monica, California<br>
+          Suzanne Brown Gallery, Scottsdale, Arizona<br>
+          Patton Duval Gallery, Santa Monica, California<br>
+        </p>
+      </div>
+  </div>
+
+    <div class="acord">
+        <label for="tb-three"  class="bg-three">
+          Artist Profile
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-three">
+        <div class="content">
+          <p>
+            Much of my inspiration is garnered from music as most of my time creating art is done with music as my backdrop. The two are interchangeable. So, it comes as no surprise that music metaphors are indelibly intertwined with my artistic definitions. Secondly, I believe that art should say something like the lyrics in a song. And finally, my highest goal, (and the one I always strive for) would be to create art that is somehow meaningful… and profound… and significant like great music which mixes profoundly moving lyrics with incredible melody. Like Bob Marley or John Lennon or Bob Dylan... These are the simple yardsticks and beacons I use and I have more or less held to them steadfast through the years. I might have different intentions and desires with regards to each individual body of work but my core beliefs always hold true to these simple maxims<br>
+          </p>
+        </div>
+    </div>
+
+  </div>
+
+    <!--- artwork masonary --->
+
+    <div class="art-container">
+      <a href="todd-gray-001.html">
+        <div class="art-box">
+            <img src="image/artwork/001.webp" alt="Blessed">
+        </div>
+      </a>
+      <a href="todd-gray-002.html">
+        <div class="art-box">
+            <img src="image/artwork/002.webp" alt="Kick Phlip">
+        </div>
+      </a>
+      <a href="todd-gray-003.html">
+        <div class="art-box">
+            <img src="image/artwork/003.webp" alt="Collywobbles">
+        </div>
+      </a>
+      <a href="todd-gray-004.html">
+        <div class="art-box">
+            <img src="image/artwork/004.webp" alt="Ebullient">
+        </div>
+      </a>
+      <a href="todd-gray-005.html">
+        <div class="art-box">
+            <img src="image/artwork/005.webp" alt="All You Need Is Love">
+        </div>
+      <a href="todd-gray-006.html">
+        <div class="art-box">
+            <img src="image/artwork/006.webp" alt="Shred White and Blue">
+        </div>
+      </a>
+      <a href="todd-gray-007.html">
+        <div class="art-box">
+            <img src="image/artwork/007.webp" alt="Flipp">
+        </div>
+      </a>
+      <a href="todd-gray-008.html">
+        <div class="art-box">
+            <img src="image/artwork/008.webp" alt="Fragmented">
+        </div>
+      </a>
+      <a href="todd-gray-009.html">
+        <div class="art-box">
+            <img src="image/artwork/009.webp" alt="The Big Bang">
+        </div>
+      </a>
+      <a href="todd-gray-010.html">
+        <div class="art-box">
+            <img src="image/artwork/010.webp" alt="Shrek">
+        </div>
+      </a>
+      <a href="todd-gray-011.html">
+        <div class="art-box">
+            <img src="image/artwork/011.webp" alt="Zabba">
+        </div>
+      </a>
+      <a href="todd-gray-012.html">
+        <div class="art-box">
+            <img src="image/artwork/012.webp" alt="Skritz">
+        </div>
+      </a>
+      <a href="todd-gray-013.html">
+        <div class="art-box">
+            <img src="image/artwork/013.webp" alt="Slam Dunk">
+        </div>
+      </a>
+      <a href="todd-gray-014.html">
+        <div class="art-box">
+            <img src="image/artwork/014.webp" alt="Chok A Blok">
+        </div>
+      </a>
+      <a href="todd-gray-015.html">
+        <div class="art-box">
+            <img src="image/artwork/015.webp" alt="Goochie">
+        </div>
+      </a>
+      <a href="todd-gray-016.html">
+        <div class="art-box">
+            <img src="image/artwork/016.webp" alt="Wunda">
+        </div>
+      </a>
+      <a href="todd-gray-017.html">
+        <div class="art-box">
+            <img src="image/artwork/017.webp" alt="Revolver">
+        </div>
+      </a>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                  <a href="../../vr.html">Virtual Gallery</a>
+                  <a href="../../sculpture.html">Sculpture</a>
+                  <a href="../../press.html">Press</a>
+              </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+
+  </body>
+</html>
