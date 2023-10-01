@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Francisco Valverde - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artist summary card  --->
+
+    <div class="content-wrapper">
+        <div class="header">
+          <h1>
+            Francisco <br>
+            Valverde
+          </h1>
+        </div>
+        <div class="numbers">
+          <br>
+          <p>1972</p>
+          <div class="hr"></div>
+          <br>
+        </div>
+        <div class="hero-img">
+          <div class="img-revealer"></div>
+          <img src="image/hero/011_francisco-valverde.jpeg" id="img-revealer" alt="" />
+        </div>
+        <div class="hero-img-info">
+          <p>
+            Francisco Valverde was born in 1972 and raised in Cuernavaca, Mexico, of a Cuban father and Mexican mother.<br>
+            Early in his career, he was known for his work in contemporary figurative painting.<br>
+            While teaching traditional techniques and large-format painting at Morelense Center for the Arts (Centro Morelense de las Artes), Francisco became inspired by his students’ search for their individual expression, which lead to his own quest for a new artistic practice.
+          </p>
+        </div>
+        <div class="cta">
+          <a href="../edward-lentsch/edward-lentsch.html">
+            <div class="cta-btn">
+              <h4><ion-icon name="arrow-back-sharp"></ion-icon> previous artist </h4>
+            </div>
+          </a>
+          <div class="cta-btn">
+            <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+            <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+            <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+            <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+          </div>   
+          <a href="../geoffrey-gersten/geoffrey-gersten.html">
+            <div class="cta-btn">
+              <h4>next artist <ion-icon name="arrow-forward-sharp"></ion-icon></h4>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <!--- artist accordion  --->
+<div class="tabs-box">
+    <div class="acord">
+        <label for="tb-one" class="bg-one">
+          Artist Photo
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-one">
+        <div class="content" >
+          <div class="artistpfp">
+            <img src="image/profile/011_francisco-valverde.JPG" id="francisco_011">
+          </div>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-two"  class="bg-two">
+          Artist CV
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-two">
+        <div class="content">
+          <p>
+            <strong>EDUCATION</strong><br><br>
+            
+            Bachelor in Fine Arts, Art Center College of Design, Pasadena, CA. USA<br><br>
+
+            <strong>AWARDS & GRANTS</strong><br><br>
+            
+            2016 First Prize, Beinal Rufino Tamayo<br>
+            2015 Bienal de Artes Visuales de Yucatán<br>
+            2014 Bienal de Artes Visuales de Yucatán<br>
+            2009 FOECA, Instituto de Cultura de Morelos, Consejo Nacional para la Cultura y las Artes<br>
+            2004 Bienal Rufino Tamayo<br>
+            2004 Jóvenes Creadores, Instituto de Cultura de Morelos, FONCA<br><br>
+
+            <strong>EXHIBITIONS</strong><br><br>
+
+            <strong>2017</strong><br>
+            Art Market & Design Hampton, Evan Lurie Gallery, Bridgehampton, NY<br>
+            Simulacrum, JLS Gallery, Mexico City, Mexico<br>
+            Drip n Dry, Slate Contemporary, San Francisco, CA<br>
+            Art Wynwood, Oliver Cole Gallery. Miami, FL<br><br>
+
+            <strong>2016</strong><br>
+            Art Palm Beach, Evan Lurie Gallery. Palm Beach, FL<br>
+            Scope Miami, Evan Lurie Gallery. Miami, FL<br>
+            Red Dot, Evan Lurie Gallery. Miami, FL<br>
+            Art Hamptons, Evan Lurie Gallery. Bridgehampton, NY<br>
+            Market Art+Design, Bridgehampton Museum. Bridgehampton, NY<br>
+            Affordable Art Fair, Evan Lurie Gallery. New York, NY<br>
+            Art Boca, Evan Lurie Gallery. Boca Raton, FL<br><br>
+
+            <strong>2015</strong><br>
+            Francisco Valverde, JLS Gallery, Valle de Bravo, Estado de Mexico, Mexico<br>
+            Gravita, El Laberinto de los Sentidos Art Gallery, Jardínes de Mexico, Jojutla, Morelos, Mexico<br>
+            Alter Pop Explosion, NM Art Gallery, Cuernavaca, Morelos, Mexico<br>
+            SMART Art Festival, San Miguel de Allende, Guanajuato, Mexico<br><br>
+
+            <strong>2014</strong><br>
+            Entramados, Alfredo Ginochio Art Gallery, Mexico City, Mexico<br><br>
+
+            <strong>2013</strong><br>
+            Arte Sana, Museo Nacional de Antropología e Historia, Mexico City, Mexico<br>
+            Art Wynwood, Alfredo Ginocchio Art Gallery. Miami, FL<br><br>
+
+            <strong>2012</strong><br>
+            Art Wynwood, Alfredo Ginocchio Art Gallery. Miami, FL<br><br>
+
+            <strong>2009</strong><br>
+            No Toxico, Fundidora Park. Monterrey, Nuevo Leon, Mexico<br><br>
+
+            <strong>2007</strong><br>
+            Lovely Creatures, Mexican Consulate, San Francisco, CA<br><br>
+
+            <strong>2005</strong><br>
+            Icono-Hombres, Centro Morelense de las Artes, Cuernavaca, Morelos, Mexico<br>
+            Museo de Arte Contemporaneo de Oaxaca, Oaxaca, Mexico<br>
+            Museo de Arte de Queretaro, Queretaro, Mexico<br>
+          </p>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-three"  class="bg-three">
+          Artist Profile
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-three">
+        <div class="content">
+          <p>
+            Francisco began working on large canvases, using bottle dispensers filled with colorful synthetic materials instead of traditional paints and brushes. His goal was to re-create the essential element within drawing and painting: the line. The resulting lines were imperfect and denied the traditional representative characteristic of a line, or what Francisco describes as“righteousness.” These paintings formed a rhythmic structure in which a certain order wasrealized. This was the start of his new direction.<br><br>
+
+            Francisco’s current work utilizes plastic materials to build complexity. These paintings utilizepowerful lines with direction, suggestive backgrounds, mysterious forms, and varying depths tocreate a story. Obsession and freedom are two words that Francisco uses to describe hiscurrent work: the obsession of daily routine, and the freedom he experimented with as a childdrawing and scribbling on a piece of paper for the very first time. He recognizes that perhaps acertain commitment to tradition survives in the smooth finishes of his paintings. These paintings also remind the artist of the colorful, shiny candies he used to eat as a child at local fairs.<br><br>
+
+            Passionate about public and urban art, Francisco recently participated in “The Street Is Yours”project in the State of Mexico. And, in 2015, the artist produced an urban intervention at the“SMART Art festival 2015” in San Miguel de Allende, Mexico.<br><br>
+
+            Francisco Valverde obtained a BA in Fine Arts at the University Art Center College of Design inPasadena, CA. He has participated in numerous domestic and international solo and groupexhibitions, and has been included in the 2004 Rufino Tamayo Biennial where he recently wasawarded with the first prize in the 2016 edition and now part of the permanent collection of theMuseum of Contemporary Art Rufino Tamayo in Mexico City.<br><br>
+
+            Francisco currently lives in Mexico and has strong ties to the San Francisco Bay Area.<br>
+          </p>
+        </div>
+    </div>
+
+  </div>
+
+    <!--- artwork masonary --->
+
+    <div class="art-container">
+      <a href="francisco-valverde-001.html">
+        <div class="art-box">
+            <img src="image/artwork/001_Makatza.jpeg" alt="Makatza">
+        </div>
+      </a>
+      <a href="francisco-valverde-002.html">
+        <div class="art-box">
+            <img src="image/artwork/002_Anaia.jpeg" alt="Anaia">
+        </div>
+      </a>
+      <a href="francisco-valverde-003.html">
+        <div class="art-box">
+            <img src="image/artwork/003_Firgun.jpeg" alt="Firgun">
+        </div>
+      </a>
+      <a href="francisco-valverde-004.html">
+        <div class="art-box">
+            <img src="image/artwork/004_Kalcomange.jpeg" alt="Kalcomange">
+        </div>
+      </a>
+      <a href="francisco-valverde-005.html">
+        <div class="art-box">
+          <img src="image/artwork/005_Voragine-pigments-and-epoxy-resin-on-panel-39-x-78-inches-2016.jpeg" alt="Voragine">
+        </div>
+      </a>
+      <a href="francisco-valverde-006.html">
+        <div class="art-box">
+            <img src="image/artwork/006_Verdigasm-70x70-2017.jpeg" alt="Verdigrasm">
+        </div>
+      </a>
+      <a href="francisco-valverde-007.html">
+        <div class="art-box">
+            <img src="image/artwork/007_Pomposity-67x67-2017.jpeg" alt="Pomposity">
+        </div>
+      </a>
+      <a href="francisco-valverde-008.html">
+        <div class="art-box">
+            <img src="image/artwork/008_Nargintosh-40x84-2017.jpeg" alt="Nargintosh">
+        </div>
+      </a>
+      <a href="francisco-valverde-009.html">
+        <div class="art-box">
+            <img src="image/artwork/009_Kromato-pigments-and-epoxy-resin-on-panel-48-x-48-inches-2016.jpeg" alt="Kromato">
+        </div>
+      </a>
+      <a href="francisco-valverde-010.html">
+        <div class="art-box">
+            <img src="image/artwork/010_Humina-pigmented-resin-on-panel-60-x-60-inches-2016.jpeg" alt="Humina">
+        </div>
+      </a>
+      <a href="francisco-valverde-011.html">
+        <div class="art-box">
+            <img src="image/artwork/011_REDBKUEPINORAN-60x60in-Pigmented-resin-on-Panel-2018.png" alt="REDBKUEPINORAN">
+        </div>
+      </a>
+      <a href="francisco-valverde-012.html">
+        <div class="art-box">
+            <img src="image/artwork/012_ENSIFERUM-75x75in-Pigmented-Resin-on-Panel-2018.png" alt="ENSIFERUM">
+        </div>
+      </a>
+      <a href="francisco-valverde-013.html">
+        <div class="art-box">
+            <img src="image/artwork/013_Leonardo-48x96in-Pigmented-Resin-on-Panel-2018.png" alt="Leonardo">
+        </div>
+      </a>
+      <a href="francisco-valverde-014.html">
+        <div class="art-box">
+            <img src="image/artwork/014_Queuesink-24x24in-Pigmented-Resin-on-Panel-2018.png" alt="Queuesink">
+        </div>
+      </a>
+      <a href="francisco-valverde-015.html">
+        <div class="art-box">
+            <img src="image/artwork/015_Vishwa-20x48in-Pigmented-Resin-on-Panel-2018.png" alt="Vishwa">
+        </div>
+      </a>
+      <a href="francisco-valverde-016.html">
+        <div class="art-box">
+            <img src="image/artwork/016_ARCOIRILUS-60x60in-Pigmented-resin-on-Panel-2018.png" alt="ARCOIRILUS">
+        </div>
+      </a>
+      <a href="francisco-valverde-017.html">
+        <div class="art-box">
+            <img src="image/artwork/017_Sandro-40x84-Pigmented-resin-on-Panel-2018.png" alt="Sandro">
+        </div>
+      </a>
+      <a href="francisco-valverde-018.html">
+        <div class="art-box">
+            <img src="image/artwork/018_Mangada.jpeg" alt="Mangada">
+        </div>
+      </a>
+      <a href="francisco-valverde-019.html">
+        <div class="art-box">
+            <img src="image/artwork/019_Saorsa.jpeg" alt="Saorsa">
+        </div>
+      </a>
+      <a href="francisco-valverde-020.html">
+        <div class="art-box">
+            <img src="image/artwork/020_Ortanique.jpeg" alt="Ortanique">
+        </div>
+      </a>
+      <a href="francisco-valverde-021.html">
+        <div class="art-box">
+            <img src="image/artwork/021_Gobemouche.jpeg" alt="Gobemouche">
+        </div>
+      </a>
+      <a href="francisco-valverde-022.html">
+        <div class="art-box">
+            <img src="image/artwork/022_Eutany 40 in x 84 in.jpeg" alt="Eutany">
+        </div>
+      </a>
+      <a href="francisco-valverde-023.html">
+        <div class="art-box">
+            <img src="image/artwork/023_Periapt 36 in x 55 in SOLD.jpeg" alt="Periapt">
+        </div>
+      </a>
+      <a href="francisco-valverde-024.html">
+        <div class="art-box">
+            <img src="image/artwork/024_Sarang 36 in x 36 in.jpeg" alt="Sarang">
+        </div>
+      </a>
+      <a href="francisco-valverde-025.html">
+        <div class="art-box">
+            <img src="image/artwork/025_Yauik 48 in x 96 in.jpeg" alt="Yauik">
+        </div>
+      </a>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                  <a href="../../vr.html">Virtual Gallery</a>
+                  <a href="../../sculpture.html">Sculpture</a>
+                  <a href="../../press.html">Press</a>
+              </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+
+  </body>
+</html>
