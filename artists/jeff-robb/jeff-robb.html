@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeff Robb - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artist summary card  --->
+
+    <div class="content-wrapper">
+        <div class="header">
+          <h1>
+            Jeff <br>
+            Robb
+          </h1>
+        </div>
+        <div class="numbers">
+          <br>
+          <p>1965</p>
+          <div class="hr"></div>
+          <br>
+        </div>
+        <div class="hero-img">
+          <div class="img-revealer"></div>
+          <img src="image/hero/018_jeff-robb.jpg" id="img-revealer" alt="" />
+        </div>
+        <div class="hero-img-info">
+          <p>
+            Since graduating with Distinction from the Royal College of Art in 1992 with a Masters degree in Fine Art Holography, Robb has continually made art, ceaselessly experimenting with three-dimensional imaging.<br>
+
+            Shortly after graduating, he was invited to submit a landscape work in to the V&A museum’s permanent collection, the first ever hologram artwork to be accessioned by the museum.<br>
+
+            Robb’s work now features in museums and private collections around the world.
+          </p>
+        </div>
+        <div class="cta">
+          <a href="../jason-myers/jason-myers.html">
+            <div class="cta-btn">
+              <h4><ion-icon name="arrow-back-sharp"></ion-icon> previous artist </h4>
+            </div>
+          </a>
+          <div class="cta-btn">
+            <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+            <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+            <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+            <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+          </div>
+          <a href="../jeffro-uitto/jeffro-uitto.html">
+            <div class="cta-btn">
+              <h4>next artist <ion-icon name="arrow-forward-sharp"></ion-icon></h4>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <!--- artist accordion  --->
+<div class="tabs-box">
+    <div class="acord">
+        <label for="tb-one" class="bg-one">
+          Artist Photo
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-one">
+        <div class="content" >
+          <div class="artistpfp">
+            <img src="image/profile/018_jeff-robb.jpg" id="jeff_018">
+          </div>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-two"  class="bg-two">
+          Artist CV
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-two">
+        <div class="content">
+          <p>
+            <strong>EDUCATION</strong><br><br>
+
+            Royal College of Art London UK<br>
+            Master of Fine Art Holography with distinction 1991 – 92<br>
+            Darwin Scholar at the Royal College of Art with extra year of study 1992 – 93<br>
+            BSc Leeds University 1984 – 87<br><br>
+            
+            <strong>COLLECTIONS</strong><br><br>
+            
+            The Museum of Fine Arts, Houston<br>
+            Her Royal Highness Princess Firyal of Jordan<br>
+            Victoria and Albert Museum, London, UK<br>
+            Getty Museum, Los Angeles<br><br>
+            
+            <strong>SELECTED SHOWS/FAIRS</strong><br><br>
+
+            2022 - Photo London<br>
+            2022 - LA Art Show<br>
+            2021 - CONTEXT Miami<br>
+            2021 - Scope Miami<br>
+            2021 - Art Hamptons<br>
+            2021 - Palm Beach Modern + Contemporary - Evan Lurie Gallery<br>
+            2021 - Art Wynwood - Evan Lurie Gallery, K+Y Gallery<br>
+            2020 - Art Palm Beach - Onessimo Fine Art<br>
+            2020 - CONTEXT Miami - (Online) K+Y Gallery<br>
+            2019 - Scope Miami with Envie’d Art<br>
+            2019 - CONTEXT Art Miami with Evan Lurie Gallery, Art Élysées, Paris - with Envie’d Art<br>
+            2017 - London Art Fair with Shine/Pontone<br>
+            2016 - BIËNNALE VEGHEL KOEKBOUW Van Loon en Simons Context Miami with Shine/Pontone<br> 
+            2015 - Art Taipei<br>
+            2015 - with Shine Artists Art Silicon Valley/San Francisco, San Mateo Shine Artists Art Southhampton, New York USA Shine Artists 345 Broome Street, New York USA Shine Artists Art Busan South Korea Shine Artists Art 15 London UK Shine Artists<br> 
+            2014 - Art Taipei<br>
+            2014 - with Shine Artists; Art Silicone Valley; 2014 with Shine Artists; KIAF 2014 with Shine Artists<br><br>
+
+            <strong>SOLO SHOWS</strong><br><br>
+
+            Installation Three Acts, Van Loon en Simons Holland<br>
+            ‘Capturing the Invisible’ McLaren Beverly Hills with Mauger Modern Art<br>
+            2013 Solo Show London Newcastle Project Space-Three Acts of Will installation<br>
+            2012 Solo show Barcelona Mauger Modern Art<br>
+            Solo Show India Art Fair New Delhi<br>
+            Realism Amsterdam<br>
+            2011 KIAF Korea Mauger Modern Art<br><br>
+            
+            <strong>GROUP SHOWS</strong><br><br>
+
+            Krause Gallery, Group show, New York<br>
+            Art In Asia with Jiang Art Gallery<br>
+            Solo Show Jiang Art Gallery, Hong Kong<br>
+            2010 Wood for Trees, Bo Lee Gallery – group show inc. P.Rego and Gavin Turk Bath<br>
+            Royal Academy Summer Exhibition 2010, London<br>
+            Royal Academy Summer Exhibition 2009, London<br>
+            Museum Street Gallery First solo show 1987<br><br>
+
+            <strong>COLLABORATIONS/COMMISSIONS</strong><br><br>
+            Unnatural Causes mural, private commission 2014<br>
+            Chris Levine portrait of Kate Moss<br>
+            Chris Levine portrait of Frankel the Great<br>
+            Chris Levine portrait of Grace Jones<br>
+            Chris Levine portrait of Queen Elizabeth II<br><br>
+
+            <strong>TV DIRECTOR</strong><br><br>
+
+            Matt Hatter Chronicles – Multivision Director for 12 Episodes<br><br>
+            
+            <strong>MEDIA COVERAGE</strong><br><br>
+            
+            ‘Due At an airport near you 3D takes off as fine art’, Evening Standard‘Jeff Robb is hot’, Timeout 14.3.12<br>
+            ‘Holography’, Times Educational Supplement 4.7.00<br>
+            ‘The Hidden Art’, The Creative Holography Index,1995<br>
+            The International Catalogue for Holography, Vol. 1 No. 1, Monand Press, Germany<br>
+            ‘Digital Da Vincis’, London Evening Standard, UK 1993<br>
+          </p>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-three"  class="bg-three">
+          Artist Profile
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-three">
+        <div class="content">
+          Robb is currently best known for his lenticular photographic work focusing on the female nude and abstract forms in space, which he makes in series. The artist has recently begun to produce bronze sculptures working with the female nude, a subject familiar to him, using cutting edge modelling technology combined with historic casting techniques. This radical development is typical of Robb’s open experimental approach in making art, using any combination of tools and technology available to him.<br><br>
+
+          In parallel to developing lines of enquiry around the nude and abstraction in his lenticular work, Robb is beginning to work on projects which investigate how we experience sound, and large-scale kinetic installations for public spaces, museums and galleries. For many, these new directions will at first seem uncharacteristic. Those who are familiar with Robb’s approach and what drives him as an artist will understand the significance of each project for him in testing possibilities with the lenticular medium, and creating new immersive experiences using three-dimensional imaging and cutting edge technology. This kind of experimental lenticular installation work is completely unchartered territory for artists.<br><br>
+
+          Jeff Robb works in a variety of media including lenticular photography, painting, bronze and silver cast sculpture, reflection and transmission holography, photography, film, laser light and sound installations. The galleries here are representations of lenticular photography that use a vertical lens array to present a stereo pair of images to the eyes. They are 3D pictures without glasses. The screen images cannot convey the visual impact of the medium, so animations are used to simulate their 3D nature. While only eight images have been chosen for each gallery, there are many more images available in each series. Please visit or contact the gallery to see the full body of work. Jeff Robb is shown in galleries and art fairs around the world.<br>
+        </div>
+    </div>
+
+
+    <div class="acord">
+        <label for="tb-four"  class="bg-four">
+          Artist Video
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-four">
+        <div class="content">
+          <div class="vid-container">
+
+            <div class="main-video-container">
+               <video src="https://evanluriegallery.s3.us-east-2.amazonaws.com/jeff-robb/video/_JeffRobb_Unnatural_Causes.mp4" loop controls class="main-video"></video>
+               <h3 class="main-vid-title">Jeff Robb Unnatural Causes</h3>
+            </div>
+         
+            <div class="video-list-container">
+         
+               <div class="list active">
+                  <video src="https://evanluriegallery.s3.us-east-2.amazonaws.com/jeff-robb/video/_JeffRobb_Unnatural_Causes.mp4" class="list-video"></video>
+                  <h3 class="list-title">Jeff Robb Unnatural Causes</h3>
+               </div>
+         
+               <div class="list">
+                  <video src="https://evanluriegallery.s3.us-east-2.amazonaws.com/jeff-robb/video/_MOVIE_Evan.mp4" class="list-video"></video>
+                  <h3 class="list-title">Jeff Robb Behind the Scenes</h3>
+               </div>
+         
+            </div>
+         
+         </div>
+        </div>
+    </div>
+
+  </div>
+
+    <!--- artwork masonary --->
+
+    <div class="art-container">
+      <a href="jeff-robb-001.html">
+        <div class="art-box">
+            <img src="image/artwork/001_Unnatural Causes.jpeg" alt="Unnatural Causes">
+        </div>
+      </a>
+      <a href="jeff-robb-002.html">
+        <div class="art-box">
+            <img src="image/artwork/002_Mirror.jpeg" alt="Mirror">
+        </div>
+      </a>
+      <a href="jeff-robb-003.html">
+        <div class="art-box">
+            <img src="image/artwork/003_Ascension 1.jpeg" alt="Ascension 1">
+        </div>
+      </a>
+      <a href="jeff-robb-004.html">
+        <div class="art-box">
+            <img src="image/artwork/004_Nightfall 5.jpeg" alt="Nightfall 5">
+        </div>
+      </a>
+      <a href="jeff-robb-005.html">
+        <div class="art-box">
+            <img src="image/artwork/005_Unnatural Causes 15.jpeg" alt="Unnatural Causes 15">
+        </div>
+      </a>
+      <a href="jeff-robb-006.html">
+        <div class="art-box">
+            <img src="image/artwork/006_Flow Series 1.jpeg" alt="Flow Series 1">
+        </div>
+      </a>
+      <a href="jeff-robb-007.html">
+        <div class="art-box">
+            <img src="image/artwork/007_Unnatural Causes 27.jpeg" alt="Unnatural Causes 27">
+        </div>
+      </a>
+      <a href="jeff-robb-008.html">
+        <div class="art-box">
+            <img src="image/artwork/008_Aperture 3.jpeg" alt="Aperture 3">
+        </div>
+      </a>
+      <a href="jeff-robb-009.html">
+        <div class="art-box">
+            <img src="image/artwork/009_Aperture 12.jpeg" alt="Aperture 12">
+        </div>
+      </a>
+      <a href="jeff-robb-010.html">
+        <div class="art-box">
+            <img src="image/artwork/010_Free Fall 5.jpeg" alt="Free Fall #5">
+        </div>
+      </a>
+      <a href="jeff-robb-011.html">
+        <div class="art-box">
+            <img src="image/artwork/011_Unnatural Causes 18.jpeg" alt="Unnatural Causes 18">
+        </div>
+      </a>
+      <a href="jeff-robb-012.html">
+        <div class="art-box">
+            <img src="image/artwork/012_Unnatural Causes 35.jpeg" alt="Unnatural Causes 35">
+        </div>
+      </a>
+      <a href="jeff-robb-013.html">
+        <div class="art-box">
+            <img src="image/artwork/013_Drawing Down the Moon 2.jpeg" alt="Drawing Down the Moon 2">
+        </div>
+      </a>
+      <a href="jeff-robb-014.html">
+        <div class="art-box">
+            <img src="image/artwork/014_Drawing Down the Moon 1.jpeg" alt="Drawing Down the Moon 1">
+        </div>
+      </a>
+      <a href="jeff-robb-015.html">
+        <div class="art-box">
+            <img src="image/artwork/015_Mirror 2.jpeg" alt="Mirror 2">
+        </div>
+      </a>
+      <a href="jeff-robb-016.html">
+        <div class="art-box">
+            <img src="image/artwork/016_Mirror 1.jpeg" alt="Mirror 1">
+        </div>
+      </a>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                  <a href="../../vr.html">Virtual Gallery</a>
+                  <a href="../../sculpture.html">Sculpture</a>
+                  <a href="../../press.html">Press</a>
+              </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+
+  </body>
+</html>
