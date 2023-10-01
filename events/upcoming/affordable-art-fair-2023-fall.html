@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Affordable Art Fair 2023 - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- icons link --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- event detail  --->
+
+    <div class="content-wrapper">
+      <div class="eventDetail">
+      <div class="copy">
+        <a href="https://affordableartfair.com/fairs/new-york-fall/">
+          <div class="header">Affordable Art Fair</div>
+        </a>
+        <a href="https://www.google.com/maps/dir//Metropolitan+Pavilion%2C+125+West+18th+Street%2C+New+York%2C+NY+10011%2C+USA">
+          <div class="sub-header">
+            Metropolitan Pavilion, 125 West 18th Street<br>
+            New York, NY 10011, USA
+          </div>
+        </a>
+        <div class="img-wrapper">
+          <img src="../../image/image_event/image_upcoming-event/003_Affordable_Art_Fair_Logo.jpeg" alt="" />
+        </div>
+        <div class="info">
+          <p class="customFont">
+            Join us for the Fall edition of the Affordable Art Fair at the Metropolitan Pavilion in Chelsea from September 20 – 24, 2023.<br><br>
+
+            When you visit Affordable Art Fair NYC you’ll find an inspiring and friendly atmosphere where you can browse thousands of original contemporary paintings, sculptures, photographs and prints showcased by a myriad of local, national and international exhibitors. With contemporary artwork by over 400 established artists and rising stars, and price points ranging from $100 to $12,000 – there is something to suit every taste and wallet whether you are a first-time art buyer or a seasoned collector.<br><br>
+
+            With two fair editions held annually, the Affordable Art Fair NYC is the ideal family day out or creative evening with friends.<br>
+          </p>
+        </div>
+        <div class="eventFooter">
+          <div class="footer-item"><strong>Wednesday September 20</strong><br>Private View<br><em>6pm - 9pm</em></div>
+          <div class="footer-item"><strong>Thursday September 21</strong><br>General Admission<br><em>12pm - 6pm</em><br><br>Free Admission with Donation of Art Supply<br><em>6pm - 8pm</em></div>
+          <div class="footer-item"><strong>Friday September 22</strong><br>General Admission<br><em>12pm - 6pm</em><br><br>Art After Dark<br><em>6pm - 9pm</em></div>
+          <div class="footer-item"><strong>Saturday September 23</strong><br>General Admission<br><em>10am - 8pm</em></div>
+          <div class="footer-item"><strong>Sunday September 24</strong><br>Stroller Hours<br><em>10am - 2pm</em><br><br>General Admission<br><em>12pm - 5pm</em></div>
+        </div>
+      </div>
+      </div>
+    </div>
+
+    <!--- contact us --->
+
+    <div id="contactContainer">
+      <h3>&bull; Inquiry &bull;</h3>
+      <form action="https://formsubmit.co/info@evanluriegallery.com" method="post" id="contact_form">
+        <div class="name">
+          <label for="name"></label>
+          <input type="text" placeholder="My name is" name="name" id="name_input" required>
+        </div>
+        <div class="email">
+          <label for="email"></label>
+          <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+        </div>
+        <div class="telephone">
+          <label for="name"></label>
+          <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+        </div>
+        <div class="subject">
+          <label for="subject"></label>
+          <select placeholder="Subject line" name="subject" id="subject_input" required>
+            <option disabled hidden selected>Newsletter Options</option>
+            <option>I would like to sign up for newsletter</option>
+            <option>I would like not to sign up for newsletter</option>
+          </select>
+        </div>
+        <div class="message">
+          <label for="message"></label>
+          <textarea name="message" placeholder="I'm interested in..." id="message_input" cols="30" rows="5" required></textarea>
+        </div>
+          <div class="submit">
+            <input type="submit" value="Send Message" id="form_button" />
+          </div>
+      </form>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                  <a href="../../vr.html">Virtual Gallery</a>
+                  <a href="../../sculpture.html">Sculpture</a>
+                  <a href="../../press.html">Press</a>
+              </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+  </body>
+</html>

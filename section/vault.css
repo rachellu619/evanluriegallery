@@ -1,0 +1,106 @@
+/*--- press ---*/
+
+.press {
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+  }
+
+  .press_01 {
+    background: #9a8f92cc;
+  }
+  .press:nth-child(1) {
+    background: #edbbb4;
+  }
+  .press:nth-child(4) {
+    background: #edd2e0;
+  }
+  .press:nth-child(3) {
+    background: #b69e87;
+  }
+  
+  .img-wrap {
+    height: 100%;
+    width: auto;
+    max-width: 75vw;
+    object-fit: contain;
+  }
+
+  
+  .fadeup {
+    font-weight: 800;
+    text-transform: uppercase;
+    -webkit-text-stroke: 2px var(--border-color);
+    text-stroke: 2px var(--border-color);
+    color: transparent;
+    font-size: clamp(3rem, 10vw, 6rem);
+    position: absolute;
+    top: 25%;
+    left: 5%;
+    width: 90%;
+    height: 50%;
+    z-index: 45;
+    display: grid;
+    place-items: center;
+  }
+  
+  body:not(.no-js) .image-wrap {
+    transition: 1s ease-out;
+    transition-delay: 0.2s;
+    position: relative;
+    width: auto;
+    height: 80vh;
+    overflow: hidden;
+    clip-path: polygon(0 100%, 100% 100%, 100% 100%, 0 100%);
+    visibility: hidden;
+  }
+  
+  body:not(.no-js) .image-wrap img {
+    transform: scale(1.3);
+    transition: 2s ease-out;
+  }
+  
+  body:not(.no-js) .animating .image-wrap {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    visibility: visible;
+    transform: skewY(0);
+  }
+  
+  body:not(.no-js) .animating img {
+    transform: scale(1);
+    transition: 4s ease-out;
+  }
+  
+  body:not(.no-js) .fadeup {
+    opacity: 0;
+    transition: 0.4s ease-out;
+    transform: translateY(40px);
+  }
+  
+  body:not(.no-js) .fading-up {
+    opacity: 1;
+    transition: 1s ease-out;
+    transform: translateY(0px);
+    transition-delay: 0.7s;
+  }
+
+@media screen and (max-width: 1023px) {
+    .img-wrap {
+        width: 100%;
+        object-fit: contain;
+        height: auto;
+      }
+
+      .fadeup {
+        font-size: 50px;
+      }
+}
+
+@media screen and (max-width: 414px) {
+    .fadeup {
+        font-size: 30px;
+      }
+
+}

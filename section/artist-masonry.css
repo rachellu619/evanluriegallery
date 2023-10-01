@@ -1,0 +1,41 @@
+/*--- artwork masonary ---*/
+
+.art-container {
+  width: 74%;
+  margin: 30px auto 50px;
+  columns: 4;
+  column-gap: 20px;
+}
+
+.art-container .art-box {
+  width: 100%;
+  margin-bottom: 10px;
+  break-inside: avoid;
+  border-radius: 10px;
+}
+
+.art-container .art-box img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/*--- responsive ---*/
+
+@media (max-width: 1200px) {
+  .art-container {
+    columns: 3;
+    width: calc(100% - 40px);
+  }
+}
+
+@media (max-width: 768px) {
+  .art-container{
+    columns: 2;
+  }
+}
+
+@media (max-width: 480px) {
+  .art-container {
+    columns: 1;
+  }
+}

@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Artists - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-overlay">
+        <div class="menu-items">
+            <div class="menu-items-container">
+                <span>
+                    <a href="event.html">
+                        <div class="menu-item">
+                            <div class="menu-item-list">E</div>
+                            <div class="menu-item-name">EV<strong>E</strong>NT</div>
+                        </div>
+                    </a>
+                </span>
+                <div class="line"></div>
+                <span>
+                    <a href="vault.html">
+                        <div class="menu-item">
+                            <div class="menu-item-list">V</div>
+                            <div class="menu-item-name"><strong>V</strong>AULT</div>
+                        </div>
+                    </a>
+                </span>
+                <div class="line"></div>
+                <span>
+                    <a href="artist-summary.html">
+                        <div class="menu-item">
+                            <div class="menu-item-list">A</div>
+                            <div class="menu-item-name"><strong>A</strong>RTIST</div>
+                        </div>
+                    </a>
+                </span>
+                <div class="line"></div>
+                <span>
+                    <a href="about.html">
+                        <div class="menu-item">
+                          <div class="menu-item-list">N</div>
+                          <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+                        </div>
+                      </a>
+                </span>
+                <div class="line"></div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artist grid  --->
+
+    <div class="artist-container">
+      <div class="images">
+
+        <a href="artists/alberto-cavalieri/alberto-cavalieri.html">
+            <div class="image-box" data-name="alberto cavalieri">
+                <img src="image/image_grid/001_alberto-cavalieri.jpeg" alt="">
+                <h6>Alberto Cavalieri</h6>
+            </div>
+        </a>
+
+        <a href="artists/alexi-torres/alexi-torres.html">
+            <div class="image-box" data-name="alexi torres">
+                <img src="image/image_grid/002_alexi-torres.jpeg" alt="">
+                <h6>Alexi Torres</h6>
+            </div>
+        </a>
+
+        <a href="artists/angela-gebhardt/angela-gebhardt.html">
+            <div class="image-box" data-name="angela gebhardt">
+                <img src="image/image_grid/003_angela-gebhardt.jpeg" alt="">
+                <h6>Angela Gebhardt</h6>
+            </div>
+        </a>
+
+        <a href="artists/brad-howe/brad-howe.html">
+            <div class="image-box" data-name="Brad Howe">
+                <img src="image/image_grid/005_brad-howe.jpeg" alt="">
+                <h6>Brad Howe</h6>
+            </div>
+        </a>
+
+        <a href="artists/breakfast/breakfast.html">
+            <div class="image-box" data-name="Breakfast">
+                <img src="image/image_grid/041_breakfast.jpg" alt="">
+                <h6>BREAKFAST</h6>
+            </div>
+        </a>
+
+        <a href="artists/bruce-reinfeld/bruce-reinfeld.html">
+            <div class="image-box" data-name="bruce reinfeld">
+                <img src="image/image_grid/039_bruce-reinfeld.jpeg" alt="">
+                <h6>Bruce reinfeld</h6>
+            </div>
+        </a>
+
+        <a href="artists/carlo-borer/carlo-borer.html">
+            <div class="image-box" data-name="carlo borer">
+                <img src="image/image_grid/006_carlo-borer.jpg" alt="">
+                <h6>Carlo Borer</h6>
+            </div>
+        </a>
+
+        <a href="artists/de-la-torre-brothers/de-la-torre-brothers.html">
+            <div class="image-box" data-name="de la torre brothers">
+                <img src="image/image_grid/008_de-la-torre-brothers.jpeg" alt="">
+                <h6>De La Torre Brothers</h6>
+            </div>
+        </a>
+
+        <a href="artists/dennis-wojtkiewicz/dennis-wojtkiewicz.html">
+            <div class="image-box" data-name="dennis wojtkiewicz">
+                <img src="image/image_grid/009_dennis-wotjkiewicz.jpeg" alt="">
+                <h6>Dennis Wojtkiewicz</h6>
+            </div>
+        </a>
+
+        <a href="artists/edward-lentsch/edward-lentsch.html">
+            <div class="image-box" data-name="edward lentsch">
+                <img src="image/image_grid/010_edward-lentsch.jpeg" alt="">
+                <h6>Edward Lentsch</h6>
+            </div>
+        </a>
+
+        <a href="artists/francisco-valverde/francisco-valverde.html">
+            <div class="image-box" data-name="francisco valverde">
+                <img src="image/image_grid/011_francisco-valverde.jpeg" alt="">
+                <h6>Francisco Valverde</h6>
+            </div>
+        </a>
+        
+        <a href="artists/geoffrey-gersten/geoffrey-gersten.html">
+            <div class="image-box" data-name="geoffrey gersten">
+                <img src="image/image_grid/012_geoffrey-gersten.jpeg" alt="">
+                <h6>Geoffrey Gersten</h6>
+            </div>
+        </a>
+
+        <a href="artists/gil-bruvel/gil-bruvel.html">
+            <div class="image-box" data-name="gil bruvel">
+                <img src="image/image_grid/013_gil-bruvel.jpeg" alt="">
+                <h6>Gil Bruvel</h6>
+            </div>
+        </a>
+
+        <a href="artists/hamilton-aguiar/hamilton-aguiar.html">
+            <div class="image-box" data-name="hamilton aguiar">
+                <img src="image/image_grid/014_hamilton-aguiar.jpeg" alt="">
+                <h6>Hamilton Aguiar</h6>
+            </div>
+        </a>
+
+        <a href="artists/james-tyler/james-tyler.html">
+            <div class="image-box" data-name="james tyler">
+                <img src="image/image_grid/015_james-tyler.jpeg" alt="">
+                <h6>James Tyler</h6>
+            </div>
+        </a>
+
+        <a href="artists/jarrad-tacon-heaslip/jarrad-tacon-heaslip.html">
+            <div class="image-box" data-name="jarrad tacon heaslip">
+                <img src="image/image_grid/016_jarrad-tacon-heaslip.jpeg" alt="">
+                <h6>Jarrad Tacon-Heaslip</h6>
+            </div>
+        </a>
+
+        <a href="artists/jason-myers/jason-myers.html">
+            <div class="image-box" data-name="jason myers">
+                <img src="image/image_grid/042_jason-myers.jpeg" alt="">
+                <h6>Jason Myers</h6>
+            </div>
+        </a>
+
+        <a href="artists/jeff-robb/jeff-robb.html">
+            <div class="image-box" data-name="jeff robb">
+                <img src="image/image_grid/017_jeff-robb.jpeg" alt="">
+                <h6>Jeff Robb</h6>
+            </div>
+        </a>
+
+        <a href="artists/jeffro-uitto/jeffro-uitto.html">
+            <div class="image-box" data-name="jeffro uitto">
+                <img src="image/image_grid/018_jeffro-uitto.jpeg" alt="">
+                <h6>Jeffro Uitto</h6>
+            </div>
+        </a>
+
+        <a href="artists/joe-piccillo/joe-piccillo.html">
+            <div class="image-box" data-name="joe piccillo">
+                <img src="image/image_grid/019_joe-piccillo.jpeg" alt="">
+                <h6>Joe Piccillo</h6>
+            </div>
+        </a>
+
+        <a href="artists/johnathan-schultz/johnathan-schultz.html">
+            <div class="image-box" data-name="johnathan schultz">
+                <img src="image/image_grid/038_johnathan-schultz.jpg" alt="">
+                <h6>Johnathan Schultz</h6>
+            </div>
+        </a>
+
+        <a href="artists/jorge-blanco/jorge-blanco.html">
+            <div class="image-box" data-name="jorge blanco">
+                <img src="image/image_grid/045_jorge-blanco.jpeg" alt="">
+                <h6>Jorge Blanco</h6>
+            </div>
+        </a>
+
+        <a href="artists/jorge-santos/jorge-santos.html">
+            <div class="image-box" data-name="jorge santos">
+                <img src="image/image_grid/020_jorge-santos.jpg" alt="">
+                <h6>Jorge Santos</h6>
+            </div>
+        </a>
+
+        <a href="artists/kevin-barrett/kevin-barrett.html">
+            <div class="image-box" data-name="kevin barrett">
+                <img src="image/image_grid/022_kevin-barrett.jpeg" alt="">
+                <h6>Kevin Barrett</h6>
+            </div>
+        </a>
+
+        <a href="artists/kris-gebhardt/kris-gebhardt.html">
+            <div class="image-box" data-name="kris gebhardt">
+                <img src="image/image_grid/046_kris-gebhardt.jpeg" alt="">
+                <h6>Kris Gebhardt</h6>
+            </div>
+        </a>
+
+        <a href="artists/larissa-morais/larissa-morais.html">
+            <div class="image-box" data-name="larissa morais">
+                <img src="image/image_grid/023_larissa-morais.jpeg" alt="">
+                <h6>Larissa Morais</h6>
+            </div>
+        </a>
+
+        <a href="artists/luis-sanchez/luis-sanchez.html">
+            <div class="image-box" data-name="luis sanchez">
+                <img src="image/image_grid/024_luis-sanchez.jpeg" alt="">
+                <h6>Luis Sanchez</h6>
+            </div>
+        </a>
+
+        <a href="artists/marek-zyga/marek-zyga.html">
+            <div class="image-box" data-name="marek zyga">
+                <img src="image/image_grid/025_marek-zyga.jpeg" alt="">
+                <h6>Marek Zyga</h6>
+            </div>
+        </a>
+
+        <a href="artists/michael-gorman/michael-gorman.html">
+            <div class="image-box" data-name="michael gorman">
+                <img src="image/image_grid/026_michael-gorman.jpg" alt="">
+                <h6>Michael Gorman</h6>
+            </div>
+        </a>
+
+        <a href="artists/michael-kalish/michael-kalish.html">
+            <div class="image-box" data-name="michael kalish">
+                <img src="image/image_grid/043_michael-kalish.jpeg" alt="">
+                <h6>Michael Kalish</h6>
+            </div>
+        </a>
+
+        <a href="artists/miroslav-antic/miroslav-antic.html">
+            <div class="image-box" data-name="miroslav antic">
+                <img src="image/image_grid/040_miroslav-antic.jpg" alt="">
+                <h6>Miroslav Antic</h6>
+            </div>
+        </a>
+
+        <a href="artists/nick-veasey/nick-veasey.html">
+            <div class="image-box" data-name="nick veasey">
+                <img src="image/image_grid/029_nick-veasey.jpeg" alt="">
+                <h6>Nick Veasey</h6>
+            </div>
+        </a>
+
+        <a href="artists/pablo-dona/pablo-dona.html">
+            <div class="image-box" data-name="pablo dona">
+                <img src="image/image_grid/030_pablo-dona.jpeg" alt="">
+                <h6>Pablo Dona</h6>
+            </div>
+        </a>
+
+        <a href="artists/taylor-smith/taylor-smith.html">
+            <div class="image-box" data-name="taylor smith">
+                <img src="image/image_grid/034_taylor-smith.jpg" alt="">
+                <h6>Taylor Smith</h6>
+            </div>
+        </a>
+
+        <a href="artists/theodore-gall/theodore-gall.html">
+            <div class="image-box" data-name="theodore gall">
+                <img src="image/image_grid/035_theodore-gall.jpeg" alt="">
+                <h6>Theodore Gall</h6>
+            </div>
+        </a>
+
+        <a href="artists/todd-gray/todd-gray.html">
+            <div class="image-box" data-name="todd gray">
+                <img src="image/image_grid/044_todd-gray.webp" alt="">
+                <h6>Todd Gray</h6>
+            </div>
+        </a>
+
+        <a href="artists/walter-knabe/walter-knabe.html">
+            <div class="image-box" data-name="walter knabe">
+                <img src="image/image_grid/037_walter-knabe.jpeg" alt="">
+                <h6>Walter Knabe</h6>
+            </div>
+        </a>
+
+      </div>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+        <div class="footer-container">
+            <div class="store-info">
+                <div class="store-info-h">
+                    Location
+                </div>
+                <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                  <p>1917 Harrison St<br>
+                  Hollywood FL 33020</p>
+                </a>
+                <div class="store-info-h">
+                    Phone
+                </div>
+                <a href="tel:+13057731732"><p>305-773-1732</p></a>
+            </div>
+            <div class="quick-links">
+                <div class="quick-links-h">
+                    Quick Links
+                </div>
+                <div class="quick-links-items">
+                  <a href="vr.html">Virtual Gallery</a>
+                  <a href="sculpture.html">Sculpture</a>
+                  <a href="press.html">Press</a>
+              </div>
+            </div>
+            <div class="social-links">
+                <div class="social-links-h">
+                    Contact Us
+                </div>
+                <div class="social-links-items">
+                    <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                    <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                      <a href="mailto:info@evanluriegallery.com">Email</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

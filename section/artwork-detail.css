@@ -1,0 +1,108 @@
+/*--- artwork detail ---*/
+
+.col {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.p-img {
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    width: 80%;
+    height: auto; 
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    object-fit: contain; 
+}
+
+.p-img-wrap {
+    width: 100%;
+    height: auto;
+    overflow: hidden; 
+    margin: 0 auto;
+    text-align: center;
+}
+
+.p-img-wrap img {
+    max-width: 100%; 
+    height: auto; 
+    margin: 0 auto;
+    display: inline-block;
+}
+
+  
+.p-info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary-color);
+}
+
+.p-info a {
+    color: var(--primary-color);
+}
+  
+.img {
+    display: flex;
+    flex-direction: column;
+}
+  
+.img-data {
+    display: flex;
+    justify-content: space-between;
+}
+  
+.img-name p {
+    font-size: 24px;
+}
+
+.img-name a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+  
+.img-info p {
+    font-size: 12px;
+    line-height: 1;
+    text-align: right;
+    text-transform: lowercase;
+}
+
+.img .hr {
+    width: 100%;
+    height: 2px;
+    margin: 1em 0;
+    background: #000;
+  }
+  
+.carousel {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.arrow, .share-social {
+    background: var(--primary-color);
+    color: var(--third-color);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+.p-info p:first-child {
+    font-weight: bold;
+    font-size: 16px;
+  }
+
+.availability {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+  }

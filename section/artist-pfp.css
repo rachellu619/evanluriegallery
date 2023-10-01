@@ -1,0 +1,217 @@
+/*--- artist detail ---*/
+
+.artistpfp {
+    margin: 1px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+}
+
+.artistprp img{
+    height: auto;
+    max-width: 800px;
+}
+
+#alberto_001 {
+    max-width: 800px;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+
+#alexi_002 {
+    max-width: 800px;
+    border-radius: 9% 91% 36% 64% / 66% 46% 54% 34% ;
+}
+
+#angela_003{
+    max-width: 800px;
+    border-radius: 52% 48% 70% 30% / 67% 66% 34% 33% ;
+}
+
+#brad_004{
+    max-width: 800px;
+    border-radius: 71% 29% 82% 18% / 40% 66% 34% 60% ;
+}
+
+#breakfast_005{
+    max-width: 800px;
+    border-radius: 40% 60% 50% 50% / 53% 46% 54% 47% ;
+}
+
+#bruce_006{
+    max-width: 800px;
+    border-radius: 58% 42% 30% 70% / 36% 46% 54% 64% ;
+}
+
+#carlo_007{
+    max-width: 800px;
+    border-radius: 39% 61% 30% 70% / 53% 46% 54% 47% ;
+}
+
+#de-la-torre_008{
+    max-width: 800px;
+    border-radius: 51% 49% 45% 55% / 59% 46% 54% 41% ;
+}
+
+#dennis_009{
+    max-width: 800px;
+    border-radius: 40% 60% 30% 70% / 64% 58% 42% 36% ;
+}
+
+#edward_010{
+    max-width: 800px;
+    border-radius: 24% 76% 56% 44% / 81% 39% 61% 19% ;
+}
+
+#francisco_011{
+    max-width: 800px;
+    border-radius: 46% 54% 56% 44% / 55% 61% 39% 45% ;
+}
+
+#geoffrey_012{
+    max-width: 800px;
+    border-radius: 35% 65% 48% 52% / 45% 59% 41% 55% ;
+}
+
+#gil_013{
+    max-width: 800px;
+    border-radius: 29% 71% 48% 52% / 53% 34% 66% 47% ;
+}
+
+#hamilton_014{
+    max-width: 800px;
+    border-radius: 54% 46% 56% 44% / 53% 55% 45% 47% ;
+}
+
+#james_015{
+    max-width: 800px;
+    border-radius: 16% 84% 80% 20% / 56% 55% 45% 44% ;
+}
+
+#jarrad_016{
+    max-width: 800px;
+    border-radius: 45% 55% 51% 49% / 50% 34% 66% 50% ;
+}
+
+#jason_017{
+    max-width: 800px;
+    border-radius: 45% 55% 51% 49% / 54% 57% 43% 46% ;
+}
+
+#jeff_018{
+    max-width: 800px;
+    border-radius: 64% 36% 29% 71% / 54% 57% 43% 46% ;
+}
+
+#jeffro_019{
+    max-width: 800px;
+    border-radius: 50% 50% 52% 48% / 54% 57% 43% 46% ;
+}
+
+#joe_020{
+    max-width: 800px;
+    border-radius: 50% 50% 50% 50% / 48% 51% 49% 52% ;
+}
+
+#johnathan_021{
+    max-width: 800px;
+    border-radius: 50% 50% 32% 68% / 38% 34% 66% 62% ;
+}
+
+#jorge_022{
+    max-width: 800px;
+    border-radius: 42% 58% 68% 32% / 38% 58% 42% 62% ;
+}
+
+#kevin_023{
+    max-width: 800px;
+    border-radius: 64% 36% 32% 68% / 38% 58% 42% 62% ;
+}
+
+#larissa_024{
+    max-width: 800px;
+    border-radius: 32% 68% 70% 30% / 48% 58% 42% 52% ;
+}
+
+#luis_025{
+    max-width: 800px;
+    border-radius: 65% 35% 56% 44% / 48% 58% 42% 52% ;
+}
+
+#marek_026{
+    max-width: 800px;
+    border-radius: 36% 64% 56% 44% / 54% 45% 55% 46% ;
+}
+
+#michael_027{
+    max-width: 800px;
+    border-radius: 19% 81% 79% 21% / 54% 45% 55% 46% ;
+}
+
+#nick_029{
+    max-width: 800px;
+    border-radius: 52% 48% 48% 52% / 54% 45% 55% 46% ;
+}
+
+#pablo_030{
+    max-width: 800px;
+    border-radius: 40% 60% 63% 37% / 54% 51% 49% 46% ;
+}
+
+#taylor_031{
+    max-width: 800px;
+    border-radius: 71% 29% 44% 56% / 54% 51% 49% 46% ;
+}
+
+#theodore_032{
+    border-radius: 30% 70% 59% 41% / 54% 51% 49% 46% ;
+}
+
+#walter_033{
+    max-width: 800px;
+    border-radius: 65% 35% 67% 33% / 54% 51% 49% 46% ;
+}
+
+#michael_034{
+    max-width: 800px;
+    border-radius: 30% 70% 86% 14% / 22% 64% 36% 78% ;
+}
+
+#todd_035{
+    max-width:800px;
+    border-radius: 76% 24% 86% 14% / 22% 64% 36% 78%;
+}
+
+#jorge_036{
+    max-width: 800px;
+    border-radius: 33% 67% 65% 35% / 60% 51% 49% 40% ;
+}
+
+#kris_037{
+    max-width: 800px;
+    border-radius: 69% 31% 8% 92% / 42% 47% 53% 58%  ;
+}
+
+@media screen and (max-width: 600px) {
+    #alberto_001, #alexi_002, #angela_003, #brad_004, #breakfast_005, 
+    #bruce_006, #carlo_007, #de-la-torre_008, #dennis_009, #edward_010, 
+    #francisco_011, #geoffrey_012, #gil_013, #hamilton_014, #james_015, 
+    #jarrad_016, #jason_017, #jeff_018, #jeffro_019, #joe_020, #johnathan_021, 
+    #jorge_022, #kevin_023, #larissa_024, #luis_025, #marek_026, #michael_027, 
+    #nick_029, #pablo_030, #taylor_031, #theodore_032, #walter_033, #michael_034,
+    #todd_035, #jorge_036, #kris_037 {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    #alberto_001, #alexi_002, #angela_003, #brad_004, #breakfast_005, 
+    #bruce_006, #carlo_007, #de-la-torre_008, #dennis_009, #edward_010, 
+    #francisco_011, #geoffrey_012, #gil_013, #hamilton_014, #james_015, 
+    #jarrad_016, #jason_017, #jeff_018, #jeffro_019, #joe_020, #johnathan_021, 
+    #jorge_022, #kevin_023, #larissa_024, #luis_025, #marek_026, #michael_027, 
+    #nick_029, #pablo_030, #taylor_031, #theodore_032, #walter_033, #michael_034,
+    #todd_035, #jorge_036, #kris_037 {
+        max-width: 200px;
+    }
+}
+

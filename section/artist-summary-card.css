@@ -1,0 +1,134 @@
+/*--- artist detail ---*/
+  
+.content-wrapper {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    border: 2px solid var(--primary-color);
+    border-radius: 10px;
+    background: var(--third-color);
+    padding: 3em 2em;
+    flex-direction: column;
+    justify-content: space-between;
+}
+  
+.content-wrapper p {
+    font-size: 12px;
+    line-height: 1;
+}
+  
+.content-wrapper .hero-img {
+    width: 100%;
+    height: 180px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+  
+.content-wrapper .hero-img img{
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+  
+.content-wrapper h1 {
+    font-size: 100px;
+    text-transform: uppercase;
+    line-height: 0.8;
+}
+  
+.numbers {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+  
+.numbers p {
+    flex: 1;
+}
+  
+.numbers p:nth-child(3) {
+    text-align: right;
+}
+
+#endyear {
+    text-align: right;
+}
+  
+.numbers .hr {
+    flex: 5;
+    width: 100%;
+    height: 2px;
+    background: var(--primary-color);
+}
+  
+.cta {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+  
+.cta .cta-btn {
+    background: var(--primary-color);
+    color: var(--third-color);
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+}
+  
+.cta-btn h4 {
+    text-transform: uppercase;
+    line-height: 1;
+    text-align: center;
+}
+  
+h4 ion-icon {
+    position: relative;
+}
+
+.hero-img-info {
+    margin-top: 7px;
+    margin-bottom: 7px;
+}
+
+.hero-img-info p {
+    font-size: 15px;
+    color: var(--primary-color);
+}
+
+.social_share{
+    font-size: 16px;
+    color: var(--third-color);
+    background-color: var(--primary-color);
+    box-shadow: 0px 0px 0px transparent;
+    border: 0px solid transparent;
+    text-shadow: 0px 0px 0px transparent;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+@media (max-width: 1024px) {
+    .content-wrapper {
+      width: 90%; 
+      margin: 90px auto; 
+    }
+  
+    .content-wrapper h1 {
+      font-size: 50px; 
+    }
+  
+    .content-wrapper .hero-img {
+      height: 120px; 
+    }
+  
+    .content-wrapper p {
+      font-size: 10px; 
+    }
+}

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Us - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- icons link --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!---  about us  --->
+
+    <div class="about-wrapper">
+      <div class="aboutTitle">
+        <h3>About Us</h3>
+      </div>
+      <article>
+        <p id="customFont">Since opening its doors in September of 2007, the Evan Lurie Gallery has specialized in introducing emerging and established international artists with a heavy emphasis on the contemporary abstract and a strong focus on realism and neo-realism. The gallery deals in works of art in all mediums and sizes including monumental, two-dimensional and three-dimensional. The 2000 square foot space offers monthly art walks featuring one man and group shows bringing an ever-changing energy of sophistication to the Hollywood area.</p>
+        <blockquote>Contemporary Abstract and Neo-Realism</blockquote>
+        <p id="customFont">Evan Lurie, Gallery Director, was born in New York and has lived and traveled extensively across Europe. Fluent in five languages, Evan has the facility to connect diverse international artists with a network of art collectors across North America. He brings his passion and professional experience from film directing and production into the fine arts business. The result is a fresh look at contemporary art and the founding of a series of galleries from Los Angeles to Miami, celebrated with the most recent opening of his signature space, Evan Lurie Gallery, in Carmel, near Indianapolis.<br><br>
+          Evan fosters powerful relationships with artists and galleries worldwide, to provide his collectors the leading edge in discovering new and unique artwork. The Gallery has exclusive representation of numerous artists in Europe, Cuba, Canada, and the United States.
+        </p>
+      </article>
+      
+      <article>
+        <figure>
+          <img id="about_img" src="image/image_about/002.JPG" alt="" onerror="this.style.display='none'">
+          <figcaption>Inside Carmel Gallery</figcaption>
+        </figure>
+        <h4 class="subtitle">Virtual Gallery</h4>
+        <p id="customFont">Visit our Hollywood location from anywhere around the world; enjoy a virtual journey through the gallery, and stop to explore individual artworks</p>
+        <a href="vr.html"><button class="VRGallery">Visit Virtual Gallery</button></a>
+      </article>
+
+     <article>
+      <h4 class="subtitle">Hollywood Location</h4>
+      <p id="customFont">
+        <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107611,-80.1482463,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+          1917 Harrison St<br>Hollywood FL 33020
+        </a>
+        <br><br>
+        <a href="mailto:info@evanluriegallery.com">info@evanluriegallery.com</a>
+        <br><br>
+        <a href="tel:+13057731732">305-773-1732</a></p>
+        <a href="service.html"><button class="VRGallery">Our Services</button></a>
+        <figure>
+          <img id="about_img" src="image/image_about/001.JPG" alt="" onerror="this.style.display='none'">
+          <figcaption>Outside Hollywood Gallery</figcaption>
+        </figure>
+    </article>
+     
+
+    </div>
+
+    <!--- contact us --->
+
+    <div id="contactContainer">
+      <h3>&bull; Contact Us &bull;</h3>
+      <form action="https://formsubmit.co/info@evanluriegallery.com" method="post" id="contact_form">
+        <div class="name">
+          <label for="name"></label>
+          <input type="text" placeholder="My name is" name="name" id="name_input" required>
+        </div>
+        <div class="email">
+          <label for="email"></label>
+          <input type="email" placeholder="My e-mail is" name="email" id="email_input" required>
+        </div>
+        <div class="telephone">
+          <label for="name"></label>
+          <input type="text" placeholder="My number is" name="telephone" id="telephone_input" required>
+        </div>
+        <div class="subject">
+          <label for="subject"></label>
+          <select placeholder="Subject line" name="subject" id="subject_input" required>
+            <option disabled hidden selected>Newsletter Options</option>
+            <option>I would like to sign up for newsletter</option>
+            <option>I would like not to sign up for newsletter</option>
+          </select>
+          <select placeholder="Subject line" name="subject" id="subject_input" required>
+            <option disabled hidden selected>I'd like to...</option>
+            <option>Delivery and Installation</option>
+            <option>Art Consulting</option>
+            <option>Art Acquision</option>
+            <option>Corporate Collection Advisory</option>
+            <option>Design</option>
+            <option>Art Staging</option>
+            <option>Appraisal</option>
+            <option>Art Relocation/Pack and Ship</option>
+            <option>Framing</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="message">
+          <label for="message"></label>
+          <textarea name="message" placeholder="I'm interested in..." id="message_input" cols="30" rows="5" required></textarea>
+        </div>
+          <div class="submit">
+            <input type="submit" value="Send Message" id="form_button" />
+          </div>
+      </form>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                <a href="vr.html">Virtual Gallery</a>
+                <a href="sculpture.html">Sculpture</a>
+                <a href="press.html">Press</a>
+            </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>

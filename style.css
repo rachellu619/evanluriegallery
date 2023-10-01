@@ -1,0 +1,49 @@
+@import url(section/header.css);
+@import url(section/artist-grid.css);
+@import url(section/footer.css);
+@import url(section/artist-summary-card.css);
+@import url(section/artist-accordion.css);
+@import url(section/artist-masonry.css);
+@import url(section/artwork-detail.css);
+@import url(section/event-summary.css);
+@import url(section/artist-pfp.css);
+@import url(section/artist-vid.css);
+@import url(section/artwork-contact-form.css);
+@import url(section/artwork-modal.css);
+@import url(section/event-detail.css);
+@import url(section/about.css);
+@import url(section/vault.css);
+@import url(section/sculpture-summary.css);
+@import url(section/press-summary.css);
+@import url(section/past-exhibit.css);
+@import url(section/coming-soon.css);
+@import url(section/intro-slider.css);
+
+
+:root {
+  --primary-color: #463f3a;
+  --secondary-color: #bcb8b1;
+  --third-color: #f4f3ee;
+  --accent-color: #e6beb2;
+  --border-color: #8a817c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: var(--third-color);
+  color: var(--primary-color);
+  font-family: "commuters-sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+
+

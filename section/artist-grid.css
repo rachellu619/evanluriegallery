@@ -1,0 +1,60 @@
+/*--- artist grid ---*/
+
+.artist-container{
+  position: relative;
+  min-height: 100vh;
+  max-width: 1000px;
+  width: 100%;
+  margin: 30px auto;
+  padding: 40px 20px;
+}
+  
+.artist-container .images .image-box{
+  position: relative;
+  height: 300px;
+  width: 210px;
+  border-radius: 6px;
+  overflow: hidden;
+}
+  
+.images{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+  
+.images .image-box{
+  margin: 8px;
+  border: 2px solid var(--border-color);
+}
+  
+.images .image-box img{
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  transition: transform 0.2s linear;
+}
+  
+.image-box:hover img{
+  transform: scale(1.05);
+}
+  
+.image-box h6{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  color: var(--third-color);
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+  
+.image-box h6 { 
+  padding: 10px;
+  margin: 0;
+  background-color: rgba(0,0,0,0.5);
+  text-align: center;
+  opacity: 0.8;
+  border-radius: 10px 10px 10px 10px;
+}

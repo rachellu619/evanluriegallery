@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="style.css">
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- icons link --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- event summary  --->
+
+    <div class="event-container">
+
+      <div class="item-container">
+          <div class="img-container">
+              <img src="image/image_event/image_upcoming-event/002_CONTEXT-logo-2023-wdates.svg" alt="Event image">
+          </div>
+
+          <div class="body-container">
+              <div class="overlay"></div>
+
+              <div class="event-info">
+                  <p class="title">Context Art Miami</p>
+                  <div class="separator"></div>
+                  <p class="info">Miami, FL</p>
+                  <p class="price">Contact for Ticket Info</p>
+
+                  <div class="additional-info">
+                      <p class="info">
+                          <i class="fas fa-map-marker-alt"></i>
+                          One Herald Plaza, NE 14th Street
+                      </p>
+                      <p class="info">
+                          <i class="far fa-calendar-alt"></i>
+                          5 - 10 December 2023
+                      </p>
+
+                      <p class="info description">
+                        <a href="events/upcoming/context-miami-2023.html">
+                         <span>more...</span>
+                        </a>
+                      </p>
+                  </div>
+              </div>
+              <a href="https://www.contextartmiami.com/">
+                <button class="action">Book it</button>
+              </a>
+          </div>
+      </div>
+
+      <div class="item-container">
+        <div class="img-container">
+            <img src="image/image_event/image_upcoming-event/004.svg" alt="Event image">
+        </div>
+
+        <div class="body-container">
+            <div class="overlay"></div>
+
+            <div class="event-info">
+                <p class="title">Art Palm Beach</p>
+                <div class="separator"></div>
+                <p class="info">West Palm Beach, FL</p>
+                <p class="price">Contact for Ticket Info</p>
+
+                <div class="additional-info">
+                    <p class="info">
+                        <i class="fas fa-map-marker-alt"></i>
+                        PALM BEACH COUNTY CONVENTION CENTER<br>
+                    </p>
+                    <p class="info">
+                        <i class="far fa-calendar-alt"></i>
+                        24 - 28 January 2024
+                    </p>
+
+                    <p class="info description">
+                      <a href="events/upcoming/art-palm-beach-2024.html">
+                       <span>more...</span>
+                      </a>
+                    </p>
+                </div>
+            </div>
+            <a href="https://www.artpalmbeach.com/">
+              <button class="action">Book it</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="item-container">
+      <div class="img-container">
+          <img src="image/image_event/image_upcoming-event/001_AAF_NEW_YORK_FALL_2023.jpg" alt="Event image">
+      </div>
+
+      <div class="body-container">
+          <div class="overlay"></div>
+
+          <div class="event-info">
+              <p class="title">Affordable Art Fair</p>
+              <div class="separator"></div>
+              <p class="info">New York, NY</p>
+              <p class="price">Contact for Ticket Info</p>
+
+              <div class="additional-info">
+                  <p class="info">
+                      <i class="fas fa-map-marker-alt"></i>
+                      Metropolitan Pavilion, 125 West 18th Street
+                  </p>
+                  <p class="info">
+                      <i class="far fa-calendar-alt"></i>
+                      20 - 24 September 2023
+                  </p>
+
+                  <p class="info description">
+                    <a href="events/upcoming/affordable-art-fair-2023-fall.html">
+                     <span>more...</span>
+                    </a>
+                  </p>
+              </div>
+          </div>
+          <a href="https://affordableartfair.com/fairs/new-york-fall/">
+            <button class="action">Book it</button>
+          </a>
+      </div>
+  </div>
+
+  </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                <a href="vr.html">Virtual Gallery</a>
+                <a href="sculpture.html">Sculpture</a>
+                <a href="press.html">Press</a>
+            </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js --->
+
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
