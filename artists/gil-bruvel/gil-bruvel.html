@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gil Bruvel - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artist summary card  --->
+
+    <div class="content-wrapper">
+        <div class="header">
+          <h1>
+            Gil <br>
+            Bruvel
+          </h1>
+        </div>
+        <div class="numbers">
+          <br>
+          <p>1959</p>
+          <div class="hr"></div>
+          <br>
+        </div>
+        <div class="hero-img">
+          <div class="img-revealer"></div>
+          <img src="image/hero/013_gil-bruvel.jpeg" id="img-revealer" alt="" />
+        </div>
+        <div class="hero-img-info">
+          <p>
+            Gil Bruvel is a visionary artist, capable of translating complex ideas and fleeting impressions into stunning works of art.<br>
+            His curiosity about the human condition and the workings of the human mind is honed through daily meditative practice.<br>
+            His art emerges from a deep contemplation of images, emotions, and sensations, which he refines continually before he casts them into material form.
+          </p>
+        </div>
+        <div class="cta">
+          <a href="../geoffrey-gersten/geoffrey-gersten.html">
+            <div class="cta-btn">
+              <h4><ion-icon name="arrow-back-sharp"></ion-icon> previous artist </h4>
+            </div>
+          </a>
+          <div class="cta-btn">
+            <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+            <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+            <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+            <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+          </div> 
+          <a href="../hamilton-aguiar/hamilton-aguiar.html">
+            <div class="cta-btn">
+              <h4>next artist <ion-icon name="arrow-forward-sharp"></ion-icon></h4>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <!--- artist accordion  --->
+<div class="tabs-box">
+    <div class="acord">
+        <label for="tb-one" class="bg-one">
+          Artist Photo
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-one">
+        <div class="content" >
+          <div class="artistpfp">
+            <img src="image/profile/013_gil-bruvel.jpeg" id="gil_013">
+          </div>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-two"  class="bg-two">
+          Artist CV
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-two">
+        <div class="content">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-three"  class="bg-three">
+          Artist Profile
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-three">
+        <div class="content">
+          <p>
+            We try and fail until we get it right. Failure is essential in crystalizing and improving on our initial ideas. There is a great complexity to us and to all that surrounds us, which is not accessible unless we are willing to move beyond physicality and into the deeper layers of our consciousness. Therein lies an experience that is to be felt, rather than described or rationalized. Bruvel’s challenge as an artist is to give it a non-verbal expression through the use of form, patterns, and color.<br><br>
+            Bruvel’s early work is marked by a desire to escape, rather than penetrate, reality at a deeper level. He was influenced by the surrealists such as Salvador Dali, Max Ernst, and Georgio de Chirico. His art was an exercise in imagination through the painting of alternate realities.<br><br>
+            While elements of surrealism have been present in his works throughout his career, Bruvel’s later efforts play with the distortion of realities, duality, and multiple perspectives. In his Cubist series, he reduces human form to component planes and geometric shapes, using negative space to create positive form, and vice versa. He seeks to reinforce the notion of fluidity by expressing multiple viewpoints simultaneously. Bruvel often bends or extends the lines that define human form, dissolving its rigidity and allowing it to connect with the flow that constantly surrounds it. To convey the complex interplay of forces that immerse us, he disrupts vertical lines by inserting horizontal ones. He creates intentional gaps and negative space to highlight disconnect.<br><br>
+            Having trained extensively in his father’s cabinet-making business and later at a prestigious restoration workshop, Bruvel’s work displays a mastery of technique and high-level craftsmanship. He moves through a wide range of media and forms with ease. His sculptures in bronze, wood, and stainless steel, as well as his functional furniture and mixed media, all reflect a well-defined move towards three-dimensional representation. The influence of architects such as Zaha Hadid, Frank Gehry, and Lebbeus Woods is present in many of his pieces.<br><br>
+            Many themes that define Bruvel’s work culminate in his most recent series, “Bending the Lines.” At first glance, we recognize the ever-prevailing human form but are instantly transfixed by the thousands of wooden shafts that comprise the work. The pixelated outlines mimic our complex neural pathways, while his use of gradient color reinforces our minds’ interconnectedness. The wood is charred to show the impact of natural phenomena on the physical form and its inherently transient nature, which is transformed by the passage of time, revealing further patterns and detail.<br><br>
+            Gil Bruvel was born in Australia, but raised in the South of France. He currently resides in Wimberley, Texas. Represented by a host of galleries worldwide.<br>
+          </p>
+        </div>
+    </div>
+
+  </div>
+
+    <!--- artwork masonary --->
+
+    <div class="art-container">
+      <a href="gil-bruvel-001.html">
+        <div class="art-box">
+            <img src="image/artwork/001_Demon+Within+-+Gil+Bruvel+(14).jpeg" alt="The Demon Within">
+        </div>
+      </a>
+      <a href="gil-bruvel-002.html">
+        <div class="art-box">
+            <img src="image/artwork/002_Gil+Bruvel+-+The+Descent.jpeg" alt="The Descent">
+        </div>
+      </a>
+      <a href="gil-bruvel-003.html">
+        <div class="art-box">
+            <img src="image/artwork/003_d8930d9068d318b4876d24b6095fb627.jpeg" alt="The Wind">
+        </div>
+      </a>
+      <a href="gil-bruvel-004.html">
+        <div class="art-box">
+            <img src="image/artwork/004_DSC01159.jpeg" alt="Rain">
+        </div>
+      </a>
+      <a href="gil-bruvel-005.html">
+        <div class="art-box">
+            <img src="image/artwork/005_Gil+Bruvel+-+My+Mirror+Remains.jpeg" alt="My Mirror's Remains">
+        </div>
+      </a>
+      <a href="gil-bruvel-006.html">
+        <div class="art-box">
+            <img src="image/artwork/006_Gil+Bruvel-Apex.jpeg" alt="Apex">
+        </div>
+      </a>
+      <a href="gil-bruvel-007.html">
+        <div class="art-box">
+            <img src="image/artwork/007_DSC03163.jpeg" alt="Dichotomy">
+        </div>
+      </a>
+      <a href="gil-bruvel-008.html">
+        <div class="art-box">
+            <img src="image/artwork/008_Gil+Bruvel-Flowing.jpeg" alt="Flowing">
+        </div>
+      </a>
+      <a href="gil-bruvel-009.html">
+        <div class="art-box">
+            <img src="image/artwork/009_Gil+Bruvel-+Dichotomy+++chair-larger.jpeg" alt="Dichotomy Chair">
+        </div>
+      </a>
+      <a href="gil-bruvel-010.html">
+        <div class="art-box">
+            <img src="image/artwork/010_Gil+Bruvel-+Equilateral+Apex+++stool.jpeg" alt="Equilateral Apex Stool">
+        </div>
+      </a>
+      <a href="gil-bruvel-011.html">
+        <div class="art-box">
+            <img src="image/artwork/011_DSC07061-c.jpeg" alt="Zig Zag Impulse Chair">
+        </div>
+      </a>
+      <a href="gil-bruvel-012.html">
+        <div class="art-box">
+            <img src="image/artwork/012_Gil+Bruvel-George's+Horse.jpeg" alt="George's Horse">
+        </div>
+      </a>
+      <a href="gil-bruvel-013.html">
+        <div class="art-box">
+            <img src="image/artwork/013_DSC04064.jpeg" alt="The Well">
+        </div>
+      </a>
+      <a href="gil-bruvel-014.html">
+        <div class="art-box">
+            <img src="image/artwork/014_DSC03284.jpeg" alt="Never Ending">
+        </div>
+      </a>
+      <a href="gil-bruvel-015.html">
+        <div class="art-box">
+            <img src="image/artwork/015_Gil+Bruvel-+One+Voice.jpeg" alt="One Voice">
+        </div>
+      </a>
+      <a href="gil-bruvel-016.html">
+        <div class="art-box">
+            <img src="image/artwork/016_DSC03468.jpeg" alt="Glimmer">
+        </div>
+      </a>
+      <a href="gil-bruvel-017.html">
+        <div class="art-box">
+            <img src="image/artwork/017_Gil+Bruvel-The+River-stainless+steel4.jpeg" alt="The River">
+        </div>
+      </a>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                <a href="../../vr.html">Virtual Gallery</a>
+                <a href="../../sculpture.html">Sculpture</a>
+                <a href="../../press.html">Press</a>
+            </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+
+  </body>
+</html>
