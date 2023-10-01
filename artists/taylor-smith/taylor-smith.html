@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taylor Smith - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artist summary card  --->
+
+    <div class="content-wrapper">
+        <div class="header">
+          <h1>
+            Taylor <br>
+            Smith
+          </h1>
+        </div>
+        <div class="numbers">
+          <br>
+          <p>1963</p>
+          <div class="hr"></div>
+          <br>
+        </div>
+        <div class="hero-img">
+          <div class="img-revealer"></div>
+          <img src="image/hero/031_taylor-smith.jpg" id="img-revealer" alt="" />
+        </div>
+        <div class="hero-img-info">
+          <p>
+            From her studio in Indianapolis, Taylor Smith creates work that focuses on technology, popular culture and consumerism.<br>
+            Drawing on her interest and training in art history and film photography, Smith redeems technologies and imagery that have been left behind.<br>
+            She creates work that focuses on the possibility of "reimagined life” within everyday things.
+          </p>
+        </div>
+        <div class="cta">
+          <a href="../pablo-dona/pablo-dona.html">
+            <div class="cta-btn">
+              <h4><ion-icon name="arrow-back-sharp"></ion-icon> previous artist </h4>
+            </div>
+          </a>
+          <div class="cta-btn">
+            <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+            <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+            <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+            <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+          </div>
+          <a href="../theodore-gall/theodore-gall.html">
+            <div class="cta-btn">
+              <h4>next artist <ion-icon name="arrow-forward-sharp"></ion-icon></h4>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <!--- artist accordion  --->
+<div class="tabs-box">
+    <div class="acord">
+        <label for="tb-one" class="bg-one">
+          Artist Photo
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-one">
+        <div class="content" >
+          <div class="artistpfp">
+            <img src="image/profile/031_taylor-smith.jpg" id="taylor_031">
+          </div>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-two"  class="bg-two">
+          Artist CV
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-two">
+        <div class="content">
+          <p>
+            <strong>EDUCATION</strong><br><br>
+
+            Studied sculpture & the figure in Vence, France under Canadian artist Jim Ritchie (1929-2017)<br>
+            AdBK - Akademie der Bildenden Künste, Nürnberg, Germany 1986-1987 - Contemporary Fine Art<br>
+            AdBK - Akademie der Bildenden Künste, Berlin, Germany 1988-1989 - Contemporary Fine Art<br>
+            Indiana University - Bloomington, IN - School of Business / concentration in the German Language<br><br>
+
+            <strong>EXHIBITIONS / PROJECTS (Selected)</strong><br><br>
+
+            Digital Dreams v2.0 [solo show] - Pando Fine Art Gallery, Park City, UT - January 2023<br>
+            “Hooking Up” - Cleve Carney Museum of Art, Chicago, IL - June - August 2022<br>
+            The Other Art Fair Chicago - Revel Fulton Market, curated by Saatchi Art, Chicago, IL - April 2022<br>
+            Art Hamptons | Market Art + Design Art Fair | Bridgehampton Museum, Evan Lurie Gallery, Bridgehampton, NY - August 2021<br>
+            The Other Art Fair Los Angeles - ROW DTLA, curated by Saatchi Art, Los Angeles, CA - June 2021<br>
+            Indianapolis International Airport Public Artwork - 15ft x 45ft 2D artwork Concourse A, Indianapolis, IN - March 2021<br>
+            Group Show, The Evan Lurie Gallery, Carmel, IN - October 2020<br>
+            The Other Art Fair Dallas - Market Hall, curated by Saatchi Art, Dallas, TX - September 2019<br>
+            Group Show, The Evan Lurie Gallery, Carmel, IN - July 2019<br>
+            The Other Art Fair Chicago - Mana Contemporary, curated by Saatchi Art, Chicago, IL - May 2019<br>
+            Art Hamptons | Market Art + Design Art Fair | Bridgehampton Museum, Evan Lurie Gallery, Bridgehampton, NY - July 2018<br>
+            Tiny V, Gallery 924, Indianapolis, IN - December 2016<br>
+            Barely There: Nude Figures, curated by Rebecca Wilson, Chief Curator and VP, Art Advisory at Saatchi Art - 2016<br>
+            iMOCA Hoosier Salon, Indianapolis Museum of Contemporary Art, Indianapolis, IN - August 2015<br>
+            Creative Renewal Arts Fellowship Retrospective, Indianapolis Arts Center, Indianapolis, IN - April 2014<br>
+            Self Portraits, Gallery 924, Indianapolis, IN - July 2013<br>
+            Kinsey Institute Group Show, Grunwald Gallery of Art, Indiana University, Bloomington, IN - May 2012<br>
+            Group Show, ArtBox Gallery, Indianapolis, IN - June 2012<br>
+            Kinsey Institute Group Show, Grunwald Gallery, Indiana University, Bloomington, IN - May 2011<br>
+            Contemporary Figurative Show, Gallery 924, Indianapolis, IN - July 2011<br>
+            Chemical Still Life Abstracted, Charles Krug Winery, St. Helena, CA - September 2010<br>
+            Sundance Film Festival, Gallery MAR, Park City, UT - January 2010<br>
+            ORANJE, Ross-Gage Industrial, Indianapolis, IN - September 2008<br>
+            Elements, Midtown Artery Gallery, Greenville, SC - June 2008<br>
+            A Certain Chemical Imbalance, Tim Faulkner Gallery, Louisville, KY - May 2008<br>
+            Brown Paper Packages, Harrison Gallery, Indianapolis, IN - December 2008<br>
+            Florence Biennale, Fortezza de Basso, Florence, Italy - December 2007<br>
+            Stutz Artists Group Show, Stutz Gallery, Indianapolis, IN - July 2007<br>
+            White, What You Crave, Harrison Gallery, Indianapolis, IN - December 2007<br>
+            Gold, Frankincense & Spurs, Harrison Gallery, Indianapolis, IN - December 2006<br>
+            Crimson & Clover, Harrison Gallery, Indianapolis, IN - December 2005<br>
+            Blue, Harrison Gallery, Indianapolis, IN - December 2004<br>
+            Keith Haring Berlin Wall Mural - October 1986<br><br>
+
+            <strong>SELECTED COLLECTIONS WORLDWIDE</strong><br><br>
+
+            Cleve Carney Museum of Art / Permanent Collection – Chicago, IL<br>
+            Madeleine Albright – Washington, D.C.<br>
+            The Eli Lilly Endowment / Permanent Collection – Indianapolis, IN<br>
+            The Eli Lilly Corporate Collection – Indianapolis, IN<br>
+            Bauhaus Universität Weimar Collection – Weimar, Germany<br>
+            Goldman Sachs – New York, NY<br>
+            Carnival Cruise Lines Corporate / Permanent Collection – Miami, FL<br>
+            Daxton Boutique Hotel – Detroit, MI<br>
+            David & Victoria Beckham – Los Angeles, CA<br>
+            Chris Martin (Coldplay) – Malibu, CA<br>
+            Four Seasons Hotels & Resorts – Toronto, Canada<br>
+            Peter Mondavi – St. Helena, CA<br>
+            The Charles Krug Winery – St. Helena, CA<br>
+            The Wine Advocate / Robert Parker, Jr. – Baltimore, MD<br>
+            Fission Consulting – Chicago, IL<br>
+            Starbucks Corp – Seattle, WA<br>
+            Kinsey Institute Collection, Indiana University – Bloomington, IN<br>
+            Estridge Companies – Indianapolis, IN<br>
+            The Block Collection – Deer Valley, UT<br>
+            Mercer & Belanger LLP – Indianapolis, IN<br>
+            Hondros Collection – Brooklyn, NY<br>
+            Fantinato Fondazione / Permanent Collection – Venice, Italy<br>
+            Midtown Artery Collection – Greenville, SC<br>
+            William Bailey Collection – Avon, IN<br>
+            Anton Klinger Foundation / Permanent Collection – Nürnberg, Germany<br>
+            Pearl Pathways – Indianapolis, IN<br>
+            Todd C. Tobias Foundation Collection – Indianapolis, IN<br>
+            David Steinberg Collection – Alexandria, VA<br><br>
+
+            <strong>SELECTED PUBLICATIONS</strong><br><br>
+
+            Pattern Magazine / Volume 22 – Feature print magazine article Fall 2022<br>
+            Saatchi Art Advisory – “New Heirlooms” February 2021<br>
+            “The Toys of Princes” – The Point Magazine, Chicago, IL, print edition only, Summer 2020<br>
+            Saatchi Art Advisory – Feature Collections January 2020; March 2020<br>
+            Indianapolis Monthly – May 2017<br>
+            Unite Magazine – Feature print magazine article, June 2014<br>
+            Studio Visit Magazine, Volume 26 – Artist profile, 2014<br>
+            Curve Magazine – Feature print magazine article, March 2014<br>
+            The Advocate Magazine – Feature online article, March 2013<br>
+            Chemical & Engineering News – Feature online article, July 2010<br><br>
+          </p>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-three"  class="bg-three">
+          Artist Profile
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-three">
+        <div class="content">
+          <p>
+            Her artistic roots run deep. Her mother was an artist who attended the first Andy Warhol Campbell's Soup Cans show at the Ferus Gallery in 1962 in Los Angeles. Smith also lived and worked in Germany for many years, attending art school in both Nurnberg and Berlin during a pivotal time in the late 1980s. Smith was present with fellow students to assist in the base layer prep and painting for Keith Haring's famous mural on the Berlin Wall in 1986, later celebrating with Haring and members of the Checkpoint Charlie Museum. These early experiences have been foundational influences of her reinterpretations of 20th Century pop art.<br><br>
+
+            Smith currently explores imagery and objects with a focus on pop culture, celebrity, consumerism, nostalgia and art history. She reinterprets familiar pop art icons, speaking to the fleeting nature of technology, people and our natural resources. From the surface, the viewer sees beauty in Smith's work - bright colors, pastels, a vibrant candy-like aesthetic, but upon closer inspection, the viewer experiences layered and more meaningful themes. Using a wide variety of materials and mediums including discarded computer disk drives, commercial packaging and found scraps of street advertising, Smith blends the practice of screen printing, painting and collage.<br><br>
+
+            Smith has exhibited internationally in Europe and North America. She has artworks in many high-profile collections, including the Eli Lilly permanent collection, the Madeleine Albright collection, the Cleve Carney Museum of Art (Chicago) permanent collection, Goldman Sachs, Carnival Cruise Lines Corporate / Permanent Collection, Chris Martin, the Mondavi Family of Napa Valley and many others.<br>
+          </p>
+        </div>
+    </div>
+
+  </div>
+
+    <!--- artwork masonary --->
+
+    <div class="art-container">
+      <a href="taylor-smith-001.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/001_Abraham+Lincoln+v2.0+in+blue+floppy+disk+painting+artist+Taylor+Smith.jpg"
+            alt="Abraham Lincoln v2.0">
+        </div>
+      </a>
+      <a href="taylor-smith-002.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/002_American+Archive+01+Haring+graffiti+American+flag+painting+recycled+computer+floppy+disks+artist+Taylor+Smith.jpg"
+            alt="American Archive No. 01">
+        </div>
+      </a>
+      <a href="taylor-smith-003.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/003_American+Archive+05+Haring+graffiti+American+flag+painting+recycled+computer+floppy+disks+artist+Taylor+Smith.jpg"
+            alt="American Archive No. 05">
+        </div>
+      </a>
+      <a href="taylor-smith-004.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/004_American+Archive+No+06+flag+boombox+floppy+disk+painting+artist+Taylor+Smith.jpg"
+            alt="American Archive No. 06 with Boombox">
+        </div>
+      </a>
+      <a href="taylor-smith-005.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/005_American+Archive+No+08+flag+pistol+painting+floppy+disk+artist+Taylor+Smith.jpg"
+            alt="American Archive No. 08 with 357">
+        </div>
+      </a>
+      <a href="taylor-smith-006.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/006_Campbells+Tomato+Soup+Disaster+in+Pink+oil+on+paper+painting+artist+Taylor+Smith.jpg"
+            alt="Campbell's Tomato Soup Disaster in Pink">
+        </div>
+      </a>
+      <a href="taylor-smith-007.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/007_Coca-Cola+with+Flowers+oil+on+paper+painting+artist+Taylor+Smith.jpg"
+            alt="Coca-Cola With Flowers">
+        </div>
+      </a>
+      <a href="taylor-smith-008.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/008_Esso+Motor+Oil+Can+Disaster+in+Blue+and+Orange+01+by+pop+artist+Taylor+Smith.jpg"
+            alt="Esso Motor Oil Can Disaster in Blue and Orange No. 01">
+        </div>
+      </a>
+      <a href="taylor-smith-009.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/009_Golden+Buddha+v2.4+gold+halo+pop+art+painting+by+artist+Taylor+Smith.jpg"
+            alt="Golden Buddha in Orange v2.4">
+        </div>
+      </a>
+      <a href="taylor-smith-010.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/010_Marilyn+Monroe+Diamond+Disaster+01+artist+Taylor+Smith.jpg"
+            alt="Marilyn Monroe Diamond Disaster">
+        </div>
+      </a>
+      <a href="taylor-smith-011.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/011_Memento+Mori+-+All+Is+Vanity+01+human+skull+painting+recycled+computer+floppy+disk+artist+Taylor+Smith.jpg"
+            alt="Memento Mori - All Is Vanity No. 01 in Sage Green">
+        </div>
+      </a>
+      <a href="taylor-smith-012.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/012_Memento+Mori+-+All+Is+Vanity+06+blue+human+skull+floppy+disk+artist+Taylor+Smith.jpg"
+            alt="Memento Mori - All Is Vanity No. 06 in Blue">
+        </div>
+      </a>
+      <a href="taylor-smith-013.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/013_Mickey+Mouse+Disaster+with+Skulls+in+Magenta+artist+Taylor+Smith.jpg"
+            alt="Mickey Mouse Disaster with Skulls in Magenta">
+        </div>
+      </a>
+      <a href="taylor-smith-014.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/014_Mobil+Motor+Oil+Can+Disaster+in+Red+and+Blue+01+by+pop+artist+Taylor+Smith.jpg"
+            alt="Mobil Motor Oil Can Disaster in Red and Blue No. 01">
+        </div>
+      </a>
+      <a href="taylor-smith-015.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/015_Must+Be+Love+01+floppy+disk+painting+artist+Taylor+Smith.jpg"
+            alt="Must Be Love No. 01 in Purple">
+        </div>
+      </a>
+      <a href="taylor-smith-016.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/016_Must+Be+Love+10+floppy+disk+painting+artist+Taylor+Smith.jpg"
+            alt="Must Be Love No. 10 in Cream">
+        </div>
+      </a>
+      <a href="taylor-smith-017.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/017_Must+Be+Love+No+12+blue+floppy+disk+painting+artist+Taylor+Smith.jpg"
+            alt="Must Be Love No. 12 in Blue">
+        </div>
+      </a>
+      <a href="taylor-smith-018.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/018_Shell+Motor+Oil+Can+Disaster+Black+Red+and+Yellow+No.+01+by+pop+artist+Taylor+Smith.jpg"
+            alt="Shell Motor Oil Can Disaster Black Red and Yellow No. 01">
+        </div>
+      </a>
+      <a href="taylor-smith-019.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/019_STP+Motor+Oil+Can+Disaster+Black+and+Red+No.+01+by+pop+artist+Taylor+Smith.jpg"
+            alt="STP Motor Oil Can Disaster Black and Red No. 01">
+        </div>
+      </a>
+      <a href="taylor-smith-020.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/020_Andrew+Jackson+v2.0+computer+floppy+disk+painting+artist+Taylor+Smith.jpg"
+            alt="Andrew Jackson v2.0">
+        </div>
+      </a>
+      <a href="taylor-smith-021.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/021_Antiquity+v1.0+with+Ski+Goggles+marble+statue+painting+recycled+computer+floppy+disks+artist+Taylor+Smith.jpg"
+            alt="Antiquity v1.0 with Ski Goggles">
+        </div>
+      </a>
+      <a href="taylor-smith-022.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/022_Basquiat+v2.0+painting+recycled+computer+floppy+disks+artist+Taylor+Smith.jpg"
+            alt="Basquiat v2.0">
+        </div>
+      </a>
+      <a href="taylor-smith-023.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/023_Benjamin+Franklin+v2.1+-+pop+art+painting+recycled+computer+floppy+disks+artist+Taylor+Smith.jpg"
+            alt="Benjamin Franklin v2.1">
+        </div>
+      </a>
+      <a href="taylor-smith-024.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/024_Bond+James+Bond+v2.0_+007+Sean+Connery+floppy+disk+painting+by+pop+artist+Taylor+Smith.jpg"
+            alt="Bond – James Bond v2.0">
+        </div>
+      </a>
+      <a href="taylor-smith-025.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/025_Boombox+v2.0+recycled+computer+floppy+disk+painting+artist+Taylor+Smith.jpg"
+            alt="Boombox v2.0">
+        </div>
+      </a>
+      <a href="taylor-smith-026.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/026_Butch+Cassidy+v2.0+-+Paul+Newman+computer+floppy+disk+pop+art+by+Taylor+Smith.jpg"
+            alt="Butch Cassidy v2.0">
+        </div>
+      </a>
+      <a href="taylor-smith-027.html">
+        <div class="art-box">
+          <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/027_Celestial+Freestyle+v1.6+-+LANGE+Ski+Boots+vintage+24kt+gold+leaf+spaceman+pop+art+painting+artist+Taylor+Smith.jpg"
+          alt="Celestial Freestyle v1.6">
+        </div>
+      </a>
+      <a href="taylor-smith-028.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/028_Celestial+Freestyle+v1.9+with+Boombox+astronaut+snow+ski+painting+recycled+computer+floppy+disks+artist+Taylor+Smith.jpg"
+            alt="Celestial Freestyle v1.9 with Boombox">
+        </div>
+      </a>
+      <a href="taylor-smith-029.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/029_Clint+Eastwood+Man+With+No+Name+v2.2+-+western+cowboy+pop+art+painting+by+Taylor+Smith.jpg"
+            alt="Clint Eastwood Man with No Name v2.2">
+        </div>
+      </a>
+      <a href="taylor-smith-030.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/030_Duke+v2.0+John+Wayne+western+cowboy+pop+art+recycled+computer+floppy+disk+painting+by+artist+Taylor+Smith.jpg"
+            alt="Duke v2.0 – John Wayne">
+        </div>
+      </a>
+      <a href="taylor-smith-031.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/031_Golden+Buddha+v2.0+computer+floppy+disk+24kt+gold+leaf+artist+Taylor+Smith.jpg"
+            alt="Golden Buddha v2.0">
+        </div>
+      </a>
+      <a href="taylor-smith-032.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/032_Golden+Buddha+v2.1+-+24kt+gold+leaf+halo+Buddha+pop+art+painting+by+artist+Taylor+Smith.jpg"
+            alt="Golden Buddha v2.1">
+        </div>
+      </a>
+      <a href="taylor-smith-033.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/033_Holly+Golightly+v2.1+-+Audrey+Hephburn+painting+recycled+computer+floppy+disk+pop+art+Breakfast+at+Tiffany_s+artist+Taylor+Smith.jpg"
+            alt="Holly Golightly v2.1 – Audrey Hepburn">
+        </div>
+      </a>
+      <a href="taylor-smith-034.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/034_James+Dean+v2+floppy+disk+painting+pop+artist+Taylor+Smith.jpg"
+            alt="James Dean v2.0">
+        </div>
+      </a>
+      <a href="taylor-smith-035.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/035_Jimi+Hendrix+v2.0_+rock+n+roll+guitar+painting+recycled+computer+floppy+disks+artist+Taylor+Smith.jpg"
+            alt="Jimi Hendrix v2.0">
+        </div>
+      </a>
+      <a href="taylor-smith-036.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/036_Lakota+Sioux+Chief+v2.2+in+Blue+Native+American+western+floppy+disk+pop+art+by+artist+Taylor+Smith.jpg"
+            alt="Lakota Sioux Chief v2.2">
+        </div>
+      </a>
+      <a href="taylor-smith-037.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/037_Marilyn+Monroe+v2.0+-+computer+floppy+disk+pop+art+painting+artist+Taylor+Smith.jpg"
+            alt="Marilyn Monroe v2.0">
+        </div>
+      </a>
+      <a href="taylor-smith-038.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/038_Old+Blue+Eyes+v2.0+Frank+Sinatra+computer+floppy+disk+painting+artist+Taylor+Smith.jpg"
+            alt="Old Blue Eyes v2.0 – Frank Sinatra">
+        </div>
+      </a>
+      <a href="taylor-smith-039.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/039_Queen+Elizabeth+v2.2+Royal+British+pop+graffiti+painting+recycled+computer+floppy+disks+artist+Taylor+Smith.jpg"
+            alt="Queen Elizabeth II v2.2">
+        </div>
+      </a>
+      <a href="taylor-smith-040.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/040_Ulysses+S+Grant+v2.0+painting+computer+floppy+disk+artist+Taylor+Smith+%C2%A9.jpg"
+            alt="Ulysses S Grant v2.0">
+        </div>
+      </a>
+      <a href="taylor-smith-041.html">
+        <div class="art-box">
+            <img src="https://evanluriegallery.s3.us-east-2.amazonaws.com/taylor-smith/041_Ziggy+Stardust+v2.0+-+David+Bowie+computer+floppy+disk+24kt+gold+painting+artist+Taylor+Smith.jpg"
+            alt="Ziggy Stardust v2.0 – David Bowie">
+        </div>
+      </a>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                  <a href="../../vr.html">Virtual Gallery</a>
+                  <a href="../../sculpture.html">Sculpture</a>
+                  <a href="../../press.html">Press</a>
+              </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+
+  </body>
+</html>
