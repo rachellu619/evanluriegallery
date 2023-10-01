@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Miroslav Antic - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artist summary card  --->
+
+    <div class="content-wrapper">
+        <div class="header">
+          <h1>
+            Miroslav <br>
+            Antic
+          </h1>
+        </div>
+        <div class="numbers">
+          <br>
+          <p>1947</p>
+          <div class="hr"></div>
+          <br>
+        </div>
+        <div class="hero-img">
+          <div class="img-revealer"></div>
+          <img src="image/hero/028_miroslav-antic.jpeg" id="img-revealer" alt="" />
+        </div>
+        <div class="hero-img-info">
+          <p>
+            Miroslav Antic explores the power of memory by painting seminal and iconic characters, veiled by semi-transparent layers of color, polka dots, and paint splatters.<br>
+            His abstracted backgrounds of drips, patterns, and phrases – and the peeling back of layers – provide a study in the impermanence of the symbols that surround us.<br>
+            His large-scale paintings and installations aim to make the most fleeting and nostalgic parts of American culture tangible.<br>
+            Antic’s work can be found in numerous public collections, including the Boston Public Library, the McDonald’s Corporation, and the Museum of Art (Ft. Lauderdale, Florida).
+          </p>
+        </div>
+        <div class="cta">
+          <a href="../michael-kalish/michael-kalish.html">
+            <div class="cta-btn">
+              <h4><ion-icon name="arrow-back-sharp"></ion-icon> previous artist </h4>
+            </div>
+          </a>
+          <div class="cta-btn">
+            <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+            <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+            <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+            <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+          </div>
+          <a href="../nick-veasey/nick-veasey.html">
+            <div class="cta-btn">
+              <h4>next artist <ion-icon name="arrow-forward-sharp"></ion-icon></h4>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <!--- artist accordion  --->
+<div class="tabs-box">
+
+
+    <div class="acord">
+        <label for="tb-two"  class="bg-two">
+          Artist CV
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-two">
+        <div class="content">
+          <p>
+            <strong>EDUCATION</strong><br><br>
+
+            M.F.A. - The Academy of Fine Arts, Belgrade, Yugoslavia<br><br>
+            
+            <strong>TEACHING</strong><br><br>
+
+            1980 – 2001   Painting and Drawing Faculty, School of the Museum of Fine Arts, Boston, MA.<br>
+            2002 – 2016   Painting and Drawing Faculty, Armory Art Center, West Palm Beach, FL<br><br>
+            
+            <strong>ONE PERSON EXHIBITIONS</strong><br><br>
+
+            2022    Helen M. Salzbergy Gallery at Palm Beach State College, Palm Beach Gardens, FL<br>
+            2017    Stremmel Gallery, Reno, NV<br>
+            2009    Polk Museum of Art, Lakeland, FL<br>
+            2008    Craighead-Green Gallery, Dallas, TX<br>
+            2008    Kidder Smith Gallery, Boston, MA<br>
+            2007    511 Gallery, New York, NY<br>
+            2007    Kidder Smith Gallery, Boston, MA<br>
+            2006    Craighead-Green Gallery, Dallas, TX<br>
+            2005    Kidder Smith Gallery, Boston, MA<br>
+            2004    Cidnee Patrick Gallery, Dallas, TX<br>
+            2004    Kidder Smith Gallery, Boston, MA<br>
+            2004    Ogilvie-Pertl Gallery, Chicago, IL<br>
+            2002    Caesarea Gallery, Boca Raton, FL<br>
+            2001    Caesarea Gallery, Boca Raton, FL<br>
+            2000    Creiger-Dane Gallery, Boston, MA<br>
+            1999    Caesarea Gallery, Boca Raton, FL<br>
+            1998    Creiger-Dane Gallery, Boston, MA<br>
+            1997    Creiger-Dane Gallery, Boston, MA<br>
+            1996    Cambridge Multicultural Center, Cambridge, MA<br>
+            1995    Creiger-Dane Gallery, Boston, MA<br>
+            1992    Zoe Gallery, Boston, MA<br>
+            1991    A.E.S. Gallery, Chicago, IL<br>
+            1988    Zoe Gallery, Boston, MA<br>
+            1987    Zoe Gallery, Boston, MA<br>
+            1984    Lopoukhine Gallery, Boston, MA<br>
+            1982    Lopoukhine Gallery, Boston, MA<br>
+            1981    Semaphore Gallery, New York, NY<br>
+            1981    Lopoukhine-Nayduch Gallery, Boston, MA<br>
+            1980    Lopoukhine-Nayduch Gallery, Boston, MA<br>
+            1979    Clark Gallery, Lincoln, MA<br><br>
+
+            <strong>SELECTED GROUP EXHIBITIONS</strong><br><br>
+
+            2018     "REimagine", Cultural Council of Palm Beach County (at City Place), Lake Worth, FL<br>
+            2017     "Palm Springs International Fine Art Fair" (Kidder Smith Gallery), Palm Springs, CA<br>
+            2016     “Selections from the Armory Art Center”, Palm Beach County Cultural Council, FL<br>
+            2016     “No School” Julie Heller Gallery, Provincetown, MA<br>
+            2016     “Palm Springs International Fine Art Fair” (Kidder Smith Gallery), Palm Springs, CA<br>
+            2015     “2015 Biennial”, Art and Culture Center of Hollywood, Hollywood, FL<br>
+            2014     “Paws and Claws”, Cultural Council of Palm Beach County, Lake Worth, FL<br>
+            2014    “Art Santa Fe” International Art Fair, (Kidder Smith Gallery), Santa Fe, NM<br>
+            2013     “Berkshires Collects”, Pittsfield Art Museum, Pittsfield, MA<br>
+            2012    “Boston Ten and Beyond: Collaborations”, Danforth Museum of Art, Framingham, MA<br>
+            2012    “Foundations”, Palm Beach County Cultural Council, Lake Worth, FL<br>
+            2011    “Double Vision”, Geoffrey Young Gallery, Great Barrington, MA<br>
+            2010    “New Acquisitions”, Scott Richards Fine Arts, San Francisco, CA<br>
+            2009    “Introductions II”, Stremmell  Gallery, Reno, NV<br>
+            2009    “Palm Beach 3” Art Fair (Ferrin Gallery), West Palm Beach, FL<br>
+            2008    “Pulse” Art Fair (Kidder Smith Gallery), Miami, FL<br>
+            2008    “Scope” Art Fair (Kidder Smith Gallery), London, UK<br>
+            2007    “Scope” Art Fair (Kidder Smith Gallery), Miami, FL<br>
+            2006    “Pulse” Art Fair (Kidder Smith Gallery), Miami, FL<br>
+            2005    “New Art 2005: South Florida Cultural Consortium Fellowship for Visual and Media Artists” Museum of Art Fort Lauderdale, FL<br>
+            2005    “All Florida”, Boca Raton Museum of Art, Boca Raton, FL<br>
+            2004    “Florida Visual Art Fellowships Exhibition”, Polk Art Museum, Lakeland, FL<br>
+            2004    “Florida Visual Art Fellowships Exhibition”, Lowe Art Museum, Miami, FL<br>
+            2003    “All Florida”, Boca Raton Museum of Art, Boca Raton, FL<br>
+            2001    “Los Cuatro Grandes”, Suffolk University, Boston, MA<br>
+            1999    “Multivision”, Cambridge Multicultural Center, Cambridge, MA<br>
+            1994    “Boston (In Dialogue) Now”, Institute of Contemporary Art, Boston, MA<br>
+            1994    “Shrines, Symbols, and Cherished Objects”, Fuller Museum of Art, Brockton, MA<br>
+            1993    “The Return of the Cadavre Exquis”, The Drawing Center, New York, NY<br>
+            1993    “Triennial”, Fuller Museum of Art, Brockton, MA<br>
+            1991    “The Object - Found and Perceived”, Fitchburg Art Museum, Fitchburg, MA<br>
+            1989    “Subjective Abstrasction”, Montserrat College of Art, Beverly, MA<br>
+            1989    “Subjective Abstraction”, Marris Art Gallery, Westfield State College, Westfield, MA<br>
+            1989    “Subjective Abstraction”, Boston College Art Gallery, Boston, MA<br>
+            1985    “Cultural Commentaries”, Berkshire Museum, Pittsfield, MA<br>
+            1984    ”New Epiphanies”, Gallery of Contemporary Art, University of Colorado, Colorado Springs, CO<br>
+            1984    “New Epiphanies”, Mandaville Art Gallery, University of California-San Diego, La Jolla, CA<br>
+            1983    “Triennial”, Brockton Art Museum, Brockton, MA<br>
+            1981    “De Cordova/Three Decades”, De Cordova Museum, Lincoln. MA<br>
+            1981    “Homage”, Danforth Museum, Framingham, MA<br>
+            1980    “New England Drawing”, DeCordova Museum, Lincoln, MA<br>
+            1979    “Art of the State”, Rose Art Museum, Brandies University, Waltham, MA<br>
+            1978    “De Cordava Collects New England Art”, DeCordova Museum, Lincoln, MA<br>
+            1977    “Massachusetts Open”, Worcester Art Museum, Worcester, MA<br>
+            1976    “Hort”, Fort Lauderdale Art Museum, Fort Lauderdale, FL<br>
+            1975    “1975 Artists Biennial”, New Orleans Art  Museum, New Orleans, LA<br>
+            1974    “May Show”, Cleveland Art Museum, Cleveland, OH<br>
+            1973    “Art of the State”, Canton Institute of Art, Canton, OH<br>
+            1973    “Young Generation”, Museum of Modern Art, Belgrade, Yugoslavia<br><br>
+
+            <strong>AWARDS</strong><br><br>
+
+            2022    Pollock-Krasner Foundation Grant, New York, NY<br>
+            2004    South Florida Cultural Consortium Fellowship for Visual and Media Artists, Miami, FL<br>
+            2002    Florida Individual Fellowship in Visual Arts, Tallahassee, FL<br>
+            1997    Pollock-Krasner Foundation Grant, New York, NY<br>
+            1996    NEA New England Foundation for the Arts Fellowships, Boston, MA<br>
+            1993    Blanche E. Colman Award, Boston, MA<br>
+            1991    Painting Finalist, Mass. Council on the Arts and Humanities, Boston, MA<br>
+            1990    Drawing Finalist, Mass. Council on the Arts and Humanities, Boston, MA<br>
+            1988    Basser Art Foundation Grant, New York, NY<br>
+            1987    Painting Finalist, Mass. Council on the Arts and Humanities, Boston, MA<br>
+            1987    Mellon Grant, School of the Museum of Fine Arts, Boston, MA<br>
+            1980    Painting Fellowship, Mass. Council on the Arts and Humanities, Boston, MA<br>
+            1979    Painting Finalist, Mass. Council on the Arts and Humanities, Boston, MA<br>
+            1978    Mural Competition Commission, Mass. Bay Transit Authority, Boston, MA<br>
+            1977    Second Prize for Painting, “Massachusetts Open” Worcester Art Museum, Worcester, MA<br><br>
+
+            <strong>PUBLIC COLLECTIONS</strong><br><br>
+
+            Museum of Art, Fort Lauderdale, FL<br>
+            Boca Raton Museum of Art, Boca Raton, FL<br>
+            Polk Art Museum, Lakeland, FL<br>
+            DeCordova Museum, Lincoln, MA<br>
+            Rose Art Museum, Brandies University, Waltham, MA<br>
+            Wellesley College Art Museum, Wellesley College, Wellesley, MA<br>
+            Chase Manhattan Bank, New York, NY<br>
+            International Telephone and Telegraph Corporation, New York, NY<br>
+            McDonalds Corporation, New York, NY<br>
+            Bank of Boston, Boston, MA<br>
+            Marriott Hotel, Boston, MA<br>
+            Fidelity Investments, Boston, MA<br>
+            Boston Public Library, Boston, MA<br><br>
+
+            <strong>SELECTED BIBLIOGRAPHY</strong><br><br>
+
+            Silver, Joanne, “MiroslavAntic: New Paintings”, ART News, April, 2006<br>
+            Foritano, James, “Miroslav Antic: New Paintings”, Art New England, April 2006<br>
+            McQuaid, Cate, “Miroslav Antic: New Paintings”, The Boston Globe, December 2005<br>
+            Helander, Bruce, “Mirroring Miro”, Art of Our Times. December, 2005<br>
+            Schwan, Gary, “What’s All The Noise”? , The Palm Beach Post, West Palm Beach, FL.
+            June 29, 2003<br>
+            Sherman, Mary, “ ‘Quatros’ Paint A Study in Nostalgia”, Boston Herald, December 2001<br>
+            McQuaid, Cate, “Seductive Paintings that Exploit Tension Between Real and Illusory Surfaces”, The Boston Globe, May 2000<br>
+            Giuliano, Charles, “Miroslav Antic, New Paintings”, Arts Media Magazine, May 2000<br>
+            Sherman, Mary, “Galleries Highlight a Yearning for Past”, Boston Herald, May 2000<br>
+            McQuaid, Cate, “Rapture Within Riddles”, The Boston Globe, November 1998<br>
+            Unger, Miles, “Miroslav Antic”, Art New England, Boston, MA. Summer 1999<br>
+            Millis, Christopher, “New Paintings by Miroslav Antic”, Arts Media, Boston, September 1996<br>
+            McQuaid, Cate, “Antic’s antics”, The Boston Globe, May 1997<br>
+            McQuaid, Cate, “This Year’s Best”, The Boston Globe, December 1996<br>
+            McQuaid, Cate, “Miroslav Antic’s Art Demands a Double Take”, The Boston Globe, Sept. 1994<br>
+            Temin, Christine, “Boston (in dialogue) Now” The Boston Globe, Sept. 1994<br>
+            Taylor, Robert, “Exploring the Nature of Personal Treasures,” The Boston Globe, Feb. 1994<br>
+            Giuliano, Charles, “Aura of Poetic Decay, Provocative and Pretty,” The Boston Globe, Nov. 1988<br>
+            Bonetti, David, “On and Off the Street”, The Phoenix, April 1987<br>
+            Giuliano, Charles, “Fifth Brockton Triennial”, The Phoenix, April 1987<br>
+            Narrett, Eugine, “Miroslav Antic’s Paintings”, Art New England, 1987<br>
+            Temin, Christine, “Perspectives”, The Boston Globe, 1987<br>
+            Temin, Christine, “Perspectives”, The Boston Globe, March 1984<br>
+            Hutton, Jon, “Miroslav Antic”, Arts Magazine, New York, NY. March 1982<br>
+            Bonetti, David, “New Portraits”, Art New England, Boston, MA. October 1982<br>
+            Baker, Kenneth, “Miroslav Antic”, The Phoenix, Boston, MA. May 1982<br>
+            Taylor, Robert, “A New Look at the Old”, The Boston Globe, November 1982<br>
+            Janows, Jill, “Two Ways with Watercolors” (with Tonia Amenoff), The Boston Globe, 1980<br>
+          </p>
+        </div>
+    </div>
+
+  </div>
+
+    <!--- artwork masonary --->
+
+    <div class="art-container">
+      <a href="miroslav-antic-001.html">
+        <div class="art-box">
+            <img src="image/artwork/001_Life is better with friends.jpeg" alt="Life’s Better with Friends">
+        </div>
+      </a>
+      <a href="miroslav-antic-002.html">
+        <div class="art-box">
+            <img src="image/artwork/002_happiness and other woes.jpeg" alt="Happiness and Other Woes">
+        </div>
+      </a>
+      <a href="miroslav-antic-003.html">
+        <div class="art-box">
+            <img src="image/artwork/003_american beauty.jpeg" alt="American Beauty">
+        </div>
+      </a>
+      <a href="miroslav-antic-004.html">
+        <div class="art-box">
+            <img src="image/artwork/004_telltale signs.jpeg" alt="Telltale Signs">
+        </div>
+      </a>
+      <a href="miroslav-antic-005.html">
+        <div class="art-box">
+            <img src="image/artwork/005_lovely rita.jpeg" alt="Lovely Rita">
+        </div>
+      </a>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                  <a href="../../vr.html">Virtual Gallery</a>
+                  <a href="../../sculpture.html">Sculpture</a>
+                  <a href="../../press.html">Press</a>
+              </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+
+  </body>
+</html>

@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Michael Gorman - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artist summary card  --->
+
+    <div class="content-wrapper">
+        <div class="header">
+          <h1>
+            Michael <br>
+            Gorman
+          </h1>
+        </div>
+        <div class="numbers">
+          <br>
+          <p>1963</p>
+          <div class="hr"></div>
+          <br>
+        </div>
+        <div class="hero-img">
+          <div class="img-revealer"></div>
+          <img src="image/hero/027_michael-gorman.jpeg" id="img-revealer" alt="" />
+        </div>
+        <div class="hero-img-info">
+          <p>Michael Gorman is a true painter of the post-war contemporary American zeitgeist.<br>
+          A renegade, an outlaw, a bon vivant of the big sky ennui of cowboy destinies and the infinite promise of blacktop highways.<br>
+          His canvases are a balance of restrained chaos and Jungian archetypes: the artist as myth, as explorer, as pleasure seeker, as poet, as shamanic manifestation of pop cultural psychology.</p>
+        </div>
+        <div class="cta">
+          <a href="../marek-zyga/marek-zyga.html">
+            <div class="cta-btn">
+              <h4><ion-icon name="arrow-back-sharp"></ion-icon> previous artist </h4>
+            </div>
+          </a>
+          <div class="cta-btn">
+            <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+            <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+            <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+            <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+          </div>
+          <a href="../michael-kalish/michael-kalish.html">
+            <div class="cta-btn">
+              <h4>next artist <ion-icon name="arrow-forward-sharp"></ion-icon></h4>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <!--- artist accordion  --->
+<div class="tabs-box">
+    <div class="acord">
+        <label for="tb-one" class="bg-one">
+          Artist Photo
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-one">
+        <div class="content" >
+          <div class="artistpfp">
+            <img src="image/profile/027_michael-gorman.png" id="michael_027">
+          </div>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-two"  class="bg-two">
+          Artist CV
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-two">
+        <div class="content">
+          <p>
+            <strong>Exhibitions</strong><br><br>
+
+            2022 Art Market Hamptons, NY<br>
+            2022 Bruce Lurie Gallery “Cowboys & Ballerinas”, Pacific Palisades, CA<br>
+            2022 LA Art Fair, CA<br>
+            2022 Lurie Gallery “New Works”, Park City, UT<br>
+            2021 Context Art Basel Miami, FL<br>
+            2021 Art Market Hamptons, NY<br>
+            2021 LA Art Fair, CA<br>
+            2021 Palm Beach Art Fair, FL<br>
+            2021 Palm Springs Art Fair, CA<br>
+            2020 Context Art Basel Miami, FL<br>
+            2020 2018 Affordable Art Fair, NYC<br>
+            2020 Art Market Hamptons, NY<br>
+            2020 LA Art Fair, CA<br>
+            2019 Context Art Basel Miami, FL<br>
+            2019 Art Market Hamptons, NY<br>
+            2018 Affordable Art Fair, NYC<br>
+            2018 Bruce Lurie Gallery, Culver City, LA<br>
+            2018 Evan Lurie Gallery, Carmel IN<br>
+            2017 "Ballerina's & Cowboys" - Lure Gallery/Platform 44, Beverly Hills, CA<br>
+            2016 Evan Lurie Gallery, Carmel, IN<br>
+            2015 Axiom Gallery, Santa Monica, CA<br>
+            2014 Axiom Gallery, Santa Monica, CA<br>
+            2012 De LaRosa / Lurie Gallery, Boca Raton, FL<br>
+            Bruce Lurie Gallery, West Hollywood, CA<br>
+            2010 The Art District, Santa Monica, CA<br>
+            2009 Lurie-Kavachnina Gallery, Miami, FL<br>
+            Gallerie Wild, Zurich, Switzerland; Frankfurt, Germany<br>
+            2008 Lure Gallery, Beverly Hills, CA<br>
+            Gallerie Wild, Zurich, Switzerland; Frankfurt, Germany<br>
+            2007 Museum of Los Gatos, San Jose, CA<br>
+            Addison Gallery, Boca Raton, FL<br>
+            Evan Lurie Gallery, Indianapolis, IN<br>
+            2006 Addison Gallery, Boca Raton, FL<br>
+            Evan Lurie Gallery, Indianapolis, IN<br>
+            2005 SoHo Gallery, Los Angeles, CA<br>
+            Venice Art Biennale, Italy<br>
+            2004 Glass Garage Gallery, West Hollywood, CA<br>
+            SoHo Gallery, Los Angeles, CA<br>
+            2003 SoHo Gallery, Los Angeles, CA<br>
+            "Provocations" - SoHo Gallery, Los Angeles, CA<br>
+            "Work from the left coast" - SoHo Gallery, Los Angeles, CA<br>
+            2002 Glass Garage Gallery, West Hollywood, CA<br>
+            2001 Glass Garage Gallery, West Hollywood, CA<br>
+            1997 Bruce Lurie Gallery, New York City, NY<br>
+            SoHo Gallery, Los Angeles, CA<br>
+            1996 SoHo Gallery, Los Angeles, CA<br>
+            1994 Irv Brenner Gallery, Palm Beach, FL<br>
+            1993 Irv Brenner Gallery, Palm Beach, FL<br>
+            Bruce Lurie Gallery, New York City, NY<br>
+            On The Wall Gallery, New York City, NY<br>
+          </p>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-three"  class="bg-three">
+          Artist Profile
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-three">
+        <div class="content">
+          <p>
+            Born and raised between Kansas, Oklahoma, and Texas, Gorman’s visual palette borrows from this Western tableaux of neon signage, semi-abstract forms, shimmering heat mirages, dark penumbras, and layers of materiality, filled with the kinetic potential of opportunity riding on the razor blade edge of disillusionment and entropy. This tension, a painterly contrast of formal and informal representation, is what makes Gorman’s paintings so electrifying and so connected to the American art historical lineage—from Ed Ruscha to Cy Twombly to Jasper Johns to Robert Rauschenberg. Painters of the nuclear age, color television, political assassinations, and social unrest. But in Gorman’s work, just under the surface of rebellion, is a vibrating romanticism, a vulnerability that is tender, like a warm desert sunset.<br><br>
+            Some of these softs ghosts of Americana that haunt his paintings can be traced back to his idyllic upbringing in the Midwest. His mother, a homemaker, painted in the manner of Norman Rockwell; hobby representations, a propagandized vision of home and country, stars and stripes. He counts his mother as one of his earliest influences. Gorman remembers competitions with his mother to see who can paint a chosen subject matter, sometimes flowers, the fastest. His father was an air traffic controller in the burgeoning aeronautical industry—a time when flying was glamorous and travel was a pastime of wanderlust and adventure. And his sister was a dancer for the American Ballet Theater, which has been the inspiration many of his recent paintings of ballet dancers, their shadows pirouetting against conceptual horizons—an arabesque with paint dripping down the languorous figure, with perhaps the specter of Tweety Bird or a spray painted chain-link just underneath the gesso.<br><br>
+            Speaking about the shadows in his paintings—of cowboys, gunslingers, and ballet dancers—Gorman says that the silhouette frees him from detailed representation. Inspired by Italian painter Alberto Giacometti’s slender faceless sculptures of men and horses, Gorman’s figures take on a sculptural form in two dimensions. In their restrained, minimal dimensionality, they take on a kind of Rorschach effect, allowing the mind’s eye to invent movement, emotion and intention. They are subjective representatives of the viewer and of the artist. They may be evil at the same time as they may be benevolent. Their abstract backgrounds further make this emotional relation obscured into a kind of stream of consciousness that metaphorizes into lightning strikes of paint splatters and rough hewn frames. In this context, the figures can exist in any form, any shape, any movement—they are a secret language of shadows in a Platonic dreamscape.<br><br>
+            Secret languages are a big part of Gorman’s paintings, but also personal history. Instead of going to college right away, he joined the United States Navy and became a cryptologist. His own unique painterly cryptology would slowly make its way into his later paintings. His specialty was Morse code—listening in on Russian communications during the Cold War. A war where information was covert and scarce, but highly valuable. In training, he would go to sleep with headphones on, listening to the relentless dits and dahs of the electrical pulses that translate into the universal, but confidential language of Morse. A coded language that can be communicated even in the midst of nuclear fallout, an apocalyptic environment that many of his paintings appear to take place in.<br><br>
+            After ten years of experimenting on canvas with a kind of nascent neo-abstract expressionism, Gorman’s lexicon of ciphers and unique vernacular also began to take the form of one word poems, phraseology, and plays on words. Instead of stars, Gorman’s big white, or big black skies, became full of letters and numbers, secret messages, pop culture references, and personal atonements. For Gorman, the text—either written in blocky serif lettering or free flowing handwritten form—is a device, an escape hatch to finish one of his paintings. He is prolific and fervent in the studio, so the text becomes a lasso, an emergency brake, akin to a signature or a brick wall for a speeding car. The poetry is beat in nature, like jazz or bebop—a kind of tonal thermometer of his own emotionality, but also the sociopolitical temperature of the moment. Words become a modality to literally slip out of the paintings and begin working on new ones.<br><br>
+            After a four year tour in the United States Navy, Gorman began studying architecture, but was painfully bored. The architectural practice was too rigid, mathematical, and severe. He found his saving grace in the fine art department of the University Of Kansas, which included legendary artists Roger Shimomura and Robert Price, who encouraged a young Gorman to continue painting. Gorman’s baroque approach to modernism and use of materiality sets him apart from other painters, then and now. His use of oil and acrylic takes on a transmogrifying dimension, similar to oil and water. And Gorman’s interest in graffiti is exemplified by the glow of spray paint in bright, nearly industrial color tones. Oil sticks and pastel allow him a free hand for his iconographic figures. On large-scale canvases, these forms sometimes take the shape of bulls, symbols of virility and masculinity, outlawness, and the stubborn nature of creativity itself.<br><br>
+            After graduating with his master from the University of Berkeley, Gorman made his way to Southern California, a land of promise and opportunity. He began to paint sets for movie productions. On a sojourn to Hollywood, Gorman met the legendary art dealer Bruce Lurie and his paintings began to briskly sell to collectors during the white hot art market of the the 90s in Los Angeles. The gallery’s flagship location on Santa Monica Boulevard was a mecca for galleries, but also for male hustlers and sex workers. Under the surface of Los Angeles’ gilded glamor was a hidden nature of danger; a beautiful, nearly spiritual underworld. Gorman’s paintings felt at home in this strange dark environment and his studio next to the gallery became a refuge for motorcycle gangs, pimps and drug dealers willing to trade duffle bags of party drugs for paintings. During this time, his paintings became more frenzied and the artist became more mythic than ever before.<br><br>
+            Today, Gorman is still prolific and still exploring new painterly languages—all the while holding a mirror to a new chaotic zeitgeist. Cowboys and gunslingers are still riding into the sunset, their silhouettes slipstreaming through the void of the artist’s raw unconscious onto the canvas. The vision quest of new pop cultural references: Supreme logos, anime cartoon characters, strippers and historical monuments—populate the paintings in a feverish encapsulation of the 21st century. His works are in countless important collections, like the North Carolina Museum of Art. And in the hands of private collectors, like Keifer Sutherland and Dave Grohl (Nirvana, Fu Fighters). Gorman is an artist who is desperate to capture the living present.<br>
+          </p>
+        </div>
+    </div>
+
+  </div>
+
+    <!--- artwork masonary --->
+
+    <div class="art-container">
+      <a href="michael-gorman-013.html">
+        <div class="art-box">
+            <img src="image/artwork/013.JPG" alt="Red White and Blue Liberty">
+        </div>
+      </a>
+      <a href="michael-gorman-014.html">
+        <div class="art-box">
+            <img src="image/artwork/014.JPG" alt="Don't Play with Guns">
+        </div>
+      </a>
+      <a href="michael-gorman-015.html">
+        <div class="art-box">
+            <img src="image/artwork/015.JPG" alt="Ride with Me">
+        </div>
+      </a>
+      <a href="michael-gorman-012.html">
+        <div class="art-box">
+            <img src="image/artwork/012.jpeg" alt="Gunslinger">
+        </div>
+      </a>
+      <a href="michael-gorman-016.html">
+        <div class="art-box">
+            <img src="image/artwork/016.JPG" alt="The Illuminate">
+        </div>
+      </a>
+      <a href="michael-gorman-017.html">
+        <div class="art-box">
+            <img src="image/artwork/017.JPG" alt="Pautus">
+        </div>
+      </a>
+      <a href="michael-gorman-018.html">
+        <div class="art-box">
+            <img src="image/artwork/018.JPG" alt="Feminine Things">
+        </div>
+      </a>
+      <a href="michael-gorman-020.html">
+        <div class="art-box">
+            <img src="image/artwork/020.JPG" alt="Le Taureau">
+        </div>
+      </a>
+      <a href="michael-gorman-021.html">
+        <div class="art-box">
+            <img src="image/artwork/021.JPG" alt="Pink Ballet Shoes">
+        </div>
+      </a>
+      <a href="michael-gorman-001.html">
+        <div class="art-box">
+            <img src="image/artwork/001_le femme.jpeg" alt="Le Femme">
+        </div>
+      </a>
+      <a href="michael-gorman-002.html">
+        <div class="art-box">
+            <img src="image/artwork/002_supreme cowboy.jpeg" alt="Supreme Cowboy">
+        </div>
+      </a>
+      <a href="michael-gorman-003.html">
+        <div class="art-box">
+            <img src="image/artwork/003_red white blue.jpeg" alt="Red White Blue">
+        </div>
+      </a>
+      <a href="michael-gorman-004.html">
+        <div class="art-box">
+            <img src="image/artwork/004_Plaisante.jpeg" alt="Plainsante">
+        </div>
+      </a>
+      <a href="michael-gorman-005.html">
+        <div class="art-box">
+            <img src="image/artwork/005_gunslinger ufo.jpeg" alt="Gunslinger UFO">
+        </div>
+      </a>
+      <a href="michael-gorman-006.html">
+        <div class="art-box">
+            <img src="image/artwork/006_betty boop ballerina.jpeg" alt="Betty Boop Ballerina">
+        </div>
+      </a>
+      <a href="michael-gorman-007.html">
+        <div class="art-box">
+            <img src="image/artwork/007_betty boop.jpeg" alt="Betty Boop">
+        </div>
+      </a>
+      <a href="michael-gorman-008.html">
+        <div class="art-box">
+            <img src="image/artwork/008_red bull.jpeg" alt="Red Bull">
+        </div>
+      </a>
+      <a href="michael-gorman-009.html">
+        <div class="art-box">
+            <img src="image/artwork/009_Ballerina 1998.jpeg" alt="Ballerina 1998">
+        </div>
+      </a>
+      <a href="michael-gorman-010.html">
+        <div class="art-box">
+            <img src="image/artwork/010_Amour.jpeg" alt="Amour">
+        </div>
+      </a>
+      <a href="michael-gorman-011.html">
+        <div class="art-box">
+            <img src="image/artwork/011_Gunslinger Battle.jpeg" alt="Gunslinger Battle">
+        </div>
+      </a>
+      <a href="michael-gorman-019.html">
+        <div class="art-box">
+            <img src="image/artwork/019.JPG" alt="Shady's Back">
+        </div>
+      </a>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                  <a href="../../vr.html">Virtual Gallery</a>
+                  <a href="../../sculpture.html">Sculpture</a>
+                  <a href="../../press.html">Press</a>
+              </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+
+  </body>
+</html>
