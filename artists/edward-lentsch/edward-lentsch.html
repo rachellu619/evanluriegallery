@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edward Lentsch - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artist summary card  --->
+
+    <div class="content-wrapper">
+        <div class="header">
+          <h1>
+            Edward <br>
+            Lentsch
+          </h1>
+        </div>
+        <div class="numbers">
+          <br>
+          <p>1959</p>
+          <div class="hr"></div>
+          <br>
+        </div>
+        <div class="hero-img">
+          <div class="img-revealer"></div>
+          <img src="image/hero/010_edward-lentsch.jpeg" id="img-revealer" alt="" />
+        </div>
+        <div class="hero-img-info">
+          <p>
+            Edward Lentsch's expansive artistic practice explores his relationship between the self, nature and the universe.<br>
+            From the Fibonacci sequence to the teachings of Aristotle, Lentsch attempts to create a bridge between the natural world and these intellectual canons, exploring the interconnection between the realms of science and mysticism, the metaphysical and the spiritual.<br>
+            He explores how these three facets are integrated within a global environment and moreover how we, as humans, fit within this complex matrix of thought using the ideas of some of the world's greatest writers and scholars.
+          </p>
+        </div>
+        <div class="cta">
+          <a href="../dennis-wojtkiewicz/dennis-wojtkiewicz.html">
+            <div class="cta-btn">
+              <h4><ion-icon name="arrow-back-sharp"></ion-icon> previous artist </h4>
+            </div>
+          </a>
+          <div class="cta-btn">
+            <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+            <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+            <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+            <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+          </div>   
+          <a href="../francisco-valverde/francisco-valverde.html">
+            <div class="cta-btn">
+              <h4>next artist <ion-icon name="arrow-forward-sharp"></ion-icon></h4>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <!--- artist accordion  --->
+<div class="tabs-box">
+    <div class="acord">
+        <label for="tb-one" class="bg-one">
+          Artist Photo
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-one">
+        <div class="content" >
+          <div class="artistpfp">
+            <img src="image/profile/010_edward-lentsch.jpeg" id="edward_010">
+          </div>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-two"  class="bg-two">
+          Artist CV
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-two">
+        <div class="content">
+          <p>
+            <strong>EXHIBITIONS (partial list)</strong><br><br>
+            
+            <strong>International Art Fair Exhibitions</strong><br><br>
+            
+            2019 LA Art Show Los Angeles<br>
+            2018 Art Market Hamptons<br>
+            2016-17 Palm Springs Fine Art Fair<br>
+            2015-17 Dallas Art Fair<br>
+            2015 Scope Miami<br>
+            2015 SCAPE Corona Del Mar/Newport Beach, CA<br>
+            2015 Dallas Fine Art Fair<br>
+            2014 Abu Dhabi Int’l Fine Art Fair<br>
+            2014 KFIAF Seoul South Korea<br>
+            2013 Costello Childs  Scottsdale<br>
+            2012-14 Art Aspen<br>
+            2012 Art San Diego<br>
+            2012 Palm Springs International Art Fair<br>
+            2012 Art Hamptons<br>
+            2011 Art San Diego<br>
+            2011 San Francisco Fine Art Fair<br>
+            2010 Art Hamptons<br>
+            2005 Art Chicago Navy Pier, Chicago, IL<br>
+            2003 Art Chicago, Julie Baker Fine Art, Grass Valley, CA<br>
+            2002 Palm Springs International Art Fair, Palm Springs, CA<br>
+            2000 Palm Springs International Art Fair, Palm Springs, CA<br><br>
+            
+            <strong>Gallery Exhibitions</strong><br><br>
+
+            2015-17 Costello Childs, Scottsdale<br>
+            2015 Melissa Morgan Fine Art, Palm Desert<br>
+            2015 Turner Carroll Gallery, Sante Fe<br>
+            2015 Kashya Hildebrand Gallerie, London<br>
+            2015 S.C.A.P.E Southern California Artist Projects and Exhibitions, Newport Beach, CA<br>
+            2014 Lanoue Fine Art, Boston<br>
+            2013 Peter Marcelle Gallery, Bridgehampton<br>
+            2011-12 Costello Childs Scottsdale 2016 Solo Exhibition New River Fine Art Ft Lauderdale<br>
+            2010 Tobi Tobin, Los Angeles<br>
+            2010 The Edge, Santa Fe<br>
+            2010 Costello Childs Gallery Scottsdale<br>
+            2010 Budwell Middle East Muscat, Oman<br>
+            2010 “Paradigms and Paradoxes” Forré and Co. Aspen, CO<br>
+            2009 “The Iridescence of Lepodoptera” Lanoue Fine Art, Boston<br>
+            2009 “The Alchemist” Ogilvie Pertl Gallery, Chicago, IL<br>
+            2009 Madison Gallery, La Jolla, CA<br>
+            2009 Zane Bennett, Santa Fe, NM<br>
+            2009 Zane Bennett, Art Chicago<br>
+            2008 Gallery Moda, Santa Fe, NM<br>
+            2008-09 Onessimo Fine Art<br>
+            2008 Ogilvie Pertle Gallery, Chicago, IL<br>
+            2007-2008 “Return to the Source OK Harris Works of Art, New York, NY<br>
+            OK Harris Works of Art, New York, NY<br>
+            2007 “Lesson’s From the I Ching” Onessimo Fine Art, Palm Beach Gardens, FL<br>
+            2007 “Remembering Atlantis” Eleonore Austerer Gallery, Palm Desert, CA<br>
+            2007 Hernandez Contemporary, Scottsdale, AZ<br>
+            2007 Ogilvie/Pertl Gallery, Chicago, IL<br>
+            2007 Gallery Moda, Santa Fe, NM<br>
+            2006 “The Saffron Adhara” Lanoue Fine Art, Boston, MA<br>
+            2006 “Modern Masters, Santa Fe, NM<br>
+            2006 Hernandez Contemporary, Scottsdale, AZ<br>
+            2006 Modern Masters Fine Art, Palm Desert, CA<br>
+            2005 Flanders Gallery, Minneapolis, MN<br>
+            2004 Elizabeth Edwards Fine Art, Palm Desert, CA<br>
+            2004 Flanders Gallery, Minneapolis, MN<br><br>
+
+            <strong>MEDIA AND PUBLICATIONS</strong><br><br>
+            
+            2014 Cover Luxe Magazine Southern California<br>
+            2013 Harpers Bazaar Magazine Japan<br>
+            2013-2014 TV show Million Dollar Listing<br>
+            2010 Music Video recording artist Enrique Iglesias “I Like It”<br>
+            2010 Music Video recording artist Ne-Yo “Champaign Life”<br>
+            2012 Elle Décor Magazine<br>
+            2011 Angelino Magazine LA<br>
+            2010 LA Times<br>
+            2010 Palm Springs Life<br>
+            2007 Art in America<br>
+            2006 Palm Springs Life<br><br>
+            
+            <strong>ART DONATIONS FOR FUNDRAISING</strong><br><br>
+
+            Giving Back Fund<br>
+            MOCA<br>
+            Minneapolis Institute of Arts<br>
+            William Shatner’s Hollywood Charity Auction<br>
+            Big Brothers and Sisters of America<br>
+            American Cancer Society<br>
+            Perspectives<br>
+            Greater Minneapolis Crisis Center Nursery<br>
+            Hess Center for Science and Medicine Mount Sinai NYC<br>
+            Minneapolis Heart Foundation<br>
+            Free Arts<br>
+          </p>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-three"  class="bg-three">
+          Artist Profile
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-three">
+        <div class="content">
+          <p>
+            Lentsch works across a variety of media to create an ‘energy of intention’, in which textures, compositions and colours (or their absence) are combined. At first glance, his abstract canvases bring to mind the earthen tones of Kiefer, or the scratched surfaces of Tàpies. Lentsch, however, draws from a broader art historical canon, and painting becomes an extension of the life force around him, a transformative experience through which he can mediate a pure experiential moment. Flowing from a nonverbal intuitive state of creative expression, Lentsch bridges a complex visual language in which colours and textures are lifted from the natural world. On canvas, they are refracted and tessellated, at times put through the process of entropy, which allows for them to be transformed and transmuted.<br><br>
+
+            Lentsch starts with a mastic and polymer foundation, before working with stone powders and dry pigments. Here, while the work is still wet, he uses trowels and sticks creating visual interventions. Before encapsulating the work in shellac and various varnishes, each works’ effervescence is enhanced and its distressed surface is developed. Works take on qualities of organic surfaces, such as sandstone or granite, using an intricate network of flecks and dots of pigment to proliferate the densely worked surface. One can imagine soft, snowy landscapes of white and grey or the verdant green of a tranquil overgrown pond or even the harsh dark lines of barren twigs and brush against an autumn landscape. Lentsch’s technique allows for the translation of our natural landscapes into abstract environments.<br><br>
+
+            It is the complex relationship between what is known, or the skill and technique, and what is manifested, the interpretation or intuition, that lies at the heart of Lentsch’s painterly technique. He uses the force of the paint as it is applied to the canvas as a sensory way to connect with the energy of the life force around him. Lentsch’s paintings also use logic existing within nature; for example, the number sequences that comprise the fractals of a snowflake. This ontological approach is spurred by the artist’s interest in Synectics, a methodology that seeks to explore how creativity works by a connecting of dots to reach a higher plane of understanding that encompasses the physical, psychological and symbolic. In this way Lentsch explores links between elemental phenomena and more ethereal, spiritual and magical experiences.<br><br>
+
+            Each of Lentsch’s works refers to a particular theory or intellectual or spiritual manifesto. His titles are not intended to act as complete narratives for individual paintings, but rather to demonstrate their significance as a theoretical foundation where each piece is connected to the other. His work becomes a series of links within a chain creating an intuitive dialogue between the conscious and subconscious. Just as his paintings make connections between the natural world and abstraction, it is the force of painting that helps him complete the circle. In diving into the canvas Lentsch understands his connection to the beauty and complexity of life that allow him to find freedom and personal empowerment.<br>
+          </p>
+        </div>
+    </div>
+
+
+    <div class="acord">
+        <label for="tb-four"  class="bg-four">
+          Artist Video
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-four">
+        <div class="content">
+          <div class="vid-container">
+
+            <div class="main-video-container">
+               <video src="https://evanluriegallery.s3.us-east-2.amazonaws.com/edward-lentsch/video/Edward+Lentsch.mp4" loop controls class="main-video"></video>
+               <h3 class="main-vid-title">Edward Lentsch</h3>
+            </div>
+         
+         </div>
+        </div>
+    </div>
+
+  </div>
+
+    <!--- artwork masonary --->
+
+    <div class="art-container">
+      <a href="edward-lentsch-001.html">
+        <div class="art-box">
+            <img src="image/artwork/001_image-25.jpeg" alt="Apeiron Infinitive Pt I">
+        </div>
+      </a>
+      <a href="edward-lentsch-002.html">
+        <div class="art-box">
+            <img src="image/artwork/002_image-26.jpeg" alt="Hestia">
+        </div>
+      </a>
+      <a href="edward-lentsch-003.html">
+        <div class="art-box">
+            <img src="image/artwork/003_image-27.jpeg" alt="Industrious Hummingbird">
+        </div>
+      </a>
+      <a href="edward-lentsch-004.html">
+        <div class="art-box">
+            <img src="image/artwork/004_image-28.jpeg" alt="Mary Oliver">
+        </div>
+      </a>
+      <a href="edward-lentsch-005.html">
+        <div class="art-box">
+            <img src="image/artwork/005_image-29.jpeg" alt="The Eureka Moment">
+        </div>
+      </a>
+      <a href="edward-lentsch-006.html">
+        <div class="art-box">
+            <img src="image/artwork/006_image-30.jpeg" alt="Nijo Castle">
+        </div>
+      </a>
+      <a href="edward-lentsch-007.html">
+        <div class="art-box">
+            <img src="image/artwork/007_image-31.jpeg" alt="Zeigarnik Effect III">
+        </div>
+      </a>
+      <a href="edward-lentsch-008.html">
+        <div class="art-box">
+            <img src="image/artwork/008_image-32.jpeg" alt="Uruka">
+        </div>
+      </a>
+      <a href="edward-lentsch-009.html">
+        <div class="art-box">
+            <img src="image/artwork/009.jpeg" alt="Platos Metaphors">
+        </div>
+      </a>
+      <a href="edward-lentsch-010.html">
+        <div class="art-box">
+            <img src="image/artwork/010.jpg" alt="Every Heart Sings A Song">
+        </div>
+      </a>
+      <a href="edward-lentsch-011.html">
+        <div class="art-box">
+            <img src="image/artwork/011.jpg" alt="The Riemann Hypothesis">
+        </div>
+      </a>
+      <a href="edward-lentsch-012.html">
+        <div class="art-box">
+            <img src="image/artwork/012.jpg" alt="Striding Saint">
+        </div>
+      </a>
+      <a href="edward-lentsch-013.html">
+        <div class="art-box">
+            <img src="image/artwork/013.jpg" alt="Reality Shines Resplendent">
+        </div>
+      </a>
+      <a href="edward-lentsch-014.html">
+        <div class="art-box">
+            <img src="image/artwork/014.jpeg" alt="The Emerald Table Part II">
+        </div>
+      </a>
+      <a href="edward-lentsch-015.html">
+        <div class="art-box">
+            <img src="image/artwork/015.jpeg" alt="The Stone of Protection">
+        </div>
+      </a>
+      <a href="edward-lentsch-016.html">
+        <div class="art-box">
+            <img src="image/artwork/016.jpg" alt="Gracias a Dios">
+        </div>
+      </a>
+      <a href="edward-lentsch-017.html">
+        <div class="art-box">
+            <img src="image/artwork/017.jpg" alt="The Poem Is A Dream">
+        </div>
+      </a>
+
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                  <a href="../../vr.html">Virtual Gallery</a>
+                  <a href="../../sculpture.html">Sculpture</a>
+                  <a href="../../press.html">Press</a>
+              </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+
+  </body>
+</html>

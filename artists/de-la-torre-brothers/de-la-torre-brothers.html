@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>De La Torre Brothers - Evan Lurie Gallery</title>
+
+    <!--- css link  --->
+    <link rel="stylesheet" href="../../style.css" />
+
+    <!--- font link --->
+    <link rel="stylesheet" href="https://use.typekit.net/wvx7oef.css">
+
+    <!--- ionicons link  --->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <!--- gsap cdn  --->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+  </head>
+
+  <body>
+
+    <!--- header  --->
+
+    <header>
+      <a href="../../index.html">
+        <div class="logo"><strong>EVAN</strong>&nbsp;Lurie Gallery</div>
+      </a>
+      <div class="menu-open" onclick="menuOpen()">
+        <ion-icon name="menu-outline"></ion-icon>
+      </div>
+    </header>
+
+    <div class="menu-container">
+      <div class="menu-close" onclick="menuClose()">
+        <ion-icon name="close-outline"></ion-icon>
+      </div>
+      <div class="menu-items">
+        <div class="menu-items-container">
+          <span>
+            <a href="../../event.html">
+              <div class="menu-item">
+                <div class="menu-item-list">E</div>
+                <div class="menu-item-name">EV<strong>E</strong>NT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../vault.html">
+              <div class="menu-item">
+                <div class="menu-item-list">V</div>
+                <div class="menu-item-name"><strong>V</strong>AULT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../artist-summary.html">
+              <div class="menu-item">
+                  <div class="menu-item-list">A</div>
+                  <div class="menu-item-name"><strong>A</strong>RTIST</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+          <span>
+            <a href="../../about.html">
+              <div class="menu-item">
+                <div class="menu-item-list">N</div>
+                <div class="menu-item-name">CO<strong>N</strong>TACT</div>
+              </div>
+            </a>
+          </span>
+          <div class="line"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--- artist summary card  --->
+
+    <div class="content-wrapper">
+        <div class="header">
+          <h1>
+            De La Torre <br>
+            Brothers
+          </h1>
+        </div>
+        <div class="numbers">
+          <br>
+          <div class="hr"></div>
+          <br>
+        </div>
+        <div class="hero-img">
+          <div class="img-revealer"></div>
+          <img src="image/hero/008_de-la-torre-brothers.jpeg" id="img-revealer" alt="" />
+        </div>
+        <div class="hero-img-info">
+          <p>
+            Collaborating brothers, Einar and Jamex De La Torre, were born in Guadalajara, México, 1963, & 1960.<br>
+            In a sudden family move, the brothers moved to The United States in 1972, going from a traditional catholic school to a small California beach Town.<br>
+            They both attended California State University at Long Beach, Jamex got a BFA in Sculpture in 1983, while Einar decided against the utility of an art degree.<br>
+            Currently the brothers live and work on both sides of the border, The Guadalupe Valley in Baja California, México, and San Diego, California.<br>
+            The complexities of the immigrant experience and contradicting bicultural identities, as well as their current life and practice on both sides of border, inform their narrative and aesthetics.
+          </p>
+        </div>
+        <div class="cta">
+          <a href="../carlo-borer/carlo-borer.html">
+            <div class="cta-btn">
+              <h4><ion-icon name="arrow-back-sharp"></ion-icon> previous artist </h4>
+            </div>
+          </a>
+          <div class="cta-btn">
+            <button class="social_share" data-type="fb"><ion-icon name="logo-facebook"></ion-icon></button>
+            <button class="social_share" data-type="twitter"><ion-icon name="logo-twitter"></ion-icon></button>
+            <button class="social_share" data-type="tumblr"><ion-icon name="logo-tumblr"></ion-icon></button>
+            <button class="social_share" data-type="pinterest"><ion-icon name="logo-pinterest"></ion-icon></button>
+            <button class="social_share" data-type="linkedin"><ion-icon name="logo-linkedin"></ion-icon></button>
+            <button class="social_share" data-type="email"><ion-icon name="mail-open-outline"></ion-icon></button>
+          </div>   
+          <a href="../dennis-wojtkiewicz/dennis-wojtkiewicz.html">
+            <div class="cta-btn">
+              <h4>next artist <ion-icon name="arrow-forward-sharp"></ion-icon></h4>
+            </div>
+          </a>
+        </div>
+    </div>
+
+    <!--- artist accordion  --->
+<div class="tabs-box">
+    <div class="acord">
+        <label for="tb-one" class="bg-one">
+          Artist Photo
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-one">
+        <div class="content" >
+          <div class="artistpfp">
+            <img src="image/profile/008_de-la-torre-brothers.jpeg" id="de-la-torre_008">
+          </div>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-two"  class="bg-two">
+          Artist CV
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-two">
+        <div class="content">
+          <p>
+            <strong>Solo Museum Exhibitions</strong><br><br>
+
+              <strong>2019</strong><br>
+
+              <em>Florentine Syndrome</em>, SiC! Gallery, Wroclaw, Poland (curated by Dominika Drozdowska and John Moran)<br>
+              <em>Rococolab</em>, The George D. and Harriet W. Cornell Fine Arts Museum, Rollins College, Winter Park, FL (curated by Gisela Carbonell)<br><br>
+          
+              <strong>2018</strong><br>
+              <em>Mexikanischer Maximalismus</em>, Frauenau Glass Museum, Frauenau, Bavaria, Germany<br><br>
+              
+              <strong>2017</strong><br>
+              <em>Dovenskalb (Sloth)</em>, Glasmuseet Ebeltoft, Ebeltoft, Denmark (catalog, essay by Selene Preciado)<br><br>
+              
+              <strong>2015</strong><br>
+              <em>Three Solo Shows</em>, Nationaal Glasmuseum, Leerdam, Holland (curated by Jeroen Maes / catalog, essay by John Drury)<br><br>          
+          
+              <strong>2014</strong><br>
+              <em>Three Solo Shows</em>, National Glass Centre Museum, Sunderland, England (curated by Jeroen Maes / catalog, essay by John Drury)<br><br>
+            
+              <strong>2013</strong><br>
+              <em>Three Solo Shows</em>, GlazenHuis Museum, Lommel, Belgium (curated by Jeroen Maes / catalog, essay by John Drury)<br><br>
+            
+              <strong>2012</strong><br>
+              <em>Einar & Jamex de la Torre</em>, The Chrysler Museum of Art, Norfolk, VA<br>
+              <em>El Melting Pot</em>, Mesa Arts Center Museum, Mesa AZ<br><br>
+
+              <strong>2011</strong><br>
+              <em>Borderlandia</em>, The Tucson Museum of Art, Tucson AZ<br><br>
+
+              <strong>2010</strong><br>
+              <em>Borderlandia</em>, Craft and Folk Art Museum, Los Angeles, CA<br>
+              <em>La Reconquista</em>, MACLA / Movimiento de Arte y Cultura Latino Americana, San Jose, CA (NEA grant)<br><br>
+
+              <strong>2008</strong><br>
+              <em>MesoAmerichanics</em>, National Hispanic Cultural Center, Albuquerque, NM (curated by Tey Nun / catalog, essays by Tomas Ybarra-Frausto and Tey Nun)<br><br>
+              
+              <strong>2005</strong><br>
+              <em>Reaching Critical Mass</em>, Carnegie Art Museum, Oxnard CA<br><br>
+              
+              <strong>2005</strong><br>
+              <em>Intersecting Time and Space</em>, The Museum of Glass: International Center for Contemporary Art, Tacoma, WA (catalog, essay by Tina Oldknow)<br><br>
+              
+              <strong>2004</strong><br>
+              <em>Einar & Jamex de la Torre</em>, Museum of American Glass, Millville, NJ<br><br>
+
+              <strong>2003</strong><br>
+              <em>Einar & Jamex de la Torre</em>, Museum of Art Fort Collins, Fort Collins, CO<br><br>
+              
+              <strong>2002</strong><br>
+              <em>Neoreliquias</em>, MUSA / Museo de las Artes Universidad de Guadalajara, Jalisco, México (curated by Ricardo Duarte / catalog, essay by Felipe Ehrenberg)<br><br>
+              
+              <strong>2001</strong><br>
+              <em>Anacronistas</em>, Mexic-Arte Museum, Austin TX (essay by Marilyn Zeitlin)<br><br>
+              
+              <strong>1998</strong><br>
+              <em>Ojito Tapatio</em>, The Mexican Fine Arts Center Museum, Chicago, IL (curated by Linda McAllister)<br>
+              <em>El Niño’s Wake</em>, MACLA Movimiento de Arte y Cultura Latino Americana, San Jose, CA (essay by Raquel Tibol)<br><br>
+              
+              <strong>1997</strong><br>
+              <em>Borderline Glass</em>, Arizona State University Art Museum, Tempe, AZ (curated by Heather Sealy Lineberry)<br><br>
+
+              <strong>Special Projects and Biennales</strong><br><br>
+
+              <strong>2019</strong><br>
+              <em>El Dorado</em>, Installation part of Lille 3000 festival, France (curated by Ana Elena Mallet)<br><br>
+              
+              <strong>2014</strong><br>
+              <em>MUJAM</em> billboard part of ‘Open Walls Project’ San Diego, CA<br><br>
+              
+              <strong>2011</strong><br>
+              Río Loco Art and Music Festival, Toulouse, France<br><br>
+              
+              <strong>2010</strong><br>
+              <em>Bienal de Estandartes Tijuana ’10</em>, Centro Cultural Tijuana, MX (curated by Marta Palau)<br><br>
+            
+              <strong>2008</strong><br>
+              <em>Pho’zole</em>, The California Biennal, Orange County Museum of Art, Newport Beach, CA<br><br>
+              
+              <strong>2005</strong><br>
+              <em>Quinto Sol</em>, 5th Bienal do Mercosul, Porto Allegre, Brasil (catalog)<br><br>
+              
+              <strong>1999</strong><br>
+              <em>Cuarta Bienal Monterrey</em>, Museo de Arte Contemporáneo de Monterrey, Monterrey, México (catalog)<br><br>
+              
+              <strong>1997</strong><br>
+              “El Niño”, binational installation for inSITE97, el Centro Cultural de Tijuana, México (curated by Sally Yard, Ivo Mesquita, Oliver Debroise, and Jessica Bradley / catalog)<br><br>  
+
+              <strong>Solo Gallery Exhibitions</strong><br><br>
+
+              <strong>2019</strong><br>
+              <em>High Noon</em>, Robert Lehman Gallery-UrbanGlass, Brooklyn, NY (curated by Ben Wright)<br>
+              <em>Latino Art Now!</em>, Smithsonian Latino Center at Nicole Longnecker Gallery, Houston, TX<br><br>
+              
+              <strong>2018</strong><br>
+              <em>Sloth</em>, Quint Gallery, San Diego, CA<br><br>
+              
+              <strong>2017</strong><br>
+              <em>Borders & Other Imaginary Fractals</em>, Koplin del Rio Gallery, Seattle, WA <br><br>
+              
+              <strong>2015</strong><br>
+              <em>Quemando las Naves</em>, Koplin del Rio Gallery, Culver City, CA<br>
+              <em>Hyperkulturemia</em>, The William Traver Gallery, Seattle, WA<br>
+              <em>Quemando las Naves</em>, The Ship in the Woods gallery, Encinitas, CA<br><br>
+
+              <strong>2014</strong><br>
+              <em>Folkloric Acid</em>, The Mindy Solomon Gallery, Miami, FL<br>
+              <em>Whysidro</em>, The Front Gallery, San Ysidro, CA<br><br>
+              
+              <strong>2012</strong><br>
+              <em>Microcosmos</em>, William Traver Gallery, Seattle, WA<br><br>
+
+              <strong>2011</strong><br>
+              <em>Fallen Angels</em>, S12 Gallery and Workshop, Bergen, Norway<br><br>
+              
+              <strong>2010</strong><br>
+              <em>Animexican</em>, Koplin del Rio Gallery, Culver City, CA<br>
+              <em>Pimp my Glass</em>, The William Traver Gallery, Seattle, WA<br>
+              <em>Inter-Continental Divide</em>, Kimball Art Center, Park City, UT<br><br>
+
+              <strong>2008</strong><br>
+              <em>New Colonies in the New World</em>, Koplin del Rio Gallery, Culver City, CA<br>
+              <em>Vitrolic Compliments</em>, The William Traver Gallery, Seattle, WA<br><br>
+              
+              <strong>2007</strong><br>
+              <em>Figurate Esto</em>, Lisa Sette Gallery, Phoenix, AZ<br><br>
+              
+              <strong>2005</strong><br>
+              <em>Desperados</em>, The Price-Dewey Gallery, Santa Fe, NM<br>
+              <em>Folkloric Acid</em>, Koplin del Rio Gallery, Culver City, CA<br>
+              <em>End of Empire</em>, CSUF / California State University Fullerton, Begovich Gallery, Fullerton, CA (catalog, essay by Felipe Ehrenberg)<br>
+              <em>Einar & Jamex de la Torre</em>, The Daniel Saxon Gallery, Los Angeles, CA<br><br>
+
+              <strong>2004</strong><br>
+              <em>Infection Confection</em>, Lisa Sette Gallery, Phoenix, AZ<br><em>Super Grotesque Beauty</em>, The Daniel Saxon Gallery, Los Angeles, CA<br><br>
+             
+              <strong>2003</strong><br>
+              <em>Eurovirus</em>, The Daniel Saxon Gallery, Los Angeles, CA<br><em>Neorelics: The Spanglish Period</em>, The Salina Art Center, Salina, KS<br>
+
+              <strong>2002</strong><br>
+              <em>Angry Gods</em>, The Daniel Saxon Gallery, Los Angeles, CA<br><br>
+              
+              <strong>2001</strong><br>
+              <em>Neorelics</em>, The Porter Troupe Gallery, San Diego, CA<br>
+              <em>Neorelics</em>, The Snyderman Gallery, Philadelphia, PA<br>
+              <em>Anacronistas</em>, Grand Arts, Kansas City, MO (curated by Sean Kelly, essay by Leah Ollman)<br><br>
+              
+              <strong>2000</strong><br>
+              <em>The Mexican Problem</em>, Intersection for the Arts, San Francisco, CA (curated by Kevin Chen)<br>
+              <em>Ácido Folclórico: en Retrosperspectiva</em>, Centro Cultural Tijuana, Tijuana, MX (essays by Felipe Ehrenberg and Olga Margarita Dávila)<br><br>
+
+              <strong>1999</strong><br>
+              <em>Nouveau Riche</em>, The Lisa Sette Gallery, Phoenix, AZ<br>
+              <em>La Conquista</em>, The Daniel Saxon Gallery, Los Angeles, CA<br>
+              <em>Mesomodern</em>, The William Traver Gallery, Seattle, WA<br>
+              <em>Oxymodern</em>, The Porter Troupe Gallery, San Diego, CA<br>
+              <em>El Niño's Wake</em>, MACLA / Movimiento de Arte y Cultura Latinoamericana, San José, CA<br>
+              <em>Arte Frontera</em>, The Snyderman Gallery, Philadelphia, PA<br><br>
+
+              <strong>1998</strong><br>
+              <em>11:58 (PMAD)</em>, The Robert Lehman Gallery, Urbanglass, Brooklyn, NY (curated by Olga T. Valle)<br>
+              <em>The Intersections Program at the University of Hawaii</em>, Pegge Hopper Gallery, Honolulu, HI<br><br>
+              
+              <strong>1997</strong><br>
+              <em>The Marlboro Man & the Virgin</em>, The Daniel Saxon Gallery, Los Angeles, CA<br>
+              <em>God's Country</em>, The William Traver Gallery, Seattle, WA<br>
+              <em>The Glass Frontera</em>, Joanne Rapp Gallery, Scottsdale, AZ<br><br>
+
+              <strong>1996</strong><br>
+              <em>Folkloric Acid: The Resurrection</em>, MACLA / Movimiento de Arte y Cultura Latinoamericana, San José, CA (curated by Maribel L. Alvarez)<br>
+              <em>Einar & Jamex de la Torre</em>, The Daniel Saxon Gallery, Los Angeles, CA<br>
+              <em>El Chamuco</em>, SOFA Miami, FL, Snyderman Gallery, Philadelphia, PA<br>
+              <em>Folkloric Acid</em>, MACLA / Movimiento de Arte y Cultura Latinoamericana, San José, CA (the exhibition was vandalized and all the works destroyed)<br><br>
+              
+              <strong>1994</strong><br>
+              <em>Sacrilege in Vitro</em>, Julie Rico Gallery, Santa Mónica, CA<br>
+              <em>Figuras y Alegoria</em>, Galería de la Raza, San Francisco, CA (curated by Liz Lerma)<br><br>
+
+              <strong>Selected Group Exhibitions</strong><br><br>
+
+              <strong>2019</strong><br>
+              <em>San Diego Surreal</em>, Oceanside Museum of Art, Oceanside, CA (curated by Susan Anderson)<br>
+              <em>Beast</em>, Riverside Art Museum, Riverside, CA<br><br>
+
+              <strong>2017</strong><br>
+              <em>Los Angeles Latin America (LA/LA)n US-Mexico Border: Place</em>, Imagination and Possibility, Craft and Folk Art Museum, Los Angeles, CA<br>
+              <em>Los Angeles Latin America (LALA) How to read El Pato Pascual: Disney's Latin America and Latin America's Disney</em>, Luckman Fine Arts V Complex, CSULA, Los Angeles, CA<br>
+              <em>Glass 4 Ever</em>, Gorcums Museum, Gorinchem, Netherlands (catalog)<br>
+              <em>Cities of Glass</em>, Kunst Fort, Asperen, Netherlands (catalog)<br><br>
+
+              <strong>2016</strong><br>
+              <em>A Peek into Chicano Art</em>, Manhattan Beach Art Center, Manhattan Beach, CA<br><br>
+              
+              <strong>2015</strong><br>
+              <em>The Cheech Marin Collection</em>, Mesa Arts Center Museum, Mesa AZ<br><br>
+              
+              <strong>2013</strong><br>
+              <em>Arte/Sano</em>, MAP / Museo de Arte Popular, México City, México<br>
+              <em>Contemporary Glass Sculpture</em>, Orlando Museum of Art, Orlando, FL (catalog)<br><br>
+              
+              <strong>2012</strong><br>
+              <em>The International Glass Symposium</em>, Nový Bor Glass Museum, Nový Bor, Czech Republic<br><br>
+              
+              <strong>2011</strong><br>
+              <em>Contacto 12</em>, Museo de las Américas, Denver, CO (curated by Maruca Salazar)<br>
+              <em>Obra Negra</em>, Centro Cultural Tijuana, México (curated by Carlos Ashida and Olga Margarita Dávila)<br><br>
+
+              <strong>2010</strong><br>
+              <em>Obsidian Mirrors-Refracting Ancient Mexican Art and Archeology</em>, Getty Research Institute Gallery, Los Angeles, CA<br>
+              <em>Bienal de Estandartes Tijuana '10</em>, Centro Cultural Tijuana, Tijuana, México (curated by Marta Palau)<br>
+              <em>Slag (the Anti Art Glass)</em>, Prichard Art Gallery, University of Idaho, Moscow, ID<br><br>
+              
+              <strong>2008</strong><br>
+              <em>A Declaration of Immigration</em>, The Mexican Fine Arts Center Museum, Chicago, IL<br>
+              <em>Juxtapoz</em>, Laguna Art Museum, Laguna Beach, CA<br>
+              <em>TRANSactions: Contemporary Latin American and Latino Art</em>, Weatherspoon Art Museum, Greensboro, NC<br><br>
+
+              <strong>2007</strong><br>
+              <em>No Distance is More Awesome</em>, Galería de la Raza, San Francisco, CA<br>
+              <em>Sister Cities- Testing Boundaries</em>, El Paso Museum of Art, TX<br>
+              <em>TRANSactions: Contemporary Latin American and Latino Art</em>, University of Rochester, Memorial Art Gallery, Rochester, NY<br>
+              <em>Strange New World-Extraño Nuevo Mundo</em>, SMMoA / Santa Monica Museum of Art, Santa Mónica, CA<br><br>
+
+              <strong>2006</strong><br>
+              <em>TRANSactions: Contemporary Latin American and Latino Art</em>, MCASD / Museum of Contemporary Art San Diego, San Diego, CA / catalog<br>
+              <em>Strange New World-Extraño Nuevo Mundo</em>, MCASD / Museum of Contemporary Art San Diego, San Diego, CA (curated by Rachel Teagle / catalog)<br>
+              <em>Holly Land- Diaspora and the Desert</em>, Heard Museum, Phoenix, AZ (essays by curators Joe Baker and Lara Taubman / catalog)<br>
+              <em>Material Matters</em>, LACMA Los Angeles County Museum of Art, Los Angeles, CA (curated by Howard N. Fox and Shara Nichols / catalog)<br>
+              <em>November</em>, The Harris Lieberman Gallery, New York, NY<br><br>
+
+              <strong>2005</strong><br>
+              <em>Espejos-Mirrors: Artistas Contemporáneos de México en los Estados Unidos</em>, Instituto Cultural de México, Washington DC (curated by Santiago Espinosa de los Monteros / catalog)<br>
+              <em>Insatiable Desires</em>, USC / University of Southern California Fisher Gallery, Los Angeles, CA (catalog)<br><br>
+              
+              <strong>2004</strong><br>
+              <em>Curious</em>, The Deschler Galerie, Berlin, Germany<br>
+              <em>Narcochic Narcochoc</em>, Musée International des Modestes, Séte, France (curated by Marco Granados / catalog)<br>
+              <em>Art from the Americas</em>, The Santa Barbara Art Museum , Santa Bárbara, CA<br>
+              <em>LARVA</em>, Centro Cultural Tijuana, Tijuana, México (curated by Marco Granados)<br>
+              <em>Going Global</em>, Carnegie Museum, Oxnard, CA (essay by Max Benavidez)<br>
+              <em>100 Artists See Satan</em>, CSUF / California State University Fullerton, Begovich Gallery, Fullerton, CA (catalog)<br><br>
+
+              <strong>2003</strong><br>
+              <em>México Illuminated</em>, Albright College and Reading Museum, Reading, PA<br>
+              <em>Ultra Baroque - Aspects of Post Latin American Art</em>, The Walker Art Center; Minneapolis, MN<br>
+              <em>Home/Land</em>, Pittsburg Society for Contemporary Craft and The Huston Center for Contemporary Craft, Pittsburg, PA (catalog)<br><br>
+              
+              <strong>2002</strong><br>
+              <em>Mixed Feelings</em>, Fisher Gallery, University of Southern California, Los Angeles, CA (curated by Gustavo Leclerc and Michael Dear / catalog)<br>
+              <em>Diagnósticos Urbanos</em>, Centro Cultural Tijuana, Tijuana, México (curated by Magali Arreola)<br>
+              <em>III Salon del Vidrio</em>, Museo de Arte Contemporáneo de Caracas, Caracas, Venezuela<br>
+              <em>VII Salón de Arte BBVA Bancomer</em>, Museo de Arte de la Ciudad de Querétaro, Querétaro, México<br><br>
+
+              <strong>2001</strong><br>
+              <em>Lateral Thinking: Art of the 1990's</em>, MCASD / Museum of Contemporary Art San Diego, San Diego, CA (catalog)<br>
+              <em>VII Salón de Arte BBVA Bancomer</em>, Museo de Arte Moderno, México City, México<br>
+              <em>Made in California- Art Image and Identity 1900-2000</em>, LACMA / Los Angeles County Museum of Art, Los Angeles, LA (catalog)<br>
+              <em>Tendencies</em>, VII Salon de Arte Bancomer, México City, México (catalog)<br>
+              <em>Ultra Baroque - Aspects of Post Latin American Art</em>, Modern Art Museum of Fort Worth, Fort Worth, TX (curated by Elizabeth Armstrong and Victor Zamundio-Taylor / catalog)<br>
+              <em>Ultra Baroque - Aspects of Post Latin American Art</em>, SFMOMA San Francisco Museum of  Modern Art, San Francisco, CA (curated by Elizabeth Armstrong and Victor Zamundio-Taylor / catalog)<br>
+              <em>Ultra Baroque - Aspects of Post Latin American Art</em>, Miami Art Museum, Miami, FL (curated by Elizabeth Armstrong and Victor Zamundio-Taylor / catalog)<br><br>
+
+              <strong>2000</strong><br>
+              <em>Ultra Baroque - Aspects of Post Latin American Art</em>, MCASD Museum of Contemporary Art San Diego, San Diego, CA (curated by Elizabeth Armstrong and Victor Zamundio-Taylor / catalog)<br>
+              <em>Millennium Glass-an International Survey of Studio Glass</em>, Kentucky Art & Craft Gallery, Louisville, KY (curated by Brion Clinkingbeard, Adeke Leight and Stephen Rolfe Powel / catalog)<br>
+              <em>ES 2000, International Biennial of Standards</em>, Centro Cultural Tijuana, Tijuana, México<br>
+              <em>7th International Shoebox Sculpture Exhibition</em>, University of Hawaii Art Gallery, Honolulu, HI (catalog)<br>
+              <em>Off Broadway</em>, MCASD / Museum of Contemporary Art San Diego, San Diego, CA<br>
+              <em>Reflections of Time and Place: Latin American Still Life in the 20th Century</em>, Katonah Museum of Art, Katonah, NY<br>
+              <em>Reflections of Time and Place: Latin American Still Life in the 20th Century</em>, El Museo del Barrio, New York, NY (curated by Clayton C. Kirking and Edward Sullivan / catalog)<br><br>
+
+              <strong>1999</strong><br>
+              <em>Glass Art Document</em>, Kanazu Forest of Creation Museum, Awara City, Japan (curated by Tomoko Aoki / catalog)<br>
+              <em>The Labyrinth of Multitude</em>, CSU / California State University, Luckman Fine Arts Center Gallery, Los Angeles, CA (curated by Susana Bautista / catalog)<br>
+              <em>Crossing Boundaries: Jamex and Einar de la Torre</em>, Steve La Ponsie, and Ronald Gonzales, USC / University of Southern California Fisher Gallery, Los Angeles, CA (curated by Max Schultz / catalog)<br>
+              <em>ntersections Program</em>, University of Hawaii, Pegge Hopper Gallery, Honolulu, HI<br><br>
+
+              <strong>1998</strong><br>
+              <em>Frágil: Arte en Vidrio</em>, Monterrey Glass Museum, Monterrey, México (catalog)<br><br>
+
+              <strong>1997</strong><br>
+              <em>Reconstructing Ritual</em>, SDSU / San Diego State University Art Gallery, San Diego, CA (curated by Tina Yapelly)<br>
+              <em>Monique Knowlton Returns</em>, Monique Knowlton Gallery, New York, NY<br>
+              <em>“El Niño”, binational installation for inSITE97</em>, Centro Cultural Tijuana, Tijuana, México (curated by Sally Yard, Ivo Mesquita, Oliver Debroise, and Jessica Bradley, catalog)<br><br>
+
+              <strong>1996</strong><br>
+              <em>Día de los Muertos</em>, The Mexican Fine Arts Center Museum, Chicago, IL, Chicago, IL<br><br>
+              
+              <strong>1995</strong><br>
+              <em>All Americans</em>, Porter Troupe Gallery, San Diego, CA<br>
+              <em>La Curva</em>, The City Gallery, Ensenada, México<br><br>
+
+              <strong>1994</strong><br>
+              <em>Glass of the Pacific Rim</em>, SFSU / San Francisco State University, San Francisco, CA<br><br>
+
+              <strong>Public Art</strong><br><br>
+
+              2019. San Ysidro Public Library, San Ysidro, CA<br>
+              2018. Vitae Telam, Manus Curant and Primum Pulmenti, Rancho los Amigos Rehabilitation Center, Downey, CA<br>
+              2017. Outdoor public sculpture, Compton light rail terminal, Compton, CA<br>
+              2017. Indoor lenticular archway and outdoor metal panels, San Ysidro Public Library, San Ysidro, CA<br>
+              2016. Vigor Vortex, 10' lenticular mandala, Rancho los Amigos Rehabilitation Center, Downey, CA (PAM-YIR award)<br>
+              2015. Barrio Bot, 16' steel and cantera stone sculpture at COMM22 development, San Diego, CA<br>
+              2014. Open Walls, printed artwork on billboard, San Diego, CA<br>
+              2013. Corpus Callosum, lobby lenticulars and elevator shaft dioramas, San Diego Central Library, San Diego, CA<br>
+              2011. 11' kinetic mandala, The City of  Toulouse, France<br>
+              2010. Dyslexic Mementos, forty wall pieces, San Diego International Airport, San Diego, CA<br>
+              2008. Southern Exposure, two 16' sentries sculpture, Phoenix Convention Center, Phoenix, AZ<br>
+              2006. Cantera stone sculptural wall and 5' bronze sculptures, Valley Metro Rail, Phoenix, AZ<br>
+              2005. Rodoviaria, five 50” cantera stone wheels with sand cast glass inclusions, Caltrans District 11 New Campus Facility, San Diego, CA<br>
+              2005. Three 10' cast glass mandalas and five cantera stone sculptures, Plaza San José, San José, CA<br>
+              2000. Journey to Aztlan City, 200 cast glass heads on a mural, San Diego Convention Center, San Diego, CA<br><br>
+
+              <strong>Selected Bibliography</strong><br><br>
+
+              2019. Gisela Carbonell, Ph.D., Interview with Einar & Jamex de la Torre, Cornell Fine Arts Museum, Winter Park, FL<br>
+              2017. Selene Preciado, Dovenskab (Laziness) exhibition catalog, Danish Arts Foundation, Copenhagen, Denmark<br>
+              2016. Paul Stankard, Studio Craft as a Career: A Guide to Achieving Excellence in Art-making, Schiffer, p. 126-127<br>
+              2005. Gary D. Keller, Triumph of Our Communities, The Bilingual Press, p. 4, 158, 307<br>
+              2004. Gary D. Keller, Chicano Art for Our Millennium, The Bilingual Press, p. 149, 154<br>
+              2002. Max Schulz, Contemporary Chicana and Chicano Art, The Bilingual Press, p. 156-159<br>
+              2002. Georgina Fentoni, Glass Art 2002, published by Georgina Fentoni, London, United Kingdom, p. 78<br>
+              2001. Ray Leier, Contemporary Glass; Color Light & Form, Guild Publishing, p. 107<br>
+              2004. Jean McLaughlin, The Nature of Craft and the Penland Experience, Lark Books, p. 147<br><br>
+
+              <strong>Collections</strong><br><br>
+
+              National Glass Centre, Sunderland, United Kingdom<br>
+              Museum of American Glass, Millville, NJ<br>
+              Arizona State University Museum, Tempe, AZ<br>
+              Arkansas Arts Center, Little Rock, AR<br>
+              Corning Museum of Glass, Corning NY<br>
+              The Ernsting Foundation Alter Hof Herding, Coesfeld, Germany<br>
+              Fisher Museum of Art, University of Southern California, Los Angeles, CA<br>
+              Frauenau Glass Museum, Frauenau, Bavaria, Germany<br>
+              GlazenHuis Museum, Lommel, Belgium<br>
+              Henry Art Gallery, Washington University, Seattle, WA<br>
+              The Kanazu Museum, Kanazu, Japan<br>
+              Lowe Art Museum, University of Miami, Miami, FL<br>
+              National Museum of Mexican Art, Chicago, IL<br>
+              Museum of Decorative Arts, Prague, Czech Republic<br>
+              Museum of Glass, Tacoma, WA<br>
+              Nationaal Glasmuseum, Leerdam, Netherlands<br
+              >National Hispanic Cultural Center, Albuquerque, NM<br>
+              Nový Bor Glass Museum, Nový Bor, Czech Republic<br>
+              Palm Springs Art Museum, Palm Springs, CA<br>
+              Museum of Contemporary Art San Diego, San Diego, CA<br>
+              The Santa Barbara Museum of Art, Santa Barbara CA<br>
+              Tucson Museum of Art, Tucson, AZ<br><br>
+
+              <strong>Glass Schools:</strong><br>
+              North Lands Creative, United Kingdom<br>
+              The Glass Furnace, Istanbul, Turkey<br>
+              JamFactory, Adelaide, Australia<br><br>
+
+              <strong>Private:</strong><br>
+              Alice Walton<br>
+              Cheech Marin<br>
+              Elton John<br>
+              Irwin Jacobs<br>
+              Terry McMillan<br>
+              Sandra Cisneros<br>
+              Quincy Troupe<br><br>
+
+              <strong>Guest Instructors</strong><br><br>
+
+              2016. Penland School of Crafts, Penland, NC<br>
+              2014. Urbanglass, Brooklyn, NY<br>
+              2013. Glazenhuiz Museum, Lommel, Belgium<br>
+              2012. Penland School of Crafts, Penland, NC<br>
+              2012. Pilchuck Glass School, Seattle, WA<br>
+              2011. Xaquixe Glass Studio, Oaxaca, México<br>
+              2010. The Pittsburg Glass Center, Pittsburg, PN<br>
+              2010. Xaquixe Glass Studio, Oaxaca, México<br>
+              2009. Penland School of Crafts, Penland, NC<br>
+              2009. Glass Studio, Oaxaca, México<br>
+              2008. Pilchuck Glass School, Seattle, WA<br>
+              2007. Northlands Creative Glass, Caithness, Scotland<br>
+              2007. Ezra Glass Studios, Kanazu, Japan<br>
+              2006. Jam Factory, Adelaide, Australia<br>
+              2005. Bild-Werk School, Fraeunau, Germany<br>
+              2005. The Pittsburg Glass Center, Pittsburg, PN<br>
+              2004. Pilchuck Glass School, Seattle, WA<br>
+              2003. The Glass Furnace, Istanbul, Turkey<br>
+              2002. Bild-Werk School, Frauenau, Germany<br>
+              2002. The Harbourfront Centre, Toronto, Canada<br>
+              2002. Penland School of Crafts, Penland, NC<br>
+              2002. More Fire Studios, Rochester, NY<br>
+              2001. Haystack Mountain School of Crafts, Deer Isle, Maine<br>
+              2001. Urbanglass, Brooklyn, NY<br>
+              2000. Pilchuck Glass School, Seattle, WA<br>
+              1999. Pratt Fine Arts Center, Seattle, WA<br>
+              1999. Pilchuck Glass School, Seattle, WA<br>
+              1999. Public Glass, San Francisco, CA<br>
+              1998. Urbanglass, Brooklyn, NY<br>
+              1998. Penland School of Crafts, Penland, NC<br><br>
+
+              <strong>Awards</strong><br><br>
+
+              2017. Public Art Network-Year in Review, Rancho los Amigos Rehabilitation Center<br>
+              2014. The USA Artists Grant<br>
+              2013. The San Diego Foundation Grant<br>
+              2010. Estandartes Biennal, Tijuana Cultural Center<br>
+              2010. The San Diego Art Prize<br>
+              2007. The Louis Comfort Tiffany Foundation Grant<br>
+              2006. The Joan Mitchell Grant Award<br>
+              2004. CGCA / Creative Glass Center of America, WheatonArts Fellowship Program<br>
+              2001. Production Grant, “Grant Arts” Kansas City<br><br>
+
+              <strong>Residencies</strong><br><br>
+
+              2017. Ebeltoft Glass Museum, Ebeltoft, Denmark<br>
+              2016. University of Wisconsin-River Falls, Wyman Visiting Scholar Program, River Falls, WI<br>
+              2016. University of Notre Dame, Segura Arts Studio, South Bend, IN<br>
+              2015. STARworks Center for Creative Enterprise, Star, NC<br>
+              2015. National Museum of Glass, Leerdam, Netherlands<br>
+              2014. Urbanglass, Brooklyn, NY<br>
+              2013. The Melting Point, Sedona, AZ<br>
+              2013. The GlazenHuis Museum, Lommel, Belgium<br>
+              2012. Ajeto Glass Studios, Nový Bor, Czech Republic<br>
+              2011. S12 Gallery and Workshop, Bergen, Norway<br>
+              2011. Río Loco Art and Music Festival, Toulouse, France<br>
+              2010. CASA / Centro de las Artes de San Agustin, San Agustin, Oaxaca, México<br>
+              2010. Pottery Northwest, Seattle, WA<br>
+              2008. MassArt / Massachusetts College of Art and Design, Boston, MA<br>
+              2008. Museum of Glass, Tacoma, WA<br>
+              2007. Banana Factory Arts and Education Center, Bethlehem, PA<br>
+              2005. Museum of Glass, Tacoma, WA<br>
+              2005. CSUF / California State University Fullerton, Art Department, Fullerton, CA<br>
+              2004. CGCA / Creative Glass Center of America, WheatonArts Fellowship Program, Millville, NJ<br>
+              2000. RISD / Rhode Island School of Design, Providence, RI<br>
+              2000. Ezra Glass Studio, Kanazu, Japan<br>
+              1996. The Hilltop AIR Program, Tacoma, WA<br><br>
+
+              <strong>Guest Artists</strong><br><br>
+              
+              2016. Ball State University, Muncie, IN<br>
+              2015. Smithsonian American Art Museum, Renwick Gallery, Washington, DC<br>
+              2014. University of Miami, Coral Gables, FL<br>
+              2014. Tomas Bata University, Zlin, Czech Republic<br>
+              2014. The National Glass Centre, Sunderland, England<br>
+              2014. University of Lisbon, VICARTE - Glass and Ceramic for the Arts, Lisbon, Portugal<br>
+              2014. Ball State University, Muncie, IN<br>
+              2011. Bowling Green State University, Bowling Green, OH<br>
+              2010. RIT / Rochester Institute of Technology, Rochester, NY<br>
+              2009. KYSU / Kentucky State University, Frankfort, KY<br>
+              2009. Temple University, Tyler School of Art, Philadelphia, PA<br>
+              2009. SJSU / San José State University, San José, CA<br>
+              2009. CCA / California College of the Arts, Oakland, CA<br>
+              2007. OTA / Tokyo Glass Art Institute, Tokyo, Japan<br>
+              2006. The Canadian Glass Art Conference, Red Deer, Canada<br>
+              2006. The Jam Factory, Adelaide, Australia<br>
+              2006. Australian National University, Camberra, Australia<br>
+              2004. CSUF / California State University Fullerton, Fullerton, CA<br>
+              2003. Ohio State University, Columbus, OH<br>
+              2003. The Appalachian Center for Craft, Smithville, TN<br>
+              2002. The Glass Furnace, Istanbul, Turkey<br>
+              2002. Alfred University, Alfred, NY<br>
+              2002. Tyler School of Art, Philadelphia, PA<br>
+              2002. University of Miami, Coral Gables, FL<br>
+              2001. Emporia State University, Emporia, KS<br>
+              2001. SFSU / San Francisco State University, San Francisco, CA<br>
+              1999. CCA / California College of the Arts, Oakland, CA<br>
+              1998. University of Hawaii, The Intersections Program, Honolulu, HI<br>
+              1998. SJSU / San José State University, San José, CA<br>
+              1997. CSUF / California State University Fullerton, Fullerton, CA<br>
+              1997. SFSU / San Francisco State University, San Francisco, CA<br>
+              1996. SJSU / San José State University, San José, CA<br>
+              1996. SFSU / San Francisco State University, San Francisco, CA<br>
+              1996. CCA / California College of the Arts, Oakland, CA<br>
+              1995. University of Illinois at Urbana-Champaign, Champaign, IL<br>
+              1995. SJSU / San José State University, San José, CA<br>
+              1995. SFSU / San Francisco State University, San Francisco, CA<br>
+              1994. SJSU / San José State University, San José, CA<br>
+              1994. SFSU / San Francisco State University, San Francisco, CA<br>
+              1994. CCA / California College of the Arts, Oakland, CA<br>
+              1985. UCLA / University of California Los Angeles, Glass Program, Los Angeles, CA<br>
+              1984. UCLA / University of California Los Angeles, Glass Program, Los Angeles, CA<br>
+              1984. CSULB / California State University Long Beach, Glass program, Long Beach, CA<br>
+              1983. CSULB / California State University Long Beach, Glass program, Long Beach, CA<br><br>
+
+              <strong>Conference Demos</strong><br><br>
+
+              2016. Minnesota Center for Creative Glass, Minneapolis, MN<br>
+              2015. Glass Art Society Conference, San José, CA<br>
+              2012. The International Glass Symposium, Nový Bor, Czech Republic<br>
+              2011. The Glass Art Society Conference, Seattle, WA<br>
+              2006. Canadian Glass Art Conference, Red Deer, Canada<br>
+              2008. The Glass Art Society Conference, Portland, OR<br>
+              2004. The Glass Art Society Conference, New Orleans, LA<br>
+              2000. The Glass Art Society Conference, Brooklyn, NY<br>
+              1997. The Glass Art Society Conference, Tucson, AZ<br><br>
+
+              <strong>Selected Reviews & Publications</strong><br><br>
+
+              Dan Mølgaard, The Seven Deathly Sins, Sloth, Neues Glass/ New Glass, 1/2017, p 7-11<br>
+              Robert Pinkus, Whysidro, Art News, October 2014<br>
+              John Drury, Alien Being: The de la Torre Brothers, Nues Glass Magazine, Fall 2011, p 26-23<br>
+              Staff, Borderlandia: Cultural Topographies v Einar and Jamex de la Torre, Tucson Weekly, September 22, 2011<br>
+              Getty staff, Obsidian Mirror-Travels, Getty Research Institute Exhibition Gallery, November 2011 (pamphlet)Margaret Reagan, Playfully Serious, Tucson Weekly, February 17, 2010<br>
+              Jody Zellen, Access and Excess: The Hybrid Work of Jamex and Einar de la Torre, Art Ltd., November/December 2010, p 54<br>
+              James Scarborough, Einar and Jamex de la Torre, Artillery Review, Los Angeles, CA, 2010<br>
+              David Pagel, Art Review: Einar and Jamex de la Torre at Koplin del Rio Gallery, The Los Angeles Times, September 23, 2010<br>
+              Lucero Amador-Miranda, Protesta en Arte en Animexican, Einar and Jamex de la Torre revelan más que belleza, La Opinion, Los Angeles, CA, September 9, 2010<br>
+              Gussie Fauntleroy, De la Torre Brother's and Border Baroque, Craft in America, September 2009<br>
+              Janelle Conaway, Manouvering Meztisaje, Americas Magazine, February 2009<br>
+              Leah Ollman, The De la Torres are tempting fate, Special to The Times, February 8, 2008<br>
+              Staff, Tijuana’s Strange New World, View of San Diego Museum of Contemporary Art, Cover, July 2006<br>
+              Joanna Shaw-Eagle, Tijuana’s Strange New World, The Washington Times, April 8, 2006<br>
+              Daniella Walsh, Glass Exhibit is a Clear Delight, The Orange County Register, April 24, 2005<br>
+              David Ebony, Report from Monterrey, Art in America, March 2005, p 75-76<br>
+              Jen Graves, A Sacrifice to Art Gods, The News Tribune, Tacoma, WA, January 22, 2005<br>
+              Tomas Ybarra-Frauso, L’expérince Métisse Conference, Louvre Museum, Paris, France, April 2004<br>
+              Shawn Waggoner, Qualified Irreverence: Einar and Jamex de la Torre, Glass Art Magazine, May 2004, p 6-12<br>
+              Leah Ollman, Jamex & Einar de la Torre, Origina Magazine, México City, January 2004, p 16-21, 71, 74<br>
+              Edward J. Sullivan, Import/Export the Borderless Baroque, Art in America, July 2002, p 30, 39<br>
+              Old Know, Juror’s Choice, The Corning Review 23, 2002<br>
+              Armando Ramírez, Neoreliquias, El Occidente newspaper, February 24, 2002<br>
+              Felipe Ehrenberg, Neoreliquias, ¿Disolución Estética?, Front page, Guadalajara, México, February 24, 2002<br>
+              Víctor Pazarín, Los Frutos del Artificio, Ocho Columnas, Guadalajara, México, front page, February 2, 2002<br>
+              Victor Ortiz Partida, El Lado Opuesto al Minimalismo, Público, Guadalajara, México, January 31, 2002, p 2<br>
+              Jorge Zul de la Cueva, Rompen las Reliquias con Vidrio, Mural, Guadalajara, México, February 31, 2002, 7D<br>
+              Staff, Neoreliquias, el Barroco Chicano en Vidrio Soplado, El Informador, Guadalajara, México, Cover, January 31, 2002<br>
+              Robert L. Pincus, Agitation in Glass and Acrylic, San Diego Union Tribune, November 22, 2001<br>
+              Alison Thorson, Cultural Chaos Erupts in Brothers’ Art, The Kansas City Star, Cover of Arts, June 3, 2001<br>
+              Rebekah Merrill, Telling Stories on Both Sides of the Border, Review, Kansas City, MO, June 2001, p 38-39<br>
+              Berin Golonu, Einar & Jamex de la Torre, Intersection for the Arts, Art Nexus, May 2001, p 154-155<br>
+              Jeanne Claire van Ryzin, Kitsch Crosses Cultural Borders, America-Statesman, Austin, TX, January 20, 2001<br>
+              Rob Curran, Exhibitionism, The Austin Chronicle, February 2, 2001, p 42<br>
+              Anjee Helstrup, The Mexican Problem, Zero Magazine, October 10, 2000<br>
+              Robert Pincus, Attitude Adjustment, San Diego Union Tribune, September 28, 2000, p 4-5<br>
+              Megan Wilson, Critics Choice: Art, The Mexican Problem, The San Francisco Guardian, September 20, 2000<br>
+              Rodrigo Diaz, The Mexican Problem, An Installation by Jamex and Einar de la Torre, SFStation.com (blog), September 20, 2000<br>
+              Felipe Ehrenberg, Minarete, La Frontera, Tijuana, México, September 7, 2000<br>
+              Lorenza Muños, Exploring the Boundaries, Los Angeles Times Calendar Section, January 12, 2000<br>
+              Kathleen Vanesian, Tijuana Brash, New Times, Phoenix, AZ, December 2, 1999<br>
+              Robert L. Pincus, Glass Darkly, San Diego Union Tribune, San Diego, CA, July 8, 1999<br>
+              Jack Fisher, When Worlds Collide: Christianity, Beer and Bad Weather, San José Mercury, February 28, 1999<br>
+              Ann Eliott Sherman, El Niño Behind Glass, San José Metro, February 11, 1999<br>
+              Interview, Artists Explore Border, Sculpture Magazine, February 1998. p 36-37, 70<br>
+              John Perrault, On the Border, Glass Magazine, Cover, Spring 1997, p 20-28<br>
+              James Chute, Arts Month: Brothers find inspiration on both sides of the border, The San Diego Union Tribune, August 28, 1997<br>
+              Michael S. Gant, Stones in a Glass House, The San José Metro Newspaper, San José, CA, October 7, 1996, p 55<br>
+              Ann Eliott Sherman, Mayhem at MACLA, The San José Metro Newspaper, April 10, 1995<br>
+            </p>
+        </div>
+    </div>
+
+    <div class="acord">
+        <label for="tb-three"  class="bg-three">
+          Artist Profile
+          <ion-icon name="chevron-down-outline"></ion-icon>
+        </label>
+        <input type="checkbox" name="mytabs" id="tb-three">
+        <div class="content">
+          <p>
+            The Brothers have been collaborating in earnest since the 1990's. Over the years they have developed their signature style featuring mix media work with blown glass sculpture and installation art. Their pieces represent a multifaceted view of life that reflects a complex and humorous aesthetic that could be seen as multi-layered baroque. Their approach is additive, constantly combining material and meaning. Influences range from religious iconography to German expressionism while also paying homage to Mexican vernacular arts and pre-Columbian art. In the last 15 years they have been creating photomural installations and using Lenticular printing as a major part of their repertoire. They have won The USA Artists Fellowship award, The Louis Comfort Tiffany Award, The Joan Mitchell Foundation Award, and The San Diego Art Prize,. They have had 18 solo museum exhibitions, completed 8 major public art projects and have participated in 4 biennales.<br>
+          </p>
+        </div>
+    </div>
+
+  </div>
+
+    <!--- artwork masonary --->
+
+    <div class="art-container">
+      <a href="de-la-torre-brothers-001.html">
+        <div class="art-box">
+            <img src="image/artwork/001_Trandifferentiation 3.png" alt="Transdifferentiation 3">
+        </div>
+      </a>
+      <a href="de-la-torre-brothers-002.html">
+        <div class="art-box">
+          <img src="image/artwork/002_Requiem for the Work Ethic.png" alt="Requiem for the Work Ethic">
+        </div>
+      </a>
+      <a href="de-la-torre-brothers-003.html">
+        <div class="art-box">
+          <img src="image/artwork/003_Invasive Species.png" alt="Invasive Species">
+        </div>
+      </a>
+      <a href="de-la-torre-brothers-004.html">
+        <div class="art-box">
+          <img src="image/artwork/004_Borderlandia.jpeg" alt="Borderlandia">
+        </div>
+      </a>
+    </div>
+
+    <!--- footer  --->   
+
+    <div class="footer">
+      <div class="footer-container">
+          <div class="store-info">
+              <div class="store-info-h">
+                  Location
+              </div>
+              <a href="https://www.google.com/maps/place/1917+Harrison+St,+Hollywood,+FL+33020/@26.0107563,-80.1456714,17z/data=!3m1!4b1!4m6!3m5!1s0x88d9ab9f786e3a23:0xdda50f19286a7586!8m2!3d26.0107563!4d-80.1456714!16s%2Fg%2F11c5nn62nx?entry=ttu">
+                <p>1917 Harrison St<br>
+                Hollywood FL 33020</p>
+              </a>
+              <div class="store-info-h">
+                  Phone
+              </div>
+              <a href="tel:+13057731732"><p>305-773-1732</p></a>
+          </div>
+          <div class="quick-links">
+              <div class="quick-links-h">
+                  Quick Links
+              </div>
+              <div class="quick-links-items">
+                  <a href="../../vr.html">Virtual Gallery</a>
+                  <a href="../../sculpture.html">Sculpture</a>
+                  <a href="../../press.html">Press</a>
+              </div>
+          </div>
+          <div class="social-links">
+              <div class="social-links-h">
+                  Contact Us
+              </div>
+              <div class="social-links-items">
+                <a href="https://www.facebook.com/ELurieGallery/">Facebook</a>
+                <a href="https://www.instagram.com/evan.lurie.gallery/">Instagram</a>
+                  <a href="mailto:info@evanluriegallery.com">Email</a>
+              </div>
+          </div>
+          <div class="footer-bottom">
+              <p>2023. Evan Lurie. ALL RIGHTS RESERVED.</p>
+          </div>
+      </div>
+  </div>
+
+    <!--- js homepage --->
+
+    <script src="../../js/script.js"></script>
+
+    <!--- js share social media --->
+
+    <script src="../../js/share.js"></script>
+    <script><!--
+      document.addEventListener("DOMContentLoaded", function(event) {
+        var shareItems = document.querySelectorAll('.social_share');
+        var isIOS = /iPad|iPhone|iPod/.test(navigator.platform)
+          || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+        var isAndroid = /(android)/i.test(navigator.userAgent);
+        var options = {};
+        if (isIOS || isAndroid) {
+          options.link_telegram = 'tg://msg';
+          options.link_whatsapp = 'whatsapp://send';
+        }
+        for (var i = 0; i < shareItems.length; i += 1) {
+          shareItems[i].addEventListener('click', function share(e) {
+            console.log(this);
+            return JSShare.go(this, options);
+          });
+        }
+      });
+      --></script>
+    
+    <!--- js artist video --->
+
+    <script src="../../js/video.js"></script>
+
+  </body>
+</html>
